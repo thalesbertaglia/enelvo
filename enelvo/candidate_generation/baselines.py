@@ -1,87 +1,32 @@
-'''Normalization candidate generation by lexical measures.'''
+'''Normalization candidate generation by lexical similarities.'''
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
-from enelvo import measures
+from enelvo import metrics
 
 
-def baseline_ed_freq(lex, word, max_ed=2, n_cands=10):
-    '''A simple edit distance + word frequency baseline for candidate generation.
+def baseline_similarity_measure(lex, word, metric=metrics.edit_distance, threshold=2, geq=False, n_cands=-1):
+    '''A simple similarity measure baseline for candidate generation.
 
-    All canonical words with edit distance below ``max_ed`` are considered
-    as candidates, then the ``n_cands`` top ones according to
-    their corpus frequency are returned.
-
-    Args:
-        lex (dict): The lexicon dictionary.
-        word (str): The noisy word to be normalized.
-        max_end (int): Maximum edit distance between words to consider them as candidates.
-        n_cands (int): Number of candidates to be returned (i.e, top n_cands will be returned according to their frequencies).
-
-    Returns:
-        list: A list containing ``n_cands`` normalization candidates.
-    '''
-    candidates = [(c, lex[c])
-                  for c in lex if measures.edit_distance(word, c) <= max_ed]
-
-    return sorted(candidates, key=lambda x: x[1], reverse=True)[:n_cands]
-
-
-def baseline_ed_lcs(lex, word, max_ed=2, n_cands=10):
-    '''A simple edit distance + LCS length baseline for candidate generation.
-
-    All canonical words with edit distance below ``max_ed`` are considered
-    as candidates, then the ``n_cands`` top ones according to the LCS length are returned.
+    All canonical words with ``metric`` below ``threshold`` (or above, if ``geq`` is set to True) are considered
+    as candidates, then ``n_cands`` are returned in alphabetical order.
+    By default, edit distance <= 2 is used.
 
     Args:
         lex (dict): The lexicon dictionary.
         word (str): The noisy word to be normalized.
-        max_end (int): Maximum edit distance between words to consider them as candidates.
-        n_cands (int): Number of candidates to be returned (i.e, top n_cands will be returned according to the LCS length).
+        metric (function): The similarity metric.
+        threshold (float): Maximum metric value between words to consider them as candidates.
+        geq (boolean): Whether the metric must be below or above ``threshold``. If ``geq`` is True, then the threshold is inverted.
+        n_cands (int): Number of candidates to be returned (i.e, top ``n_cands`` will be returned according to their frequencies).
+                       By default, all candidates (-1) that satisfy the metric threshold are returned.
 
     Returns:
         list: A list containing ``n_cands`` normalization candidates.
     '''
-    candidates = [(c, measures.lcs(word, c))
-                  for c in lex if measures.edit_distance(word, c) <= max_ed]
+    # Comparison function changes according to ``geq`` flag.
+    comp = lambda x, y: x >= y if geq else x <= y
 
-    return sorted(candidates, key=lambda x: x[1], reverse=True)[:n_cands]
+    candidates = sorted([c for c in lex if comp(metric(word, c), threshold)])
 
-
-def baseline_ed_lcs_freq(lex, word, max_ed=2, n_cands=10):
-    '''A simple edit distance + LCS length + word frequency baseline for candidate generation.
-
-    All canonical words with edit distance below ``max_ed`` are considered
-    as candidates, then the ``n_cands`` top ones according to the LCS length are returned.
-    When candidates have the same LCS length, their frequency is used as the sorting criterion.
-
-    Args:
-        lex (dict): The lexicon dictionary.
-        word (str): The noisy word to be normalized.
-        max_end (int): Maximum edit distance between words to consider them as candidates.
-        n_cands (int): Number of candidates to be returned (i.e, top n_cands will be returned according to the LCS length).
-
-    Returns:
-        list: A list containing ``n_cands`` normalization candidates.
-    '''
-    candidates = [(c, measures.lcs(word, c), lex[c])
-                  for c in lex if measures.edit_distance(word, c) <= max_ed]
-
-    return sorted(candidates, key=lambda x: (x[1], x[2]), reverse=True)[:n_cands]
-
-
-def main():
-    lex_file = open('../resources/lexicons/lex-ugcnormal-cb100.txt')
-
-    lex = dict()
-
-    for line in lex_file:
-        w = line.split(',')[0].strip()
-        n = line.split(',')[1].strip()
-
-        lex[w] = int(n)
-
-    print(baseline_ed_freq(lex, 'vcê'))
-
-if __name__ == '__main__':
-    main()
+    return candidates if n_cands == -1 else candidates[:n_cands]
