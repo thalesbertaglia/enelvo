@@ -1,6 +1,4 @@
-from __future__ import absolute_import
-
-__prog__ = "enelvo"
+__prog__ = 'enelvo'
 __title__ = 'Enelvo'
 __summary__ = 'A flexible normalizer for user-generated content.'
 __uri__ = 'https://www.github.com/tfcbertaglia/enelvo'
