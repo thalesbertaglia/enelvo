@@ -1,4 +1,4 @@
-'''Normalization candidate generation by lexical similarities.'''
+'''Normalization candidate generation baselines.'''
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
