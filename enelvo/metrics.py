@@ -39,3 +39,58 @@ def lcs(x, y):
             else:
                 C[i][j] = max(C[i][j - 1], C[i - 1][j])
     return C[len(C) - 1][len(C[0]) - 1]
+
+
+def lcs_ratio(x, y):
+    '''The length of the longest common subsequence between two strings normalized by the length of longest one.
+
+    Args:
+        x (str): The first string.
+        y (str): The second string.
+
+    Returns:
+        float: The normalized length of the longest common subsequence between x and y.
+    '''
+    return lcs(x, y) / max(len(x), len(y))
+
+
+def c_lcs_ratio(x, y):
+    '''Complement of LCS ratio.
+
+    Args:
+        x (str): The first string.
+        y (str): The second string.
+
+    Returns:
+        float: 1 - the normalized length of the longest common subsequence between x and y.
+    '''
+    return 1 - (lcs(x, y) / max(len(x), len(y)))
+
+
+def c_lcs(x, y):
+    '''Complement of LCS length.
+
+    Args:
+        x (str): The first string.
+        y (str): The second string.
+
+    Returns:
+        int: len(x) - longest common subsequence length between x and y.
+    '''
+    c = len(x) - lcs(x,y)
+    return c if c >= 0 else len(x)
+
+
+# Not exactly a metric, but it is here for the sake of organization.
+def word_frequency(lex, word):
+    '''Returns the frequency of ``word`` from ``lex``.
+
+    Args:
+        lex (dictionary): The lexicon dictionary.
+        word (str): The word to be  processed.
+
+    Returns:
+        int: The absolute frequency of ``word`` based on ``lex`` frequency list.
+             Returns 0 if ``word`` is not contained in ``lex``.
+    '''
+    return lex[word] if word in lex else 0
