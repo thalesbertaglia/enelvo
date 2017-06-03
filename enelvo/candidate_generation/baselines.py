@@ -5,8 +5,8 @@
 from enelvo import metrics
 
 
-def baseline_similarity_measure(lex, word, metric=metrics.edit_distance, threshold=2, geq=False, n_cands=-1):
-    '''A simple similarity measure baseline for candidate generation.
+def generation_similarity_metric(lex, word, metric=metrics.edit_distance, threshold=2, geq=False, n_cands=-1):
+    '''A simple similarity metric baseline for candidate generation.
 
     All canonical words with ``metric`` below ``threshold`` (or above, if ``geq`` is set to True) are considered
     as candidates, then ``n_cands`` are returned in alphabetical order.
