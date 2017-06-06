@@ -19,6 +19,7 @@ def edit_distance(x, y):
     return editdistance.eval(x, y)
 
 
+# TODO: Implement in C for better performance
 def lcs(x, y):
     '''Calculates the length of the longest common subsequence between two strings.
 
