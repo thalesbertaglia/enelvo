@@ -320,9 +320,6 @@ class Tokenizer:
         if self.ignorestopwords:
             message = [word for word in message if word not in self._stopwords]
 
-        else:
-            message = [word for word in message.split()]
-
         return message
 
     def emoticons(self, iterable=None, filename=None):
