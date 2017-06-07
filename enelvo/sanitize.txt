@@ -1,0 +1,18 @@
+message = ' '.join([word for word in message if not word in string.punctuation])
+
+    # sub por NUMBER
+    hora = re.compile(
+        r'[0-9]+(horas|hrs|hs|h|:)\s*(([0-9]+\s*(min|am|pm|m))|[0-9]*)')
+
+    # uma url que não pegou, sub por URL
+    url = re.compile(r'https :/ / t . co / [0-9a-z]*')
+
+    data = re.compile(r'NUMBER / (NUMBER|[0-9]+\s)')  # sub por NUMBER
+
+    num_solto = re.compile(r'\s*[0-9]+\s*')  # sub por NUMBER
+
+    message = hora.sub(' NUMBER ', message)
+    message = url.sub(' URL ', message)
+    message = data.sub(' NUMBER ', message)
+    message = num_solto.sub(' NUMBER ', message)
+    message = message.strip()
