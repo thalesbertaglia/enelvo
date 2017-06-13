@@ -19151,8 +19151,6 @@ dadaísta,146
 dadaístas,164
 dado,94982
 dados,415674
-dae,167
-dai,703
 dali,4528
 dama,1931
 damas,946

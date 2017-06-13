@@ -241,7 +241,6 @@ class Tokenizer:
         tokens = []
         deletion_tokens = {'', 'REMOVE', 'remove', 'DELETE', 'delete'}
         for word in msg:
-            print(word)
             matching = self.word_re.match(word)  # 1st check if normal word
             if matching and len(matching.group(0)) == len(word):
                 tokens.append(self._cleanword(word))

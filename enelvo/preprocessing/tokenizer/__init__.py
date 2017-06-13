@@ -25,3 +25,5 @@ __version__ = '1.0.1'
 __author__ = 'Jared Suttles'
 __license__ = 'Modified BSD'
 __copyright__ = 'Copyright 2013 Jared Suttles'
+
+from .tokenizer import Tokenizer
