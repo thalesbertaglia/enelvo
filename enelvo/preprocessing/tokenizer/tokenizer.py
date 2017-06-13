@@ -5,6 +5,9 @@
 # Copyright: (c) 2013, Jared Suttles. All rights reserved.
 # License: BSD, see LICENSE for details.
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Adapted to Portuguese by Thales Bertaglia <thalesbertaglia@gmail.com>
+
 import re
 import string
 from os import path
