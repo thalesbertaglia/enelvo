@@ -4,9 +4,10 @@ from enelvo import candidate_generation
 from enelvo import candidate_scoring
 from enelvo import metrics
 from enelvo.preprocessing import tokenizer
+from enelvo.utils import evaluation
 
 
-lex_file = open('enelvo/resources/lexicons/freq-cgu.txt')
+'''lex_file = open('enelvo/resources/lexicons/freq-cgu.txt')
 lex = dict()
 for line in lex_file:
     lex[line.split(',')[0]] = line.split(',')[1]
@@ -19,4 +20,7 @@ oov = analytics.identify_oov(lex=lex, tokens=tokens)
 cands = candidate_generation.baselines.generate_by_similarity_metric(
     lex=lex, word=tokens[oov[3]], n_cands=-1)
 top = candidate_scoring.baselines.score_by_similarity_metrics(lex=lex, candidates=cands, n_cands=10)
-print(top)
+print(top)'''
+
+count = evaluation.load_enelvo_format('correcoes-enelvo/O-corr-enelvo.txt', 'O')
+print(count['ta'])

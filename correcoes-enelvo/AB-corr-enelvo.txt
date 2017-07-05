@@ -1,0 +1,246 @@
+facul	faculdade,AB,4 
+mtu	muito,AB,4 
+p	para,AB,122 pra,AB,4 por,AB,1 
+prc	piroca,AB,4 porcaria,AB,1 
+q	que,AB,590 quer,AB,1 abreviação,AB,1 
+ta	está,AB,75 estar,AB,6 
+to	estou,AB,138 
+vc	você,AB,237
+xrc	xereca,AB,4 
+app	application,AB,2 
+bio	biografia,AB,2 
+d	de,AB,31 #,AB,1 do,AB,1 
+mat	matemática,AB,1 
+mt	muita,AB,3 muito,AB,57 
+n	não,AB,207 
+pa	pra,AB,1 
+pq	porque,AB,185 
+sensa	sensacional,AB,1 
+tb	também,AB,29 
+m	me,AB,1 
+tv	televisão,AB,179 televisões,AB,1 
+crl	caralho,AB,5  
+mm	mesmo,AB,2 
+snap	snapchat,AB,1 
+bj	beijo,AB,7 beiijo,AB,1 
+c	com,AB,41 você,AB,6 como,AB,3 
+cs	casa,AB,1 
+fb	facebook,AB,3 
+hj	hoje,AB,41 
+hr	hora,AB,9 horas,AB,1 
+memo	mesmo,AB,1 
+rlx	relax,AB,1 
+vo	vou,AB,2 
+mc	mcdonald's,AB,1 
+agr	agora,AB,26 
+fzr	fazer,AB,2 
+msm	mesmo,AB,20 mesma,AB,4 
+mto	muito,AB,16 
+ngm	ninguém,AB,18 
+tao	estão,AB,5 
+tbm	também,AB,46 
+kd	kadê,AB,1 
+porq	porque,AB,1 
+soh	só,AB,1 
+bb	bebê,AB,2 
+cm	comigo,AB,1 com,AB,5 centímetro,AB,2 centímetros,AB,1 como,AB,1 
+cmg	comigo,AB,25 
+nd	nada,AB,9 
+vcs	vocês,AB,53 
+aq	aqui,AB,11 
+bagui	bagulho,AB,1 
+bgl	bagulho,AB,5 
+crlhoo	caralho,AB,1 
+marcos	#,AB,1 
+rbd	rebelde,AB,1 
+sdds	saudades,AB,18 
+vamo	vamos,AB,1 
+cap	capitão,AB,1 
+dr	doutor,AB,1 
+favs	favoritas,AB,2 
+tas	estás,AB,1 
+tmbm	também,AB,2 
+vlh	velho,AB,1 
+dps	depois,AB,19 quero,AB,1 
+guenta	aguenta,AB,1 
+ql	qual,AB,2 
+qnd	quando,AB,20 
+t	te,AB,2 
+tl	timeline,AB,5 
+tt	twitter,AB,17 twiter,AB,3 tweet,AB,1 
+vdd	verdade,AB,10 
+3d	tridimensional,AB,1 
+rpg	#,AB,1 
+band	bandeirantes,AB,1 
+eqnto	enquanto,AB,1 
+s	sim,AB,2 se,AB,3 sem,AB,1 
+tda	toda,AB,2 
+tdo	todo,AB,4 tudo,AB,3 
+tdos	todos,AB,2 
+cel	celular,AB,9 
+id	identidade,AB,2 identificação,AB,1 
+miga	amiga,AB,3 
+migos	amigos,AB,2 
+obg	obrigado,AB,7 
+obs	observação,AB,4 
+vei	velho,AB,2 
+td	todo,AB,6 tudo,AB,10 toda,AB,1 
+crlh	caralho,AB,4 
+v	voltz,AB,1 
+tpc	tópico,AB,11 
+tvs	televisões,AB,23 
+fts	fotos,AB,1 
+tou	estou,AB,4 
+bjs	beijos,AB,4 
+qe	que,AB,2 
+hs	horas,AB,1 
+add	adicionar,AB,1 adiciona,AB,1 
+amg	amigo,AB,6 amiga,AB,2 
+gnt	gente,AB,12 
+hrs	horas,AB,11 
+rt	retweet,AB,18 rtweet,AB,1 
+dms	demais,AB,5 
+ep	episódio,AB,2 
+mo	amor,AB,1 
+bffs	#,AB,1 
+nn	ninguém,AB,1 não,AB,3 
+qro	quero,AB,6 
+qndo	quando,AB,10 
+qnto	quanto,AB,10 
+bglh	bagulho,AB,4 bagulhos,AB,1 
+blz	beleza,AB,3 
+fut	futebol,AB,4 futbol,AB,1 
+smp	sempre,AB,4 
+fbc	facebook,AB,5 
+inst	instagran,AB,1 instagram,AB,4 
+kg	quilogramas,AB,2 kilogramas,AB,2 
+magrin	magrinho,AB,2 
+wpp	whatsapp,AB,9 
+mp	megapixel,AB,2 
+r	reais,AB,3 
+mnh	minha,AB,4 
+msc	música,AB,1 
+vrs	#,AB,1 
+vzs	vezes,AB,2 
+min	ministério,AB,1 minutos,AB,1 minuto,AB,1 
+tamo	estamos,AB,2 
+mix	#,AB,2 
+apx	apaixonado,AB,1 
+yt	youtube,AB,1 
+ps	postscript,AB,2 
+tele	televisão,AB,1 
+tds	todos,AB,2 
+ft	foto,AB,9 
+tadinho	coitadinho,AB,2 
+ctg	contigo,AB,2 
+mds	#,AB,1 
+qdo	quando,AB,11 
+msg	mensagens,AB,1 mensagem,AB,1 
+bjo	beijo,AB,2 
+b	bom,AB,1 
+qq	qualquer,AB,1 
+qto	quanto,AB,1 
+qd	quando,AB,3 
+tmb	também,AB,8 
+eps	episódios,AB,1 
+temp	temporadas,AB,1 temporada,AB,1 
+amgs	amigas,AB,1 
+ed	educação,AB,1 
+qqr	qualquer,AB,1 
+dnv	novamente,AB,1
+ctz	certeza,AB,2 
+gd	grande,AB,1 
+semis	semifinais,AB,1 
+tpcs	tópicos,AB,1 
+block	bloquear,AB,1 
+cf	crossfire,AB,1 
+et	extraterrestre,AB,1 
+mb	megabyte,AB,1 
+din	dinheiro,AB,1 
+jg	jogo,AB,1 
+tbem	também,AB,1 
+k	karalho,AB,1 
+cd	cadê,AB,1 
+def	definition,AB,1 
+hi	high,AB,1 
+h	hoje,AB,1 
+gb	gigabytes,AB,1 
+nick	nickname,AB,1 
+br	brasileiro,AB,2 
+mlk	moleque,AB,1 mulek,AB,1 muleke,AB,1 
+mtas	muitas,AB,1 
+pgt	perguntar,AB,1 perguntado,AB,1 
+pr	para,AB,1 
+qtde	quantidade,AB,1 
+pt	parte,AB,1 
+crlho	caralho,AB,1 
+obgd	obrigado,AB,1 
+taria	estaria,AB,1 
+aprox	aproximadamente,AB,1 
+bct	boceta,AB,1 
+pv	privado,AB,1 
+rew	rewind,AB,1 
+qm	quem,AB,6 
+bbs	bebês,AB,1 
+mta	muita,AB,2 
+hexa	hexacampeonato,AB,1 
+maraca	maracanã,AB,1 
+fla	flamengo,AB,2 
+seg	segunda,AB,1 
+sex	sexta,AB,1 
+btus	#,AB,3 
+equanto	enquanto,AB,1 
+dp	depois,AB,1 
+gov	governo,AB,1 
+sdd	saudade,AB,6 
+aux	auxiliar,AB,1 
+sgt	sargento,AB,1 
+tel	telefone,AB,1 
+cvsando	conversando,AB,1 
+pol	polegada,AB,1 
+fav	favorito,AB,2 
+hra	hora,AB,1 
+alg	alguém,AB,1 
+pgm	programa,AB,1 
+dzr	dizer,AB,2 
+flo	falo,AB,1 
+qr	quero,AB,1 quer,AB,1 
+bro	brother,AB,1 
+epis	episódios,AB,1 
+bby	baby,AB,1 
+oce	você,AB,1 
+sznha	sozinha,AB,1 
+slc	#,AB,1 
+3x	#,AB,1 
+psico	psicopata,AB,1 
+sb	sabe,AB,2 
+vrdd	verdade,AB,1 
+niver	aniversário,AB,1 
+tar	estar,AB,2 
+qlq	qualquer,AB,1 
+cntg	contigo,AB,1 
+churras	abreviação,AB,1 
+grp	grupo,AB,1 
+sr	senhor,AB,1 
+mg	amigo,AB,1 
+prof	professora,AB,1 
+grupin	grupinho,AB,1 
+krl	karalho,AB,2 
+ct	contigo,AB,1 
+hepta	heptacampeonato,AB,2 
+rolesin	rolezinho,AB,1 
+jsto	justo,AB,1 
+mgk	mágika,AB,1 
+fics	fanfics,AB,1 
+dmais	demais,AB,1 
+cnvs	conversar,AB,1 
+mbytes	megabytes,AB,1 
+hetero	heterosexual,AB,1 
+lgd	ligado,AB,1 
+promo	promoção,AB,1 
+peq	pequena,AB,1 
+flu	fluminense,AB,1 
+hoj	hoje,AB,1 
+secr	secar,AB,1 
+dx	deixa,AB,1 
+fessor	professor,AB,1 

@@ -1,0 +1,1537 @@
+dao	dão,O,5 
+dificil	difícil,O,20 díficil,O,1 
+eh	é,IN,79 é,AB,2 é,O,3 #,IN,6 
+facul	faculdade,AB,4 faculdade,IN,2 
+mtu	muito,AB,4 muito,O,1 
+oq	#,IN,4 oque,IN,2 #,AB,6 
+p	para,AB,122 pra,AB,4 para,O,3 por,AB,1 
+porem	porém,OC,21 
+prc	piroca,AB,4 porcaria,AB,1 
+q	que,AB,590 que,O,7 quer,AB,1 abreviação,AB,1 
+ta	está,AB,75 estar,AB,6 tá,O,4 está,O,67 estar,O,5 está,IN,1 estar,IN,1 estou,O,1 tá,OC,1 #,IN,1 estás,O,1 
+to	estou,AB,138 estou,O,16 estou,IN,1 
+troxa	trouxa,O,8 
+vandalismooo	vandalismo,IN,5 
+vc	você,AB,237 voc6e,AB,1 
+xrc	xereca,AB,4 
+app	application,AB,2 
+bio	biografia,AB,2 
+d	de,AB,31 #,AB,1 de,IN,11 do,AB,1 
+dhow	show,O,1 
+dulceee	dulce,IN,1 
+lindaaaa	linda,IN,1 
+mat	matemática,AB,1 
+mt	muita,AB,3 muito,AB,57 muito,IN,16 
+n	não,AB,207 não,O,2 
+ne	né,O,16 não é,IN,5 né,IN,1 #,AB,2 
+pa	pra,AB,1 para,O,2 
+pq	porque,AB,185 porque,O,1 
+sensa	sensacional,AB,1 
+tb	também,AB,29 
+uuu	you,IN,1 
+confinanemto	confinamento,O,1 
+impar	ímpar,O,1 
+principe	príncipe,O,1 
+tv	televisão,AB,179 televisões,AB,1 
+alem	além,OC,15 além,O,2 
+ate	até,OC,9 até,O,31 
+att	#,AB,1 
+crl	caralho,AB,5 
+cumendo	comendo,O,1 
+cumi	comi,O,2 
+gracas	graças,O,1 
+mm	mesmo,AB,2 mesma,O,1 minutos,O,1 
+nao	não,O,282 
+otras	outras,O,1 
+servico	serviço,O,1 
+acustico	acústico,O,1 
+bj	beijo,AB,7 beijo,IN,1 beiijo,AB,1 
+c	com,AB,41 você,IN,1 se,IN,3 você,AB,6 como,AB,3 
+ceu	céu,O,5 
+cs	casa,AB,1 
+fb	facebook,AB,3 
+felicidadeeer	felicidade,O,1 
+hj	hoje,AB,41 
+hr	hora,AB,9 horas,AB,1 
+luccas	lucas,O,1 
+memo	mesmo,O,2 mesmo,AB,1 
+mknja	minha,O,1 
+rlx	relax,AB,1 
+vo	vou,IN,1 vou,O,11 #,IN,1 vou,AB,2 
+demcratica	democrática,O,1 
+mr	mc,O,1 
+noticias	notícias,OC,1 
+potar	postar,O,1 
+zuar	zoar,O,2 
+agr	agora,AB,26 
+amanha	amanhã,O,3 amanhã,OC,3 
+anciosa	ansiosa,O,1 
+avancados	avançados,O,1 
+durmi	dormir,O,2 
+fzr	fazer,AB,2 fazer,IN,2 
+ja	já,O,115 
+mainha	mãinha,O,1 mãe,IN,1 
+msm	mesmo,AB,20 mesma,AB,4 
+neeem	nem,IN,1 
+paises	países,O,1 
+tinhamos	tínhamos,O,2 
+ai	aí,OC,42 aí,O,3 
+despiei	fui,IN,1 
+mto	muito,AB,16 
+ngm	ninguém,AB,18 
+noob	novato,IN,1 
+so	só,O,85 
+tao	tão,O,23 estão,O,3 estão,AB,5 
+tbm	também,AB,46 
+aki	aqui,IN,6 aqui,O,17 
+alguem	alguém,O,26 
+consciencia	consciência,O,1 
+dakele	daquele,IN,1 
+decencia	decência,O,1 
+dindim	dinheiro,IN,1 
+idemmmmmmmmmm	idem,IN,1 
+infrigi	infringi,O,1 
+jah	já,IN,2 
+kd	cadê,IN,5 kadê,AB,1 
+lah	lá,IN,2 
+maluquisses	maluquices,O,1 
+ninguem	ninguém,O,9 niguém,O,8 
+perjorativamente	pejorativamente,O,1 
+porq	porque,AB,1 porque,O,1 
+quotando	#,IN,1 
+soh	só,IN,7 só,AB,1 
+tah	tá,IN,6 está,IN,11 
+titulo	título,OC,1 
+topico	tópico,O,4 
+tranqula	tranquila,O,1 
+ultima	última,OC,2 
+vao	vão,O,5 
+ve	veja,O,1 ver,O,5 vê,O,2 #,IN,1 
+vlw	valeu,IN,3 
+vlws	valeu,IN,1 
+aminho	amo,IN,1 
+bb	bebê,AB,2 bbb,O,1 
+carai	caralho,IN,2 
+cm	comigo,AB,1 com,AB,5 centímetro,AB,2 com,IN,1 centímetros,AB,1 com,O,1 como,AB,1 
+cmg	comigo,AB,25 comigo,IN,1 
+la	lá,O,9 
+meua	meus,O,1 
+moveei	#,IN,1 
+nd	nada,AB,9 
+poes	pões,O,1 
+sabado	sábado,O,3 
+secundarias	secundárias,OC,1 
+ss	as,O,1 
+unica	única,O,8 
+vcs	vocês,AB,53 
+entenderao	entenderão,O,1 
+envergonhanda	envergonhada,O,1 
+esta	está,OC,26 está,O,3 
+estao	estão,O,8 
+imaginarios	imaginários,O,1 
+ops	opa,IN,1 
+sao	são,O,26 
+sera	será,O,16 
+situacao	situação,O,1 
+ultimos	últimos,O,4 
+voce	você,O,94 
+aq	aqui,AB,11 aqui,O,1 
+bagui	bagulho,AB,1 bagulho,IN,1 
+bgl	bagulho,AB,5 
+crlhoo	caralho,AB,1 
+fodase	foda-se,O,1 
+nois	nós,O,10 nós,IN,8 #,IN,2 
+oubindo	ouvindo,O,1 
+sdds	saudades,AB,18 
+serio	sério,O,2 sério,OC,4 
+vamo	vamos,O,8 #,IN,1 vamos,AB,1 
+cap	capitão,AB,1 
+favs	favoritas,AB,2 
+mexmo	mesmo,O,1 
+muoto	muito,O,1 
+po	pô,O,1 por,O,1 #,IN,2 
+tas	estás,AB,1 estás,O,2 
+tmbm	também,AB,2 
+vlh	velho,AB,1 
+dps	depois,AB,19 quero,AB,1 
+guenta	aguenta,IN,1 aguenta,AB,1 
+lindoooo	lindo,IN,1 
+mamis	mamãe,IN,1 
+ql	qual,AB,2 
+qnd	quando,AB,20 
+sla	#,IN,1 
+t	te,AB,2 
+tl	timeline,AB,5 timeline,IN,1 
+tt	twitter,AB,17 twiter,AB,3 tweet,AB,1 
+vdd	verdade,AB,10 
+veram	verão,O,1 
+assistencia	assistência,O,5 assistência,OC,1 
+beneficio	benefício,OC,6 benefício,O,1 
+en	em,O,2 
+facil	fácil,O,43 
+prejuizo	prejuízo,O,1 
+tecnica	técnica,O,4 
+videos	vídeos,O,9 
+band	bandeirantes,AB,1 
+cerebro	cérebro,O,2 
+codnome	codinome,O,1 
+coisica	#,IN,4 coisinha,IN,5 coisa,IN,5 
+dr	doutor,AB,1 
+engracado	engraçado,O,1 
+eqnto	enquanto,AB,1 
+recnov	#,AB,1 
+tda	toda,AB,2 toda,O,1 
+tdo	todo,AB,4 tudo,AB,3 tudo,O,1 
+tdos	todos,AB,2 
+abilite	habilite,O,1 
+acessivel	acessível,O,2 
+axei	achei,IN,1 
+co	com,O,1 
+dnla	dlna,O,1 
+muitoas	muitas,O,1 
+otimas	ótimas,O,2 
+otimo	ótimo,O,15 ótimo,OC,17 
+pc	#,AB,1 personal computer,AB,1 
+rapido	rápido,O,9 
+unico	único,O,3 
+usuario	usuário,O,1 
+caraio	caralho,IN,3 caralho,O,4 
+cel	celular,AB,9 celular,IN,1 
+demonio	demônio,O,5 
+id	identidade,AB,2 identificação,IN,1 identificação,AB,1 
+maquigem	maquiagem,O,5 
+miga	amiga,IN,3 amiga,O,1 amiga,AB,3 
+migos	amigos,IN,2 amigos,O,6 amigos,AB,2 
+obg	obrigado,AB,7 
+vei	velho,IN,4 velho,O,4 velho,AB,2 #,IN,2 veio,O,1 
+zuarem	zoarem,O,4 zombar,IN,1 
+entao	então,O,15 
+goooool	gol,IN,1 
+mayyybbbbeeee	maybe,IN,1 
+nene	nenê,O,3 
+otario	otário,O,2 
+plmdds	#,AB,1 
+td	todo,AB,6 tudo,AB,10 toda,AB,1 
+tuuu	tu,IN,1 
+berrooooo	berro,IN,1 
+crlh	caralho,AB,4 
+mae	mãe,O,10 
+brasuca	#,IN,1 
+consequencias	consequências,O,1 
+pe	pé,OC,2 
+trutv	truetv,O,1 
+v	ver,IN,1 ver,O,1 voltz,AB,1 
+alguas	algumas,O,1 
+atencao	atenção,O,3 
+inciais	iniciais,O,2 
+ira	irá,OC,5 
+lider	líder,O,8 
+lorinha	loirinha,O,1 
+paredao	paredão,O,5 
+tpc	tópico,AB,11 
+auqeles	aqueles,O,1 
+carregor	carregador,O,1 
+desing	design,O,9 
+horrivel	horrível,O,1 
+incrivel	incrível,O,13 
+parabens	parabéns,O,13 
+pendrivese	pendrives,O,1 
+possuia	possuía,O,1 
+proximo	próximo,O,3 
+satelite	satellite,O,1 
+tvs	televisões,AB,23 
+fts	fotos,AB,1 
+inha	tinha,O,1 
+kedi	cadê,IN,1 
+mimmm	mim,IN,1 
+tou	estou,AB,4 estou,IN,4 
+bjs	beijos,AB,4 
+history	#,IN,1 
+juntooooo	junto,IN,1 
+qe	que,AB,2 que,O,3 
+video	vídeo,O,27 
+akilo	aquilo,IN,1 aquilo,O,1 
+blaster	ótima,IN,1 
+cells	céus,IN,2 
+dah	dá,IN,3 
+heim	hein,O,1 
+karai	caralho,IN,1 
+ki	que,IN,18 #,IN,1 que,O,3 
+naum	não,IN,9 
+queeeeeee	que,IN,1 
+ridicula	ridícula,O,2 
+comevente	comovente,O,1 
+dissernimento	discernimento,O,1 
+ha	há,O,3 
+hs	horas,AB,1 
+instistiu	insistiu,O,1 
+parametro	parâmetro,O,1 
+paredoes	paredões,O,1 
+siceridade	sinceridade,O,1 
+tambem	também,O,20 
+vazaaaaaaaaaaaa	vaza,IN,1 
+votamdo	votando,O,1 
+amg	amigo,AB,6 amiga,AB,2 
+hrs	horas,AB,11 
+inicio	início,OC,6 ínicio,OC,1 
+musica	música,OC,9 música,O,3 
+mutuo	mútuo,OC,4 mútuo,O,1 
+rt	retweet,AB,18 rtweet,AB,1 
+vey	,IN,1 veio,O,1 velho,IN,3 
+bomm	bom,O,1 
+dms	demais,AB,5 
+ep	episódio,AB,2 
+pistolei	#,IN,1 
+afrontaaaaaa	afronta,IN,1 
+asiva	avisa,O,1 
+carencia	carência,O,1 
+jacareeeeeee	jacaré,IN,1 
+nn	ninguém,AB,1 nem,O,2 não,AB,3 
+qro	quero,AB,6 quero,IN,2 
+bandidaaaaaaaaaaaaaaa	bandida,IN,4 #,IN,1 
+familia	família,O,8 
+maquear	maquiar,O,5 
+qndo	quando,AB,10 
+qnto	quanto,AB,10 
+voces	vocês,O,14 
+ah	#,IN,5 
+bglh	bagulho,AB,4 bagulhos,AB,1 
+blz	beleza,AB,3 
+exculachada	esculachada,O,1 
+fut	futebol,AB,4 futbol,AB,1 
+maqueada	maquiada,O,1 
+pelamor	#,IN,1 
+roupaaa	roupa,IN,1 
+smp	sempre,AB,4 sempre,IN,4 sempre,O,1 
+axo	acho,IN,3 acho,O,2 
+demsss	demais,IN,3 demais,O,2 
+fbc	facebook,AB,5 
+idd	#,IN,1 
+inst	instagran,AB,1 instagram,AB,4 
+magrin	magrinho,O,2 magrinho,AB,2 magrinho,IN,1 
+wpp	whatsapp,AB,9 
+atraves	através,O,2 
+combrado	cobrado,O,1 
+economica	econômica,O,2 
+ideoneas	idôneas,O,1 
+insuperaval	insuperável,O,1 
+lags	atrasos,IN,1 
+maquina	máquina,OC,8 
+mesmoo	mesmo,O,1 
+ncessidade	necessidade,O,1 
+necessarias	necessárias,O,2 
+oculpa	ocupa,O,1 
+otima	ótima,OC,18 ótima,O,13 
+r	reais,AB,3 
+rapida	rápida,O,4 rápido,O,1 
+sisteme	sistema,O,1 
+estudio	estúdio,O,1 
+joao	joão,O,2 
+odio	ódio,O,3 
+viero	vieram,O,1 
+flesh	flash,O,1 
+serie	série,OC,3 
+varias	várias,OC,11 
+delicia	delícia,OC,3 
+guriaa	guria,IN,1 
+mnh	minha,AB,4 
+msc	música,AB,1 
+vrs	#,AB,1 
+vzs	vezes,AB,2 
+xulianaaaaaa	#,IN,1 
+ae	aí,IN,5 #,IN,1 
+aquivos	arquivos,O,1 
+camera	câmera,O,44 
+fose	fosse,O,1 
+grao	grão,O,1 
+medio	médio,O,1 
+piquena	pequena,O,1 
+resistencia	resistência,O,2 
+util	útil,O,2 
+min	mim,O,2 ministério,AB,1 minutos,AB,1 minuto,AB,1 
+mo	maior,IN,1 muito,O,1 meu,IN,1 amor,AB,1 
+oculos	óculos,O,1 óculos,OC,1 
+tamo	estamos,AB,2 
+akeles	aqueles,IN,1 
+diversao	diversão,O,1 
+emfim	enfim,O,2 
+experiencia	experiência,O,2 
+imperdiveis	imperdíveis,O,1 
+maaais	mas,IN,1 
+mecher	mexer,O,1 
+quelidade	qualidade,O,1 
+sensivel	sensível,O,3 
+tensao	tensão,O,1 
+cade	cadê,O,6 
+diaa	dia,IN,1 
+fazend	fazendo,O,1 
+m	me,AB,1 merda,O,1 um,O,1 
+mix	#,AB,2 
+solzinho	sozinho,O,1 
+viado	veado,O,3 
+xitas	xiitas,O,1 
+apx	apaixonado,AB,1 
+comassim	como assim,IN,1 
+falano	falando,O,1 
+herois	heróis,O,1 
+mc	mac,AB,1 mcdonald's,AB,1 
+pqq	pq,O,1 
+serpentario	serpentário,O,1 
+trampano	trampando,O,1 
+upando	#,IN,1 
+vots	vota,O,1 
+yt	youtube,AB,1 
+comentarios	comentários,O,2 
+voteiiiiiiiii	votei,IN,1 
+yesssssssss	yes,IN,1 
+duvidas	dúvidas,OC,7 
+execelente	excelente,O,6 
+oiportunidade	oportunidade,O,5 
+possivel	possível,O,7 
+tele	tela,O,4 televisão,AB,1 
+twetando	#,IN,1 
+atras	atrás,O,6 
+audio	áudio,O,11 
+botao	botão,O,1 
+classico	clássico,O,1 
+doradoura	duradoura,O,1 
+economico	econômico,O,3 
+enves	invés,O,1 
+exelente	excelente,O,5 
+exelentes	excelentes,O,2 
+fragancia	fragrância,O,5 fragância,O,1 
+genero	gênero,O,3 
+gostp0	gosto,O,1 
+imbassar	embassar,O,1 
+navagar	navegar,O,1 
+podi	pode,O,1 
+poloegadas	polegadas,O,1 
+proximos	próximos,O,1 
+rapidas	rápidas,O,1 
+razoavel	razoável,O,2 
+supender	suspender,O,1 
+tlabet	tablet,O,1 
+acessorios	acessórios,O,1 
+batsante	bastante,O,1 
+cameras	câmeras,O,4 
+faceis	fáceis,O,2 
+graficos	gráficos,O,4 
+imagen	imagem,O,2 
+mutio	muito,O,1 
+otimos	ótimos,O,5 
+pow	#,IN,1 poxa,IN,1 pô,IN,1 
+recomwendada	recomendada,O,1 
+resolucao	resolução,O,1 
+tds	todos,IN,1 todos,AB,2 
+volueme	volume,O,1 
+dispiei	dispistei,IN,1 desapareci,IN,1 saí,IN,1 
+ft	foto,AB,9 
+mozaumm	amorzão,IN,3 #,IN,1 amor,IN,1 
+simmm	sim,IN,4 #,IN,1 
+cachoreira	cachoeira,O,1 
+post	#,IN,1 
+reserveu	reservou,O,1 
+tadinho	coitadinho,AB,2 
+conexao	conexão,O,1 
+escanea	escaneia,O,1 
+impares	ímpares,OC,1 
+insastifeito	insatisfeito,O,1 
+irmao	irmão,O,3 
+lavavel	lavável,O,1 
+paginas	páginas,OC,1 
+raca	raça,O,1 
+radio	rádio,OC,6 rádio,O,1 
+recolocacao	recolocação,O,1 
+af	ave!,IN,1 aff,IN,1 
+brincks	brincadeira,IN,1 
+ctg	contigo,AB,2 
+ferias	férias,O,1 
+mow	maior,IN,1 
+simm	sim,IN,2 
+sofrir	sofri,O,1 
+solberem	souberem,O,1 
+bee	bissexual,O,1 bissexuais,O,3 
+cool	cu,O,1 
+qdo	quando,AB,11 
+quotei	citei,O,1 
+beneficios	benefícios,O,1 
+caracteristicas	características,O,1 
+desenpenho	desempenho,O,4 
+espaco	espaço,O,4 
+impossivel	impossível,O,3 
+msg	mensagens,AB,1 mensagem,AB,1 
+pessimo	péssimo,O,3 
+ahhh	ah,IN,2 
+putz	poxa,IN,1 #,IN,1 
+sacooooo	saco,IN,1 
+trab	trabalhar,IN,1 
+ue	ué,O,1 
+aaaaa	ah,IN,3 
+bbb	#,AB,9 
+belesura	beleza,O,1 
+bjo	beijo,AB,2 
+decibeis	decibéis,O,1 
+massss	mas,IN,1 
+queeeee	que,IN,1 
+safadeeeeenha	safadinha,IN,1 
+brodi	brother,O,1 
+kmila	kamila,O,1 
+ainsa	ainda,O,1 
+bora	vamos,IN,1 
+caminhao	caminhão,O,1 
+contrario	contrário,OC,2 
+dormio	dormiu,O,1 
+dow	do,O,1 
+futuralia	futurália,O,1 
+fz	faz,O,1 
+guaruja	guarujá,O,1 
+hue	rui,O,1 
+mensagns	mensagens,O,1 
+mes	mês,O,7 
+oje	hoje,O,1 
+pk	porque,O,1 
+policia	polícia,OC,1 
+stor	gestor,O,1 
+esrcreve	escrevem,O,1 
+etccccc	#,IN,1 
+excessoes	excessões,O,1 
+gnt	gente,IN,4 gente,AB,12 
+icognita	incógnita,O,1 
+mermo	mesmo,O,2 #,IN,1 
+netgeo	natgeo,O,1 
+oa	os,O,1 
+opcao	opção,O,1 
+qto	quanto,AB,1 
+reaginso	reagindo,O,1 
+realitys	reality,O,1 
+ahn	ah,IN,1 
+bacano	bacana,O,1 
+clichezudo	clichê,IN,1 
+minhyuk	min-hyuk,O,1 
+porreiro	bravo,IN,1 
+qd	quando,AB,3 
+vitima	vítima,OC,1 
+alfinetante	desconfortante,IN,1 
+bombar	arrasar,IN,1 
+compicha	compadre,O,1 
+destituida	destituída,O,1 
+dislates	disparates,IN,1 
+far	dar,O,1 
+fofolete	fofa,IN,2 
+goianense	goianiense,O,1 
+libanes	libanês,O,1 
+pitacos	palpites,IN,1 
+tadinha	coitada,O,1 coitada,IN,1 
+taticas	táticas,O,1 
+trasformo	transformo,O,1 
+eeee	e,IN,2 
+eeeee	e,IN,1 
+eitcha	eita,O,1 
+muuuuito	muito,IN,1 
+psir	pedir,O,1 
+terrona	terra,IN,1 
+u	you,O,1 
+net	interenet,IN,1 internet,IN,1 
+tmb	também,AB,8 
+botiquim	boteco,IN,1 
+cargar	carregar,IN,1 
+compralo	comprá-lo,O,1 
+estivessemos	estivéssemos,O,1 
+giratoria	giratória,O,1 
+prob	problema,IN,1 
+produt	produto,O,1 
+ain	ai,IN,1 
+bommm	bom,IN,1 
+cp	#,AB,1 
+eps	episódios,AB,1 
+marcos	#,AB,1 
+miiiil	mil,IN,1 
+oieeee	oi,IN,1 
+pll	#,IN,1 
+stts	tts,O,1 
+temp	temporadas,AB,1 temporada,AB,1 tem,O,1 
+amgs	amigas,O,1 amigas,AB,1 
+bla	blá,O,1 
+cartao	cartão,O,2 
+qqr	qualquer,AB,1 
+comportamenteo	comportamento,O,1 
+euu	eu,IN,2 
+mamao	mamão,O,2 
+ngmmm	ninguém,IN,1 
+nojoooo	nojo,IN,1 
+padsa	passa,O,1 
+todooo	todo,IN,1 
+cuzao	cuzão,O,1 
+dnv	#,IN,1 novamente,AB,1 #,AB,1 de novo,AB,2 
+nenem	neném,O,1 
+papae	papai,O,1 
+essaaa	essa,IN,1 
+laga	largar,O,1 
+agoraaaaaaa	agora,IN,1 
+ctz	certeza,IN,1 certeza,AB,2 
+gd	grande,AB,1 
+semis	semifinais,AB,1 
+aprecer	aparecer,O,1 
+contigente	contingente,O,1 
+pertubando	perturbando,O,1 
+piscadinho	piscadinha,O,1 
+ps	postscript,AB,2 
+tpcs	tópicos,AB,1 
+cf	crossfire,AB,1 
+esfa	está,O,1 
+euuu	eu,IN,2 
+mane	mané,OC,1 mané,IN,1 
+pprt	#,IN,1 
+troiste	triste,O,1 
+vicio	vício,OC,1 
+faci	facebook,O,1 fácil,O,1 
+obs	observação,AB,4 
+deox	deus,O,1 
+et	extraterrestre,AB,1 
+idol	ídolos,O,1 
+madru	madrugada,O,1 
+meo	meu,IN,1 
+nadrugada	madrugada,O,1 
+pfvr	#,IN,1 por favor,AB,2 
+sombrancelha	sobrancelha,O,1 
+arrogancia	arrogância,O,1 
+descontrolaaaaaadaaaaa	descontrolada,IN,1 
+menospresado	menosprezado,O,1 
+milhao	milhão,O,1 
+prepotencia	prepotência,O,1 
+rangar	comer,IN,1 
+rodrigao	rodrigão,O,3 
+drawn	draw,O,1 
+exietem	existem,O,1 
+g	gb,O,1 
+mb	megabyte,AB,1 
+mp	megapixel,AB,2 
+pagina	página,OC,1 
+panoramicas	panorâmicas,O,2 
+perfoma	performance,O,1 
+sempe	semp,O,1 
+tenm	tem,O,1 
+aqele	aquele,O,1 
+chuviscariiii	chuviscar,IN,1 
+din	dinheiro,AB,1 
+dog	dogs,O,1 
+fazr	fazer,O,1 
+jg	jogo,AB,1 
+tbem	também,AB,1 
+aviadado	afeminado,IN,1 
+lagrima	lágrima,OC,1 
+compativel	compatível,O,2 
+desiner	designer,O,2 
+expessura	espessura,O,1 
+varios	vários,O,8 
+angulo	ângulo,OC,1 
+def	definition,AB,1 
+hi	high,AB,1 
+plasticos	plásticos,O,1 
+abrita	abritta,O,1 
+aindaa	ainda,IN,1 
+amanhaa	amanhã,IN,1 
+ambulanteee	ambulante,IN,1 
+assistindoo	assistindo,IN,1 
+genteeq	gente,O,1 
+namorandoo	namorando,IN,1 
+naquelaa	naquela,IN,1 
+piadaa	piada,IN,1 
+taa	está,IN,1 
+tamirees	tamires,IN,1 
+vaii	vai,IN,1 
+aaaahh	ah,IN,1 
+aaaiii	ah,IN,1 
+loka	louca,IN,1 louca,O,1 
+mds	#,IN,2 #,AB,1 
+aaaaaaaaa	ah,IN,1 
+brinks	brincando,IN,1 #,IN,1 brincadeira,IN,1 
+fdd	foda,O,1 fudido,IN,1 
+irma	irmã,O,2 
+pes	pés,O,1 
+pesadooo	pesado,IN,1 
+aceada	asseada,O,1 
+biquine	biquíni,O,1 
+bunita	bonita,O,2 
+campia	campeã,O,1 
+conhesso	conheço,O,1 
+convercer	convencer,O,1 
+deboxadus	debochados,O,1 
+fernabda	fernanda,O,1 
+fisemus	fizemos,O,1 
+inteligenti	inteligentes,O,1 
+intendu	entendo,O,1 
+meldis	merda,IN,3 
+ningue	ninguém,O,1 
+precocupe	preocupe,O,1 
+qque	que,O,1 
+qui	que,O,2 
+saisse	saísse,O,1 
+tanbem	também,O,1 
+tiira	tira,IN,1 
+torsso	torço,O,2 
+tve	teve,O,1 
+vosseis	vocês,O,2 
+xerosa	cheirosa,O,1 
+camer	câmera,O,1 
+discajem	discagem,O,1 
+historias	história,O,1 
+manunseio	manuseio,O,1 
+mintutos	minutos,O,1 
+pratico	prático,OC,3 
+qwert	qwerty,O,1 
+tamanh	tamanho,O,1 
+ventuinha	ventoinha,O,1 
+fds	fdps,O,2 #,AB,1 
+tatiale	tatiele,O,1 
+displei	display,O,1 
+foruns	fóruns,O,2 
+gb	gigabytes,AB,1 
+nivel	nível,O,2 
+sonny	sony,O,1 
+fragiu	frágil,O,1 
+funcionabilidade	funcionalidade,O,1 
+otico	óptico,O,1 ótico,O,1 
+toch	touch,O,1 
+add	adicionar,IN,1 adicionar,AB,1 adiciona,AB,1 
+emoji	#,IN,1 
+comentouu	comentou,IN,1 
+foii	foi,IN,1 
+leuu	leu,IN,1 
+onteeem	ontem,IN,1 
+textooo	texto,IN,1 
+tudoo	tudo,IN,3 
+voceee	você,IN,1 #,IN,1 
+am	amo,O,1 
+demon	damon,O,1 
+idzer	dizer,O,1 
+kg	quilogramas,AB,2 kilogramas,AB,2 
+metrosexual	metrossexual,O,1 
+trainner	trainer,O,1 
+ultimo	último,OC,5 última,OC,1 
+br	brasileiro,AB,2 
+hinoo	hino,IN,1 
+maze	fazer,O,1 
+mlk	moleque,IN,3 moleque,AB,1 mulek,AB,1 muleke,AB,1 
+mtas	muitas,AB,1 
+olleh	olé,IN,1 
+produvcsao	produção,O,1 
+reputacao	reputação,O,1 
+caraaaaaa	cara,IN,1 
+pgt	perguntar,AB,1 perguntado,AB,1 
+pr	para,O,1 para,AB,1 
+romantico	romântico,O,1 
+tosadin	tosadinho,O,1 
+antendeu	atendeu,O,1 
+bluray	blu-ray,O,1 
+cotrole	controle,O,1 
+desngner	designer,O,1 
+dis	diz,O,1 
+liquido	líquido,OC,2 
+pefeito	perfeito,O,1 
+qtde	quantidade,AB,1 
+reclmar	reclamar,O,1 
+color	collor,O,2 
+saney	sarney,O,3 
+aparencia	aparência,O,4 
+carissima	caríssima,O,1 
+laminas	lâminas,OC,3 
+maminas	lâminas,O,1 
+maravilhos	maravilhosos,O,1 
+tlas	telas,O,1 
+uidado	cuidado,O,1 
+assimmmmm	assim,IN,1 
+certissimos	certíssimos,O,1 
+desinterese	desinteresse,O,1 
+mimir	dormir,IN,2 
+pt	parte,AB,1 
+qmd	quando,O,1 
+taquei	ataquei,O,1 
+crlho	caralho,AB,1 
+edicao	edição,O,2 
+fudendo	fodendo,O,1 
+fudida	fodida,O,1 
+geladaoooo	geladão,IN,1 
+obgd	obrigado,AB,1 
+taria	estaria,IN,1 estaria,AB,1 
+tlgd	está ligado,AB,1 
+habibs	habib's,O,1 
+aprox	aproximadamente,AB,1 
+fulor	flor,O,1 
+meidin	made in,O,1 
+treinooo	treino,IN,1 
+tristeee	triste,IN,1 
+bct	boceta,AB,1 
+iiiii	ih,IN,1 
+pirainha	piranha,O,1 
+pv	privado,AB,1 
+zoa	brincadeira,IN,1 
+aconcelho	aconselho,O,1 
+calidade	qualidade,O,1 
+deticada	dedicada,O,1 
+extraordinario	extraordinário,O,1 
+nen	nem,O,1 
+rew	rewind,AB,1 
+apxonado	apaixonando,O,1 apaixonado,O,1 
+assm	assim,O,1 
+estvam	estavam,O,1 
+fik	fica,IN,1 
+fznd	fazendo,O,1 
+memu	mesmo,O,1 
+qm	quem,IN,1 quem,AB,6 
+sufoc	sufoco,O,1 
+comeer	comer,IN,1 
+comeriaa	comeria,IN,1 
+comidaa	comida,IN,1 
+deuu	deu,IN,1 
+falandoo	falando,IN,1 
+inves	invés,O,2 
+naoo	não,IN,1 
+tecooo	troço,IN,1 
+vontadee	vontade,IN,1 
+sansung	samsung,O,5 
+bbs	bebês,AB,1 
+injenuas	ingênuas,O,1 
+mta	muita,AB,2 
+namors	namora,O,1 
+olhano	olhando,O,1 
+rebolano	rebolando,O,1 
+veno	vendo,O,1 
+chanmi	chance,O,1 
+ein	hein,O,1 
+explodie	explodir,O,1 
+analizar	analisar,O,1 
+confiaveis	confiáveis,O,1 
+labortatorios	laboratórios,O,1 
+nuggts	nuggets,O,1 
+pasteis	pastéis,OC,1 
+cprdei	acordei,O,1 
+demte	dente,O,1 
+espectativa	expectativa,O,1 
+fluzao	fluzão,IN,1 
+hexa	hexacampeonato,AB,1 
+maraca	maracanã,AB,1 
+sorteee	sorte,IN,1 
+fla	falam,O,1 flamengo,AB,2 
+pudinzinho	pudim,IN,1 
+terere	tereré,O,1 
+brigadinha	obrigada,IN,1 
+forum	fórum,O,8 
+posicionamente	posicionamento,O,1 
+proxima	próxima,O,3 
+substimar	subestimar,O,1 
+votalhada	votação,IN,1 
+xs	vezes,IN,1 
+topper	top,IN,1 #,IN,1 
+acontenceu	aconteceu,O,1 
+batolage	#,IN,2 
+coincidencia	coincidência,O,1 
+obvio	óbvio,OC,1 
+tras	atrás,O,1 trás,O,1 
+apagaaa	#,IN,1 
+bobalhao	bobalhão,O,1 
+eo	eu,IN,1 
+negocio	negócio,OC,3 
+ultando	#,IN,1 
+abracaad	abraçado,O,1 
+alo	alô,OC,1 
+bue	muito,IN,1 
+horaas	horas,O,1 
+mrlhor	melhor,O,1 
+trabesseiros	travesseiros,O,1 
+va	vá,O,2 
+comercio	comercial,OC,1 
+dispoe	dispõe,O,1 
+expancivel	expansível,O,1 
+horario	horário,O,1 
+inacreditavel	inacreditável,O,1 
+maos	mãos,O,2 
+media	média,OC,1 
+obtiva	obtive,O,1 
+sabados	sabádos,O,1 
+seg	segunda,AB,1 
+sex	sexta,AB,1 
+transferencia	transferência,O,2 
+hipocritas	hipócritas,O,1 
+hm	um,IN,1 
+lesionando	lesionado,O,1 
+mndo	mundo,O,1 
+troll	#,IN,1 
+vsff	#,IN,1 
+amooo	#,IN,1 amo,IN,1 
+faaaar	#,IN,1 
+gurizao	#,IN,1 
+kabo	#,IN,1 
+kiridan	#,IN,1 
+lindona	#,IN,3 
+okay	#,IN,1 
+teeeee	#,IN,1 
+adcionais	adicionais,O,1 
+bao	bom,IN,2 
+btus	#,AB,3 
+ccoisas	coisas,O,1 
+compatividade	compatível,O,1 
+credito	crédito,O,1 
+demtre	dentre,O,1 
+imcrivel	incrível,O,1 
+produ	produto,O,1 
+qualidaes	qualidades,O,1 
+saida	saídas,O,1 saída,O,3 
+amanda	amada,O,1 
+ensiaos	ensaios,O,1 
+fatale	fatal,O,1 
+gominhos	#,IN,1 
+instapanico	#,IN,1 
+superflor	#,IN,1 
+zona	#,IN,1 
+alimnetaaar	#,IN,1 
+aniversariooo	#,IN,1 
+clique	#,IN,2 
+deliciinha	#,IN,1 
+discretaa	#,IN,1 
+emboraaaa	#,IN,1 
+eseprar	esperar,O,1 
+habil	hábil,O,1 
+instaaa	#,IN,1 
+ounnn	#,IN,1 
+ousadoo	#,IN,1 
+primarios	primários,O,1 
+queriaa	#,IN,2 
+bonitim	#,IN,1 
+dimai	#,IN,1 
+fude	#,IN,1 
+premio	prêmio,OC,2 
+tedio	tédio,O,1 
+tva	tava,O,1 
+crush	#,IN,2 
+loucao	#,IN,1 
+meme	#,IN,1 
+piranhona	#,IN,1 
+putiane	#,IN,1 
+anatomica	anatômica,O,1 
+el	e,O,1 
+eoutras	outras,O,1 
+etrodomesticos	eletrodomésticos,O,1 
+gas	gás,O,1 
+lampada	lâmpada,O,1 
+amavel	amável,O,1 
+aniversario	aniversário,O,2 
+brincs	#,IN,1 brincadeira,IN,1 
+comeca	começa,O,2 
+comecar	começar,O,1 
+decepcao	decepção,O,1 
+educacao	educação,O,1 
+equanto	enquanto,O,1 enquanto,AB,1 
+ignorancia	ignorância,O,1 
+inscrevir	inscrevi,O,1 
+ola	olá,O,1 olá,OC,3 
+permido	permitido,O,1 
+suburbio	subúrbio,O,1 
+tarjando	#,IN,1 
+usuarios	usuários,O,2 
+dp	depois,AB,1 
+ganharao	ganharão,O,1 
+loko	louco,O,1 
+men	homem,IN,1 
+aproveitemm	aproveitem,O,1 
+credooo	#,IN,1 
+elasticos	elásticos,O,1 
+elle	ele,O,1 
+gov	governo,AB,1 
+mn	man,IN,1 
+continuee	#,IN,1 
+convocadaa	#,IN,1 
+emagreceuu	#,IN,1 
+gordaaa	#,IN,1 
+kiloos	#,IN,1 
+maezonaa	#,IN,1 
+migaaa	#,IN,1 
+podeee	#,IN,1 
+regionaiis	#,IN,1 
+aff	#,IN,1 
+bebada	bêbada,O,2 
+instasnaps	#,IN,1 
+xau	tchau,IN,2 
+coisica2	#,IN,1 
+scrock	#,IN,1 
+aaah	#,IN,1 
+acjo	acho,O,1 
+crushs	#,IN,1 
+fuder	foder,O,2 
+fudido	fodido,O,1 
+muie	mulher,IN,1 
+rpg	#,AB,1 
+caprichete	#,IN,1 
+caraia	#,IN,1 
+concusrso	concurso,O,1 
+flopar	#,IN,1 
+juntaro	#,IN,1 
+ronczzzzzzzzzzzzzz	#,IN,1 
+het	#,IN,1 
+lovezin	#,IN,1 
+monstra	#,IN,1 
+poowww	#,IN,1 
+rrrrrrrroubou	#,IN,1 
+sdd	saudade,AB,6 
+zoas	#,IN,1 
+taoooo	#,IN,1 
+tcd	#,IN,3 
+twitadas	#,IN,1 
+zoeirasssss	#,IN,1 
+indice	índice,O,3 
+missao	missão,O,2 
+patetico	patético,O,1 
+rejeicao	rejeição,O,6 
+s	sim,AB,2 se,AB,3 sem,AB,1 
+tera	terá,O,1 
+aux	auxiliar,AB,1 
+binzinho	bonzinho,O,1 
+chancr	chance,O,1 
+felizona	#,IN,1 
+sgt	sargento,AB,1 
+showzinho	#,IN,1 
+analogica	analógica,O,2 
+arrempedi	arrependi,O,1 
+caracteristiva	característica,O,1 
+dinamica	dinâmica,O,3 
+esperiencia	experiência,O,1 
+jogabilidades	jogabilidade,IN,2 
+movel	móvel,O,2 
+muitoooooo	muito,IN,1 
+pos	pós,OC,1 
+trouxes	trouxe,O,2 
+umido	úmido,O,1 
+usalos	usa-los,O,1 
+brasilis	#,IN,1 
+duzia	dúzia,O,1 
+kcete	cacete,IN,1 
+porr	porrada,O,1 
+rodiado	rodeado,O,1 
+tel	telefone,AB,1 
+desinstalar	#,IN,1 
+jega	#,IN,1 
+adorooooo	#,IN,1 
+estatua	estátua,OC,1 
+pacero	parceiro,O,1 
+boninhadas	#,IN,1 
+cell	céu,IN,1 
+dells	deus,IN,1 
+encomode	incomode,O,1 
+historia	história,OC,1 história,O,1 
+sensualizand	sensualizando,O,1 
+telespetador	telespctador,O,1 
+frecuras	frescuras,O,1 
+muuiiiiiiiiiiiiiito	muito,IN,1 
+periodo	período,O,1 
+1oculos	1 óculos,O,1 
+2hdmi	2 hdmi,O,1 
+2usbs	2 usb,O,1 
+4hdmi	4 hdmi,O,1 
+adquir	adquirir,O,1 
+basico	básico,O,1 
+dispensavel	dispensável,OC,1 
+fabricas	fábricas,OC,1 
+mlhores	melhores,O,1 
+numeros	números,O,1 
+ohar	olhar,O,1 
+ois	pois,O,1 
+parametros	parâmetros,O,1 
+preco	preço,O,1 
+utilizacao	utilização,O,1 
+amorzinho	amor,IN,1 
+aviona	avião,IN,1 
+democratico	democrático,O,1 
+mamae	mamãe,O,1 
+mamy	mãe,IN,2 
+minimo	menino,IN,1 mínimo,O,1 
+querereia	quereria,O,1 
+tipico	típico,O,2 
+vesguinho	vesgo,IN,1 
+amoooor	amor,IN,1 
+comecinho	#,IN,1 
+cvsando	conversando,AB,1 
+musicas	músicas,OC,2 músicas,O,1 
+namoral	na moral,O,2 
+ahh	#,IN,2 
+belissimo	belíssimo,O,1 
+colocacao	colocação,O,1 
+concerteza	com certeza,O,1 
+impressao	impressão,O,2 
+instalacao	instalação,O,1 
+opcoes	opções,O,2 
+pol	polegada,AB,1 
+webcontinental	web continental,O,1 
+fav	favorito,AB,2 
+homao	#,IN,1 
+hra	hora,AB,1 
+quiz	quiser,O,1 
+quizer	quiser,O,1 
+tudinho	#,IN,1 
+apartir	a partir,O,1 
+cendo	sendo,O,1 
+contrarte	constraste,O,1 
+esiste	existe,O,1 
+exigencia	exigência,O,1 
+fuciona	funciona,O,2 
+fucionou	funcionou,O,1 
+imajem	imagem,O,1 
+megas	#,IN,1 
+proprio	próprio,O,2 
+assimetricos	assimétricos,O,1 
+buceta	#,IN,1 
+cao	#,O,1 
+composi	#,O,1 
+descobreeeee	#,IN,1 
+homi	homem,IN,1 
+horrorrr	#,IN,1 
+alg	alguém,AB,1 
+dm	direct message,AB,1 
+questao	questão,O,3 
+simserament	sinceramente,O,1 
+bab	#,O,1 
+funiquem	futriquem,O,1 
+pgm	programa,AB,1 
+quice	#,O,1 
+sofa	sofá,O,1 
+agoooora	agora,IN,1 
+dzr	dizer,AB,2 
+flo	falo,AB,1 
+awn	#,IN,1 
+fofinhosss	#,IN,1 
+tadin	#,IN,1 
+vtnc	vai tomar no cu,AB,1 
+fofuchos	#,IN,1 
+granda	grande,O,1 
+ham	#,IN,1 
+intercambio	intercâmbio,OC,1 
+manha	manhã,OC,1 
+qr	quero,AB,1 quer,AB,1 
+ryca	#,IN,1 
+sacoooooo	#,IN,1 
+sebar	secar,O,1 
+entreoutras	entre outras,O,1 
+funcao	função,O,1 
+gravissimo	gravissímo,O,1 
+initilizou	inutilizou,O,1 
+naofunciona	não funciona,O,1 
+panel	painel,O,1 
+poi	pois,O,1 
+pricipal	principal,O,1 
+surporta	suporta,O,1 
+bebado	bêbado,O,1 
+deuso	deus,IN,1 
+novis	novidade,IN,1 
+cosegue	consegue,O,1 
+ed	educação,AB,1 
+enxergan	enxergam,O,1 
+felizao	felizão,O,1 
+fisica	física,O,3 
+gravaaaaar	gravar,IN,1 
+mimmmmm	mim,IN,1 
+ridiculo	ridículo,O,1 
+sabeeeee	sabe,IN,1 
+vcccc	você,IN,2 
+crocolilagem	crocolilagem,O,1 
+falsiane	falso,IN,1 
+cancer	câncer,O,1 
+doi	dói,O,1 
+fudder	foder,O,1 
+potaquiospariu	#,IN,1 
+putta	puta,O,1 
+vagabba	vagaba,O,1 
+ceis	vocês,O,1 
+epis	episódios,AB,1 
+euc	eu,O,1 
+inutil	inútil,O,2 
+snap	snapchat,AB,1 
+block	bloquear,AB,1 
+fizessemos	fizéssemos,O,1 
+foraaaaaaaaaaaaaaaa	fora,IN,1 
+obrigacao	obrigação,O,1 
+sarcastica	sarcástica,O,1 
+adoruuuu	adoro,IN,1 
+bby	baby,AB,1 
+brigadaaaa	obrigada,IN,1 
+faiz	faz,O,1 
+sairem	saírem,O,1 
+brazil	brasil,O,1 
+cvs	conversar,O,1 
+hinooooo	hino,IN,1 
+insulficiente	insuficiente,O,1 
+lyndo	lindo,O,1 
+momis	mãe,IN,1 
+oce	você,AB,1 
+ozamigo	#,IN,1 
+rbd	rebelde,AB,1 
+surtadinho	louco,IN,1 
+traida	traída,O,1 
+cliche	clichê,O,1 
+dae	daí,O,1 
+fugindoo	fugindo,O,1 
+problems	problemas,O,1 
+sznha	sozinha,AB,1 
+fod	foda,O,1 
+fodiii	fodi,O,1 
+kra	cara,IN,1 
+pessado	pesado,O,1 
+ameiiii	amei,IN,1 
+concorrencia	concorrência,O,2 
+deacho	acho,O,1 
+decarega	descarrega,O,1 
+fabrica	fábrica,OC,1 
+muinto	muito,O,1 
+publico	público,OC,3 
+resursos	recursos,O,1 
+roduto	produto,O,1 
+acdemia	academia,O,1 
+achu	acho,O,1 
+derrepente	#,O,1 
+kpop	k-pop,O,1 
+maisssssssss	mais,IN,1 
+vtmnc	#,AB,1 
+alguam	alguma,O,1 
+curtiuu	curtiu,O,1 
+definiuu	definiu,O,1 
+delees	deles,O,1 
+depoiis	depois,O,1 
+elee	ele,O,2 
+falaa	fala,O,1 
+faloo	falo,O,1 
+foruum	fórum,O,1 
+fuii	fui,O,1 
+hojee	hoje,O,1 
+moreee	amor,IN,1 
+morrendoo	morrendo,O,1 
+preferenciaa	preferência,O,1 
+siiim	sim,IN,1 
+maravilhosaaa	maravilhosa,IN,1 
+opaaa	#,IN,1 
+slc	#,AB,1 
+3x	#,AB,1 
+bffs	#,AB,1 
+boladona	chateada,IN,1 
+deuuus	deus,IN,1 
+meuuuu	meu,IN,1 
+perdao	perdão,O,1 
+propria	própria,O,1 
+serumaninho	#,IN,1 
+vamoooooooooooo	vamos,IN,1 
+caminah	caminhar,O,1 
+elaa	ela,O,1 
+mia	minha,O,1 
+pradronizar	padronizar,O,1 
+graca	graça,O,1 
+parachoque	para-choque,O,1 
+paralama	para-lama,O,1 
+watsapp	whatsapp,O,1 
+autura	altura,O,1 
+cornetar	xingar,IN,2 
+fuuuuii	fui,IN,1 
+imbcil	imbecil,O,1 
+merd	merda,O,1 
+peguete	namorado,IN,1 
+psico	psicopata,AB,1 
+put	puta,O,1 
+3d	tridimensional,AB,1 
+analogico	analógico,O,2 
+aprelhos	aparelhos,O,1 
+incoveniente	inconveniente,O,1 
+oseco	seco,O,1 
+preferencias	preferência,O,1 
+baraulho	barulho,O,1 
+cosinha	cozinha,O,1 
+deposito	depósito,OC,1 
+entrga	entrega,O,1 
+mao	mão,OC,1 
+medias	médias,OC,1 
+oleo	óleo,O,1 
+opniao	opinião,O,1 
+potencia	potência,OC,3 
+usufluir	usufruir,O,1 
+vdro	vidro,O,1 
+descidi	decidi,O,1 
+fixacao	fixação,O,1 
+fotograficas	fotográficas,O,1 
+maquinas	máquinas,OC,2 
+tres	três,O,2 
+ahazo	arrasou,IN,1 
+materia	matéria,O,3 
+sb	sabe,AB,2 
+showzao	showzão,O,1 
+vrdd	verdade,AB,1 
+blilho	brilho,O,1 
+concelho	conselho,O,1 
+debum	de um,O,1 
+numero	número,OC,1 
+optica	óptica,O,1 
+priciparnte	principalmente,O,1 
+retante	restante,O,1 
+silencio	silêncio,O,1 
+buscopam	buscopan,O,1 
+remedio	remédio,O,1 remédio,OC,1 
+enfileiras	enfileirar,O,1 
+espereme	espreme,O,1 
+3g	terceira geração,AB,1 
+animacao	animação,O,1 
+beem	bem,O,1 
+clic	clique,O,1 
+deslunbrada	deslumbrada,O,1 
+escolhee	escolhe,O,1 
+esssas	essas,O,1 
+faco	faço,O,1 
+obrigaaddooo	obrigado,IN,1 
+satisfatorio	satisfatório,O,1 
+tm	tem,O,1 
+universitario	universitário,O,1 
+universitarios	universitários,O,1 
+ambiwoox	ambi-woox,O,1 
+chao	chão,O,1 
+estave	estava,O,1 
+limpissimo	limpíssimo,O,1 
+queriamos	queríamos,O,1 
+recomedo	recomendo,O,1 
+ruido	ruído,O,1 
+trablalho	trabalho,O,1 
+adapatador	adaptador,O,1 
+gratis	grátis,O,2 
+imbutido	embutido,O,1 
+limpesa	limpeza,O,1 
+obtem	obtém,O,1 
+relacao	relação,O,1 
+uteis	úteis,OC,1 
+exa	essa,O,1 
+niver	aniversário,AB,1 
+pokemon	pokémon,O,1 
+raba	nádegas,IN,1 
+tar	estar,AB,2 
+scrrrrr	socorro,IN,1 
+sndo	sendo,O,1 
+boyzinho	menino,IN,1 
+carater	caráter,O,1 
+automaticos	automáticos,O,2 
+qlq	qualquer,AB,1 
+qualdiade	qualidade,O,2 
+cntg	contigo,O,1 contigo,AB,1 
+india	índia,O,1 
+pfv	por favor,AB,1 
+churras	abreviação,AB,1 
+pao	pão,O,1 
+entaum	então,IN,1 
+pareo	páreo,O,2 
+pepeca	vagina,IN,1 
+bonitao	bonitão,O,1 
+grp	grupo,AB,1 
+preucupado	preocupado,O,1 
+deizer	dizer,O,1 
+ducarai	do caralho,IN,1 
+levvando	levando,O,1 
+massssss	mas,IN,1 
+mew	meu,IN,1 
+muuuuuuuito	muito,IN,1 
+panac	panaca,O,1 
+sr	senhor,AB,1 
+edredon	edredom,O,1 
+unilevere	unilever,O,1 
+caraiiiii	caralho,IN,1 
+problemaaaa	problema,IN,1 
+trist	triste,O,1 
+estreesse	estresse,O,1 
+iae	e aí,IN,1 
+mg	amigo,AB,1 
+midia	mídia,O,1 
+pouquin	pouquinho,IN,1 
+engrassado	engraçado,O,1 
+inteligencia	inteligência,O,1 
+ma	má,O,1 
+optico	óptico,O,1 
+portatil	portátil,O,1 
+produlto	produto,O,1 
+bapho	bafo,O,1 
+dala	dela,O,1 
+descepcionei	decepcionei,O,1 
+espectativas	expectativas,O,1 
+le	lê,O,1 
+nitida	nítida,O,2 
+satisfesz	satisfez,O,1 
+smatephone	smartphone,O,1 
+aaa	ah,IN,1 
+at	et,O,1 
+ci	cú,O,1 
+jo	só,O,1 
+legaall	legal,IN,1 
+skaipou	skype,O,1 
+atee	até,IN,1 
+dormiiiir	dormir,IN,1 
+dormiir	dormir,IN,1 
+ouu	ou,IN,1 
+pensoo	penso,IN,1 
+quandoo	quando,IN,1 
+quintaa	quinta,IN,1 
+raiaar	raiar,IN,1 
+implicancia	implicância,O,1 
+mubdo	mundo,O,1 
+prof	professora,AB,1 
+unicas	únicas,O,1 
+zap	whatsapp,IN,1 
+eficiencia	eficiência,O,2 
+email	e-mail,O,4 
+meracado	mercado,O,1 
+miseros	míseros,O,2 
+sofrivel	sofrível,O,4 
+telefonico	telefônico,O,4 
+grupin	grupinho,AB,1 
+krl	karalho,AB,2 
+ppr	por,O,1 
+idrolatar	idolatrar,O,1 
+lokas	loucas,IN,1 
+bonis	boninho,O,1 
+buzanfam	buzanfão,IN,1 
+ct	contigo,AB,1 
+drogga	droga,O,2 
+eith	eita,O,1 
+interesante	interessante,O,1 
+k	karalho,AB,1 
+marvada	malvada,IN,1 
+flw	#,IN,1 
+galeraaaa	#,IN,1 
+heimmm	#,IN,1 
+hepta	heptacampeonato,AB,2 
+mlkedaaaa	#,IN,1 
+picaaaaa	#,IN,1 
+skaaaaate	#,IN,1 
+voltau	voltou,O,1 
+amoresssss	amores,IN,1 
+bosssssta	bosta,IN,1 
+caraca	#,IN,1 
+dmsss	demais,IN,1 
+fodaaa	foda,IN,1 
+rolesin	rolezinho,AB,1 
+volkswagem	volkswagen,O,1 
+acordouu	acordou,IN,1 
+boaaa	boa,IN,1 
+milionariaaaa	milionária,IN,1 
+tardee	tarde,IN,1 
+jsto	justo,AB,1 
+leganda	legenda,O,1 
+arrombdo	arrombado,O,1 
+baton	batom,O,1 
+feiao	feião,O,1 
+poem	põe,IN,1 
+encomoda	incomoda,O,1 
+miuta	muita,O,1 
+atitutude	atitude,O,1 
+ciencia	ciência,O,1 
+licao	lição,O,1 
+mediocre	medíocre,O,1 
+neuronios	neurônios,O,1 
+nick	nickname,AB,1 
+dialogo	diálogo,OC,1 
+galere	galera,O,1 
+mgk	mágika,AB,1 
+coco	cocô,OC,1 
+incluido	incluído,O,1 
+veterado	veterano,O,1 
+combustivel	combustível,O,1 
+fics	fanfics,AB,1 
+poe	põe,O,1 
+poha	porra,IN,1 
+h	hoje,AB,1 
+somemm	#,IN,1 
+componete	componente,O,1 
+tatuape	tatuapé,O,1 
+bro	brother,AB,1 
+dmais	demais,AB,1 
+elonqueci	enlouqueci,O,1 
+pasa	passa,O,1 
+qq	qualquer,AB,1 
+cnvs	conversar,AB,1 
+educacial	educacional,O,1 
+migaa	amiga,IN,1 
+oii	oi,IN,1 
+pscicologia	psicologia,O,1 
+vcss	vocês,IN,1 
+belissima	belíssima,O,1 
+besteria	besteira,O,1 
+cheando	chegando,O,1 
+espetetacular	espetacular,O,1 
+litium	lithium,O,1 
+mbytes	megabytes,AB,1 
+posui	possui,O,1 
+protudo	produto,O,1 
+versatil	versátil,O,1 
+di	de,O,1 
+nadaaa	nada,IN,1 
+tomen	tomem,O,1 
+tristeeeee	triste,IN,1 
+guela	goela,O,1 
+hetero	heterosexual,AB,1 
+lgd	ligado,AB,1 
+seeeeeenhor	senhor,IN,1 
+promo	promoção,AB,1 
+saido	saído,O,1 
+tiozao	tiozão,O,1 
+wue	que,O,1 
+analises	análises,OC,1 
+cd	cadê,AB,1 
+hipoteses	hipóteses,O,1 
+lindu	lindo,O,1 
+opps	ops,IN,1 
+podologa	podóloga,O,1 
+brodinhno	brotherzinhos,O,1 
+cagaro	cagaram,O,1 
+discipulo	discípulo,O,1 
+enlouqueeeeeece	enlouquece,IN,1 
+montanhaa	montanha,IN,1 
+terrivel	terrível,O,1 
+conciencia	consciência,O,1 
+ingles	inglês,O,1 
+mimim	mimimi,O,1 
+bahiano	baiano,O,1 
+questionavel	questionável,O,1 
+reporter	repórter,O,1 
+concordsr	concordar,O,1 
+fasso	faço,O,1 
+gremio	grêmio,O,1 
+memso	mesmo,O,1 
+ponde	pondé,O,1 
+relogio	relógio,O,1 
+boaaaaaaaaaaaaaaaaaaaaaaaaa	boa,IN,1 
+excelenconte	excelente,O,1 
+fotografica	fotográfica,O,1 
+grandem	grande,O,1 
+millllllllll	mil,IN,1 
+peq	pequena,AB,1 
+recomendoooo	recomendo,IN,1 
+wifi	wi-fi,O,2 
+apotar	apostar,O,1 
+cheroso	cheiroso,O,1 
+flu	fluminense,AB,1 
+fodeeeer	foder,IN,1 
+hoj	hoje,AB,1 
+minino	mínimo,O,1 
+nariga	nariz,IN,1 
+paciencia	paciência,O,1 
+secr	secar,AB,1 
+aaaaah	ah,IN,1 
+camaaa	cama,IN,1 
+dx	deixa,AB,1 
+arrenpendimento	arrependimento,O,1 
+centifugar	centrifugar,O,1 
+centrefuga	centrifuga,O,1 
+centrifuga	centrifugar,O,1 
+fragil	frágil,O,3 
+frequencia	frequência,O,1 
+b	bom,AB,1 
+fessor	professor,AB,1 
+redesss	redes,IN,1 
+senhpra	senhora,O,1 
+idot	idiot,O,1 
+canera	câmera,O,1 
+dendro	dentro,O,1 
+depedendo	dependendo,O,1 
+geito	jeito,O,1 
+muio	muito,O,1 
+pixil	pixel,O,1 
+poco	pouco,O,1 
+senssivel	sensível,O,1 
+teveria	deveria,O,1 
