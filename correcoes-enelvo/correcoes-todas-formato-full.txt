@@ -1,0 +1,1989 @@
+eu bebo e n sou careta sou maravilhosa ok bjs hahaha
+	n,10-11,AB,não
+	bjs,42-45,AB,beijos
+	hahaha,46-52,Lixo,
+
+
+a alone tinha ki fazer o pela metade naum dah pra elogiar ali totalmente
+	alone,2-7,NP,
+	ki,14-16,IN,que
+	naum,37-41,IN,não
+	dah,42-45,IN,dá
+
+
+boa noite acabei de chegar com trabalho e ja votamdo muito pq hoje a diana vazaaaaaaaaaaaa
+	ja,42-44,O,já
+	votamdo,45-52,O,votando
+	pq,59-61,AB,porque
+	diana,69-74,NP,
+	vazaaaaaaaaaaaa,75-90,IN,vaza
+
+
+meu papel de parede na tela bloqueada dos marauders e na tela de inicio o l kkkkkkjjjjj adoro a vida
+	marauders,42-51,NP,
+	inicio,65-71,OC,início
+	l,74-75,Lixo,
+	kkkkkkjjjjj,76-87,Lixo,
+
+
+pistolei pq torci o na parte do feio do woozi e olha no q deu
+	pistolei,0-8,IN,
+	pq,9-11,AB,porque
+	woozi,40-45,NP,
+	q,56-57,AB,que
+
+
+joyce meu amorzinho que nn tem tt
+	joyce,0-5,NP,
+	amorzinho,10-19,Ja-corrigido,
+	nn,24-26,AB,ninguém
+	tt,31-33,AB,twiter
+
+
+os sarneys chamam aki a capital de ilha rebelde pq historicamente aki eles ganham
+	sarneys,3-10,NP,
+	aki,18-21,O,aqui
+	pq,48-50,AB,porque
+	aki,66-69,O,aqui
+
+
+queria mt um x tudo agr
+	mt,7-9,AB,muito
+	x,13-14,Ja-corrigido,
+	agr,20-23,AB,agora
+
+
+idd iludida do duduzinho kkkkkkk dps dessa eu vou a jega
+	idd,0-3,IN,
+	duduzinho,15-24,NP,
+	kkkkkkk,25-32,Lixo,
+	dps,33-36,AB,depois
+	jega,52-56,Ja-corrigido,
+
+
+excelente imagem boa e rapida resposta aos comandos as entradas as necessarias havendo ncessidade para mais nenhuma perde em nada para aparelhos de outras marcas mais caras
+	rapida,23-29,O,rápida
+	necessarias,67-78,O,necessárias
+	ncessidade,87-97,O,necessidade
+
+
+melhor programa hj wct ao vivo na espn
+	hj,16-18,AB,hoje
+	wct,19-22,SI,world championship tour
+	espn,34-38,NP,
+
+
+gostei muito nao esperava que a lg fosse boa em tv
+	nao,13-16,O,não
+	lg,32-34,NP,
+	tv,48-50,AB,televisão
+
+
+andressa n chegou do ainda n fomos p aula q guriaa
+	andressa,0-8,NP,
+	n,9-10,AB,não
+	n,27-28,AB,não
+	p,35-36,AB,para
+	q,42-43,AB,que
+	guriaa,44-50,IN,guria
+
+
+imagem som e 3d nativo vindo do blu ray ou pc perfeitos se for usar o conversor 2d para 3d vai encontrar o mesmo efeito do 3d nativo
+	3d,13-15,Ja-corrigido,
+	blu,32-35,Ruido,
+	ray,36-39,NP,
+	pc,43-45,SI,personal computer
+	2d,80-82,Ja-corrigido,
+	3d,88-90,Ja-corrigido,
+	3d,123-125,Ja-corrigido,
+
+
+casais por contrato deve ser mo chato de shippar ne kkkkk
+	mo,29-31,IN,maior
+	shippar,41-48,ES,
+	ne,49-51,O,né
+	kkkkk,52-57,Lixo,
+
+
+galaxy tab um tablet da samsung com tela de polegadas x pixels e android jelly bean
+	galaxy,0-6,NP,
+	tab,7-10,NP,
+	tablet,14-20,NP,
+	samsung,24-31,NP,
+	x,54-55,Ja-corrigido,
+	android,65-72,NP,
+	jelly,73-78,NP,
+	bean,79-83,NP,
+
+
+esse do olleh eu passo mal de amorzinho que ele eh
+	olleh,8-13,NP,
+	amorzinho,30-39,Ja-corrigido,
+	eh,48-50,IN,é
+
+
+upando meu round de zarya absurdo boatos que vai aparecer no yt tb hahahauahahau
+	upando,0-6,IN,
+	zarya,20-25,NP,
+	yt,61-63,AB,youtube
+	tb,64-66,AB,também
+	hahahauahahau,67-80,Lixo,
+
+
+mas acho que deveriam tirar a andressa primeiro o nasser depois e tirava a kamilla no
+	andressa,30-38,NP,
+	nasser,50-56,NP,
+	kamilla,75-82,NP,
+
+
+o nokia lumia sem duvidas um produto excelente e valeu cada centavo que gastei nele o sistema windows phone simples intuitivo leve e bonito e aliado ao design da nokia se torna um aparelho arrasador
+	nokia,2-7,NP,
+	nokia,2-7,NP,
+	lumia,8-13,NP,
+	duvidas,18-25,OC,dúvidas
+	gastei,72-78,Ja-corrigido,
+	windows,94-101,NP,
+	phone,102-107,NP,
+	design,152-158,ES,
+	nokia,162-167,NP,
+	nokia,162-167,NP,
+
+
+veni vidi vici bom demais caralho
+	veni,0-4,NP,
+	vidi,5-9,NP,
+	vici,10-14,NP,
+
+
+gostaria que essa tv tivesse 120hetz para imagem em movimento perder o foco e imbassar como acontece com essa tv na imagem em movimento so o demais ela muito boa
+	tv,18-20,AB,televisão
+	120hetz,29-36,Ja-corrigido,
+	imbassar,78-86,O,embassar
+	tv,110-112,AB,televisão
+	so,136-138,O,só
+
+
+a camera mutio boa o seus megapixels sao muito bons e polegadas perfeitas
+	camera,2-8,O,câmera
+	mutio,9-14,O,muito
+	sao,37-40,O,são
+
+
+chorei um pouquinho vendo whindersson pedi a namorada em casamento pq fiquei aaaaa eu quero um tb
+	whindersson,26-37,NP,
+	pq,67-69,AB,porque
+	aaaaa,77-82,Lixo,
+	tb,95-97,AB,também
+
+
+vc foi a penedo pertinho de itaipava tem uma cachoeira maravilhosa um lugar tranquilo principalmente pra quem quer descansar eu estou gostando do aprendiz que o programa passa muito e fica pro acompanhar com detalhes cada tarefa que eles fazem acho que o roberto justus muito rigoroso com os mas tbm com as celebridades e tenho minhas se ele mesmo teria capacidade pra exercer essas atividades com tanta e rapidez com pouco tempo mas pra distrair um pouco mas que nem se compara com a fazenda
+	vc,0-2,AB,você
+	pertinho,16-24,Ja-corrigido,
+	itaipava,28-36,NP,
+	roberto,255-262,NP,
+	justus,263-269,NP,
+	tbm,296-299,AB,também
+
+
+o kit vem completo no meu caso veio com 256mb de cabo de dados e fone de ouvido simples o fontopia como dos outros walkman em alguns casos ele vem com 128mb
+	256mb,40-45,Ja-corrigido,
+	fontopia,90-98,NP,
+	walkman,115-122,NP,
+	128mb,151-156,Ja-corrigido,
+
+
+espero que o pessoal que demonstre tanto que foram pelo jb tadinho do maejor
+	jb,56-58,SI,
+	tadinho,59-66,AB,coitadinho
+	maejor,70-76,NP,
+
+
+dos tablets mais finos rrrss e faltam como um belo dock ou teclado
+	tablets,4-11,NP,
+	rrrss,23-28,Lixo,
+	dock,51-55,NP,
+
+
+que isso pessoal mexeu com a geisoca mexeu com a gente sqn aqui no holo adoramos fazer piada com a nossa subcelebridade preferida
+	geisoca,29-36,NP,
+	sqn,55-58,SI,só que não
+	holo,67-71,NP,
+	subcelebridade,105-119,Ja-corrigido,
+
+
+displei possui uma borda branca que consegui eliminar e que encobre importantes como nivel de carga da bateria etc
+	displei,0-7,O,display
+	nivel,85-90,O,nível
+
+
+as fotos sao de qualidade ozomm otico e de 5x muito boa camera
+	sao,9-12,O,são
+	ozomm,26-31,SC,o zoom
+	otico,32-37,O,óptico
+	5x,43-45,Ja-corrigido,
+	camera,56-62,O,câmera
+
+
+meu papel de parede na tela bloqueada dos marauders e na tela de inicio o l kkkkkkjjjjj adoro a vida
+	marauders,42-51,NP,
+	inicio,65-71,OC,início
+	l,74-75,Ja-corrigido,
+	kkkkkkjjjjj,76-87,Lixo,
+
+
+foii tudoo que euu e vc comentouu onteeem
+	foii,0-4,IN,foi
+	tudoo,5-10,IN,tudo
+	euu,15-18,IN,eu
+	vc,21-23,AB,você
+	comentouu,24-33,IN,comentou
+	onteeem,34-41,IN,ontem
+
+
+a leite faz a linha como a carolina dickman e eu vejo nada nela q justifique esse valor q ela tem como jurada do the voice ela o elo mais fraco e aproveito para idzer q ali o daniel o melhor pois tem q tem a ver com a e com o produto
+	carolina,27-35,NP,
+	dickman,36-43,NP,
+	q,64-65,AB,que
+	q,88-89,AB,que
+	the,113-116,NP,
+	voice,117-122,NP,
+	idzer,161-166,O,dizer
+	q,167-168,AB,que
+	daniel,175-181,NP,
+	q,200-201,AB,que
+
+
+o este das peras estalle dando a vida ao meu tl
+	peras,11-16,Ja-corrigido,
+	estalle,17-24,NP,
+	tl,45-47,AB,timeline
+
+
+entendi nada as mexidas do pivetti e do paulo autuori hoje deixa eu voltar a ler o livro do guardiola que ganho mais
+	pivetti,27-34,NP,
+	paulo,40-45,NP,
+	autuori,46-53,NP,
+	guardiola,92-101,NP,
+
+
+o desngner da tv lindo o tamanho pefeito tem e d se localizar tanto na tela datv quanto no cotrole
+	desngner,2-10,O,designer
+	tv,14-16,AB,televisão
+	pefeito,33-40,O,perfeito
+	d,47-48,IN,de
+	datv,76-80,SC,da televisão
+	cotrole,91-98,O,controle
+
+
+os sarneys chamam aki a capital de ilha rebelde pq historicamente aki eles ganham
+	sarneys,3-10,NP,
+	aki,18-21,O,aqui
+	pq,48-50,AB,porque
+	aki,66-69,O,aqui
+
+
+produto de otima qualidade facil manuseio otimo
+	otima,11-16,OC,ótima
+	facil,27-32,O,fácil
+	otimo,42-47,OC,ótimo
+
+
+e estao marcos e ilmar certissimos emilly precisava acordar do pais das maravilhas aquilo vale muito dinheiro e se ela bobear perde
+	estao,2-7,O,estão
+	marcos,8-14,NP,
+	ilmar,17-22,NP,
+	certissimos,23-34,O,certíssimos
+	emilly,35-41,NP,
+
+
+apesar de saber q alexandre nao fica com sandrinha eu sempre fui team sandrinha vou nem fudendo com a cara da lucia
+	q,16-17,AB,que
+	alexandre,18-27,NP,
+	nao,28-31,O,não
+	sandrinha,41-50,NP,
+	team,65-69,ES,
+	sandrinha,70-79,NP,
+	fudendo,88-95,O,fodendo
+	lucia,110-115,NP,
+
+
+idd iludida do duduzinho kkkkkkk dps dessa eu vou a jega
+	idd,0-3,NP,
+	duduzinho,15-24,NP,
+	kkkkkkk,25-32,Lixo,
+	dps,33-36,AB,depois
+	jega,52-56,NP,
+
+
+joguei pq tem gnt mt melhor que eu
+	pq,7-9,AB,porque
+	gnt,14-17,IN,gente
+	mt,18-20,IN,muito
+
+
+joga a bct pra tropa do messi piranha pirainha
+	bct,7-10,AB,boceta
+	messi,24-29,NP,
+	pirainha,38-46,O,piranha
+
+
+fica boa se for pra conectar em um home theater
+	conectar,20-28,Ja-corrigido,
+	home,35-39,NP,
+	theater,40-47,NP,
+
+
+alguem dorme por mim pf pois eu to com sono e n quero dormir
+	alguem,0-6,O,alguém
+	pf,21-23,SI,por favor
+	to,32-34,AB,estou
+	n,46-47,AB,não
+
+
+no cinema do lider o cezar ao inves de dar um beijo na bochecha da tamires deu uma dentada e ela ficou
+	lider,13-18,O,líder
+	cezar,21-26,NP,
+	inves,30-35,O,invés
+	tamires,67-74,NP,
+
+
+o nokia lumia sem duvidas um produto excelente e valeu cada centavo que gastei nele o sistema windows phone simples intuitivo leve e bonito e aliado ao design da nokia se torna um aparelho arrasador
+	nokia,2-7,NP,
+	nokia,2-7,NP,
+	lumia,8-13,NP,
+	duvidas,18-25,OC,dúvidas
+	gastei,72-78,Ja-corrigido,
+	windows,94-101,NP,
+	phone,102-107,NP,
+	design,152-158,ES,
+	nokia,162-167,NP,
+	nokia,162-167,NP,
+
+
+tenho de mandar sms a marlene a dizer que levo as calcas rasgadasno rabo porque ela queria ver como sao
+	sms,16-19,SI,
+	marlene,22-29,NP,
+	rasgadasno,57-67,SC,rasgadas no
+	sao,100-103,O,são
+
+
+imfact foi o boygroup rookie que me interessei talvez porque muito originais e o resto tenta
+	imfact,0-6,NP,
+	boygroup,13-21,ES,
+	rookie,22-28,ES,
+
+
+pouca dificuldade na e custo de cartucho pouco mais elevado q a epson lx300
+	q,60-61,AB,que
+	epson,64-69,NP,
+	lx300,70-75,NP,
+
+
+cprdei com uma dor de demte fdp
+	cprdei,0-6,O,acordei
+	demte,22-27,O,dente
+	fdp,28-31,SI,filha da puta
+
+
+eu escrevo emo eu sabia q eu era e quando vc disse q era vc disse era eramos
+	emo,11-14,NP,
+	q,24-25,AB,que
+	vc,42-44,AB,você
+	q,51-52,AB,que
+	vc,57-59,AB,você
+
+
+passe a votar de tanta bones vai ver como a banda toca como diz my friend green morrer seu amigo kkk
+	bones,23-28,NP,
+	my,64-66,ES,
+	friend,67-73,ES,
+	green,74-79,NP,
+	kkk,97-100,Lixo,
+
+
+chorei um pouquinho vendo whindersson pedi a namorada em casamento pq fiquei aaaaa eu quero um tb
+	whindersson,26-37,NP,
+	pq,67-69,AB,porque
+	aaaaa,77-82,IN,ah
+	tb,95-97,AB,também
+
+
+continuo votando diana fora pouco importa se foi a primeira a sair ou no meio de tantos personagens patetico desse bbb sendo a vencedora o q importa como disse mais cedo
+	diana,17-22,NP,
+	patetico,100-108,O,patético
+	bbb,115-118,SI,
+	q,139-140,AB,que
+
+
+meu papel de parede na tela bloqueada dos marauders e na tela de inicio o l kkkkkkjjjjj adoro a vida
+	marauders,42-51,NP,
+	inicio,65-71,OC,ínicio
+	l,74-75,Lixo,
+	kkkkkkjjjjj,76-87,Lixo,
+
+
+estou de aux d do curso de de sgt do como eh bom azucrinar os kakakak
+	aux,9-12,AB,auxiliar
+	d,13-14,AB,de
+	sgt,30-33,AB,sargento
+	eh,42-44,IN,é
+	kakakak,62-69,Lixo,
+
+
+o mp3 player poderia ter um acesso a playlist de forma mais facil tv digital ou analogica com fraca travamento a qualidade das fotos poderiam ser melhores
+	mp3,2-5,SI,
+	playlist,37-45,ES,
+	facil,60-65,O,fácil
+	tv,66-68,AB,televisão
+	analogica,80-89,O,analógica
+
+
+os sarneys chamam aki a capital de ilha rebelde pq historicamente aki eles ganham
+	sarneys,3-10,NP,
+	aki,18-21,O,aqui
+	pq,48-50,AB,porque
+	aki,66-69,O,aqui
+
+
+tb to achando isso yvaine boninho antecipando o desfecho essa ideia vamos aguardar trazendo aline de volta bom
+	tb,0-2,AB,também
+	to,3-5,AB,estou
+	yvaine,19-25,NP,
+	boninho,26-33,NP,
+	aline,92-97,NP,
+
+
+idd iludida do duduzinho kkkkkkk dps dessa eu vou a jega
+	idd,0-3,NP,
+	duduzinho,15-24,NP,
+	kkkkkkk,25-32,Lixo,
+	dps,33-36,AB,depois
+	jega,52-56,IN,
+
+
+pra quem vc torcendo no bbb q vc de bbb te adorooooo dede
+	vc,9-11,AB,você
+	bbb,24-27,SI,
+	q,28-29,AB,que
+	vc,30-32,AB,você
+	bbb,36-39,SI,
+	adorooooo,43-52,IN,
+	dede,53-57,NP,
+
+
+depois de tudo marcelo ainda acha que angela tem bom meu dells do cell
+	marcelo,15-22,NP,
+	angela,38-44,NP,
+	dells,57-62,IN,deus
+	cell,66-70,IN,céu
+
+
+no gostei mas agora da muita ter q ficar picando o alimento em naum sai muito suco tb naum
+	q,33-34,AB,que
+	naum,63-67,IN,não
+	tb,83-85,AB,também
+	naum,86-90,IN,não
+
+
+encontro a autorizada na minha cidade estou indo de m lugar pra outro sem ter resultado isto acaba com qualquer produto como ter um produto que tem assistencia tecnica nota zero
+	m,52-53,O,um
+	assistencia,148-159,O,assistência
+	tecnica,160-167,O,técnica
+	zero,173-177,Ja-corrigido,
+
+
+a mariza quando cisma com uma coisa que a remova ex ela afirmou veementemente que bial entra no para consagrar o decorrente de uma prova de adrlles diz que sexta e ela afirma caso ele tenha alguma cala a boca e mesmo depois dela ter vivido essa porque bial entrou na sexta pra confirmar rafael afirmando a mesma coisa o fernando por ter vivido o fato ela continuava batendo na mesma tecla haja saco e quando bial apontou o livro dela ontem como fofoqueira ela fica indignada e diz que inoportuna ao extremo
+	mariza,2-8,NP,
+	bial,82-86,NP,
+	adrlles,140-147,NP,
+	bial,252-256,NP,
+	rafael,287-293,NP,
+	fernando,320-328,NP,
+	bial,408-412,NP,
+
+
+eu juro pra vcs q n faz nem um q to sem trabalhar e ja me sinto o ser mais do universo
+	vcs,12-15,AB,vocês
+	q,16-17,AB,que
+	n,18-19,AB,não
+	q,31-32,AB,que
+	to,33-35,AB,estou
+	ja,52-54,O,já
+
+
+se vc gosta de um para ver um efeito diferente blz mas se vc detesta ter de por um toda santa vez desista
+	vc,3-5,AB,você
+	blz,47-50,AB,beleza
+	vc,58-60,AB,você
+
+
+o nokia lumia sem duvidas um produto excelente e valeu cada centavo que gastei nele o sistema windows phone simples intuitivo leve e bonito e aliado ao design da nokia se torna um aparelho arrasador
+	nokia,2-7,NP,
+	nokia,2-7,NP,
+	lumia,8-13,NP,
+	duvidas,18-25,OC,dúvidas
+	gastei,72-78,Ja-corrigido,
+	windows,94-101,NP,
+	phone,102-107,NP,
+	design,152-158,ES,
+	nokia,162-167,NP,
+	nokia,162-167,NP,
+
+
+ei silvia maria tu viu grace and frankie tudinho
+	ei,0-2,Ja-corrigido,
+	silvia,3-9,NP,
+	maria,10-15,NP,
+	grace,23-28,NP,
+	and,29-32,ES,
+	frankie,33-40,NP,
+	tudinho,41-48,IN,
+
+
+a campanha pede que os eventos do primeiro jogo que as percebidas por quem tiver acompanhado a jornada do soap mctavish em cod4
+	soap,106-110,NP,
+	mctavish,111-119,NP,
+	cod4,123-127,NP,
+
+
+o homi tem q largar p gringa kkk
+	homi,2-6,IN,homem
+	q,11-12,AB,que
+	p,20-21,AB,para
+	gringa,22-28,Ja-corrigido,
+	kkk,29-32,Lixo,
+
+
+servidores de club penguin fecharam hj
+	club,14-18,NP,
+	penguin,19-26,NP,
+	hj,36-38,AB,hoje
+
+
+boninho kkkkkkkkkkkkkkkkk os bbbs e artistas que se funiquem mas vamos combinar que
+	boninho,0-7,NP,
+	kkkkkkkkkkkkkkkkk,8-25,Lixo,
+	bbbs,29-33,SI,
+	funiquem,52-60,O,futriquem
+
+
+qd nem p brigar a pessoa serve pq demora a responder ja temos mais um motivo p brigar
+	qd,0-2,AB,quando
+	p,7-8,AB,para
+	pq,31-33,AB,porque
+	ja,53-55,O,já
+	p,77-78,AB,para
+
+
+e geovany enchendo a porra do saco pra subir no palco mesmo com mandando descer eu falei voado vou pq to puta
+	geovany,2-9,NP,
+	pq,99-101,AB,porque
+	to,102-104,AB,estou
+
+
+ava que eu so vo na aula de manha
+	ava,0-3,NP,
+	so,11-13,O,só
+	vo,14-16,O,vou
+	manha,28-33,OC,manhã
+
+
+sempre tive iphone desde o primeiro o 2g demorei pra encontrar um telefone que fosse bom como os da apple esse galaxy note ainda tem a vantagem da tela muito melhor e maior agora esperar o android para ele fica ainda melhor
+	iphone,12-18,NP,
+	2g,38-40,SI,
+	apple,100-105,NP,
+	galaxy,111-117,NP,
+	android,189-196,NP,
+
+
+chorei um pouquinho vendo whindersson pedi a namorada em casamento pq fiquei aaaaa eu quero um tb
+	whindersson,26-37,NP,
+	pq,67-69,AB,porque
+	aaaaa,77-82,Lixo,
+	tb,95-97,AB,também
+
+
+mah tao falando que vc vai na festa do justin e vdd
+	mah,0-3,NP,
+	tao,4-7,AB,estão
+	vc,20-22,AB,você
+	justin,39-45,NP,
+	vdd,48-51,AB,verdade
+
+
+ficou um mes exatos dias na autorizada da rua coelho lisboa tatuape sao paulo
+	mes,9-12,O,mês
+	lisboa,53-59,NP,
+	tatuape,60-67,O,tatuapé
+	sao,68-71,O,são
+	paulo,72-77,NP,
+
+
+ajudo sim nene qq vc precisa
+	nene,10-14,O,nenê
+	qq,15-17,AB,qualquer
+	vc,18-20,AB,você
+
+
+meu papel de parede na tela bloqueada dos marauders e na tela de inicio o l kkkkkkjjjjj adoro a vida
+	marauders,42-51,NP,
+	inicio,65-71,OC,início
+	l,74-75,SC,
+	kkkkkkjjjjj,76-87,Lixo,
+
+
+se bobear pior aquele hat trick iludiu mt torcedor e eu te avisei tem bosta pqp
+	hat,22-25,ES,
+	trick,26-31,ES,
+	mt,39-41,AB,muito
+	pqp,76-79,SI,
+
+
+um aparelho singular de facil manuseio esta virando o queridinho da familia agora todos querem um tambem
+	facil,24-29,O,fácil
+	esta,39-43,OC,está
+	familia,68-75,O,família
+	tambem,98-104,O,também
+
+
+m e u c o r a o n o a g u e n t a
+	m,0-1,SC,
+	u,4-5,SC,
+	c,6-7,SC,
+	r,10-11,SC,
+	n,16-17,AB,não
+	g,22-23,SC,
+	u,24-25,SC,
+	n,28-29,AB,não
+	t,30-31,SC,
+
+
+aqueles pra chorar msm to lgd amo esses kkkk
+	msm,19-22,AB,mesmo
+	to,23-25,AB,estou
+	lgd,26-29,AB,ligado
+	kkkk,40-44,Lixo,
+
+
+hj surtei na faculdade mas o pessoal do empoderades me ajudou eles tudo uns
+	hj,0-2,AB,hoje
+	surtei,3-9,Ja-corrigido,
+	empoderades,40-51,NP,
+
+
+pq so mostram o grupo dos queridinhos cd o grupo verde
+	pq,0-2,AB,porque
+	so,3-5,O,só
+	cd,38-40,AB,cadê
+
+
+fala p vcs o bglh era loco kkkkkkkkkkkk q sdd
+	p,5-6,AB,para
+	vcs,7-10,AB,vocês
+	bglh,13-17,AB,bagulho
+	kkkkkkkkkkkk,27-39,Lixo,
+	q,40-41,AB,que
+	sdd,42-45,AB,saudade
+
+
+enquanto os outros brothers se divertem na festa indiana angela se isola a sister fica pensativa
+	brothers,19-27,ES,
+	angela,57-63,NP,
+	sister,75-81,ES,
+
+
+ta ai um bom conselho sera que ela conseguira seguir ja que veio de voce
+	ta,0-2,O,está
+	ai,3-5,OC,aí
+	sera,22-26,O,será
+	ja,53-55,O,já
+	voce,68-72,O,você
+
+
+eu uso este notebook para jogos e tem um desempenho muito bom roda jogos como perfect world e left dead com o no
+	notebook,12-20,ES,
+	perfect,78-85,NP,
+	left,94-98,NP,
+	dead,99-103,NP,
+
+
+os sarneys chamam aki a capital de ilha rebelde pq historicamente aki eles ganham
+	sarneys,3-10,NP,
+	aki,18-21,O,aqui
+	pq,48-50,AB,porque
+	aki,66-69,O,aqui
+
+
+mano esse justin que que eu to fazendo aqui que to
+	justin,10-16,NP,
+	to,28-30,AB,estou
+	to,48-50,AB,estou
+
+
+idd iludida do duduzinho kkkkkkk dps dessa eu vou a jega
+	idd,0-3,NP,
+	duduzinho,15-24,NP,
+	kkkkkkk,25-32,Lixo,
+	dps,33-36,AB,depois
+	jega,52-56,Ja-corrigido,
+
+
+nao acredito no que meus ouvidos estao ouvindo hold tight
+	nao,0-3,O,não
+	estao,33-38,O,estão
+	hold,47-51,NP,
+	tight,52-57,NP,
+
+
+em tudo a camera fotografica ou a de video para ligarmos a negocio
+	camera,10-16,O,câmera
+	fotografica,17-28,O,fotográfica
+	video,37-42,O,vídeo
+	negocio,59-66,OC,negócio
+
+
+p e r f e i t o
+	p,0-1,SC,
+	r,4-5,SC,
+	f,6-7,SC,
+	i,10-11,SC,
+	t,12-13,SC,
+
+
+o nokia lumia sem duvidas um produto excelente e valeu cada centavo que gastei nele o sistema windows phone simples intuitivo leve e bonito e aliado ao design da nokia se torna um aparelho arrasador
+	nokia,2-7,NP,
+	nokia,2-7,NP,
+	lumia,8-13,NP,
+	duvidas,18-25,OC,dúvidas
+	gastei,72-78,Ja-corrigido,
+	windows,94-101,NP,
+	phone,102-107,NP,
+	design,152-158,ES,
+	nokia,162-167,NP,
+	nokia,162-167,NP,
+
+
+eu to com uma puta de procurar uniforme tomar banho acho q vou faltar hj de novo
+	to,3-5,AB,estou
+	q,57-58,AB,que
+	hj,70-72,AB,hoje
+
+
+o exynos quad com quatro possui um chip e com velocidade de gigahertz um dos mais velozes de sua categoria
+	exynos,2-8,NP,
+	quad,9-13,NP,
+	gigahertz,60-69,Ja-corrigido,
+
+
+essa so eu no banheiro dos fessor pq no dos aluno n tem papel ai me sinto obrigada a levar pro banheiro de aluno
+	so,5-7,O,só
+	fessor,27-33,AB,professor
+	pq,34-36,AB,porque
+	n,50-51,AB,não
+	ai,62-64,OC,aí
+
+
+chorei um pouquinho vendo whindersson pedi a namorada em casamento pq fiquei aaaaa eu quero um tb
+	whindersson,26-37,NP,
+	pq,67-69,AB,porque
+	aaaaa,77-82,Lixo,
+	tb,95-97,AB,também
+
+
+duvido tdo mundo sabe q dona de vaca se tiver pagando r ja muito qnto a seara qnto desespero
+	tdo,7-10,AB,todo
+	q,22-23,AB,que
+	r,54-55,SC,
+	ja,56-58,O,já
+	qnto,65-69,AB,quanto
+	seara,72-77,NP,
+	qnto,78-82,AB,quanto
+
+
+a capa da bateria e muio fragil a bateria logo fica folgada dendro do celular
+	muio,20-24,O,muito
+	fragil,25-31,O,frágil
+	dendro,60-66,O,dentro
+
+
+meu papel de parede na tela bloqueada dos marauders e na tela de inicio o l kkkkkkjjjjj adoro a vida
+	marauders,42-51,NP,
+	inicio,65-71,OC,início
+	l,74-75,Lixo,
+	kkkkkkjjjjj,76-87,Lixo,
+
+
+tv perfeita realmente vale o que custa com um home da samsung
+	tv,0-2,AB,televisão
+	home,46-50,ES,
+	samsung,54-61,NP,
+
+
+de ronildo hj foi uma brabinha
+	ronildo,3-10,NP,
+	hj,11-13,AB,hoje
+	brabinha,22-30,Lixo,
+
+
+possui saida de audio convencional somente digital e pode representar uma barreira para se conectar na maioria dos home theaters
+	saida,7-12,O,saída
+	audio,16-21,O,áudio
+	conectar,91-99,Ja-corrigido,
+	home,115-119,ES,
+	theaters,120-128,ES,
+
+
+eu sinceramente tenho pra abusada e chata fazem o que ele quer smp ai cmg acha q vai ter
+	smp,63-66,AB,sempre
+	ai,67-69,OC,aí
+	cmg,70-73,AB,comigo
+	q,79-80,AB,que
+
+
+se vira monta uma casa de vidro e se enfia dentro pra voltar a gente vota faz a phoenix manipula o tempo apaga os tweets seringada em quem assumiu seu lugar o inferno pra garantido mesmo sei faz o que te der na telha mas devolve o nosso bbb pra gente
+	phoenix,80-87,NP,
+	tweets,114-120,ES,
+	seringada,121-130,Ja-corrigido,
+	bbb,237-240,SI,
+
+
+vamos investir no futuro me escolhee obrigado galera me ajuda curtindo isso faria uma diferencia gigante nao so na minha vida mas tambem para o meu trabalho obrigaaddooo
+	escolhee,28-36,O,escolhe
+	nao,105-108,O,não
+	so,109-111,O,só
+	tambem,130-136,O,também
+	obrigaaddooo,157-169,IN,obrigado
+
+
+os sarneys chamam aki a capital de ilha rebelde pq historicamente aki eles ganham
+	sarneys,3-10,NP,
+	aki,18-21,O,aqui
+	pq,48-50,AB,porque
+	aki,66-69,O,aqui
+
+
+sem falar que tem o android e processador 850mhz enquanto seus principais concorrentes o motorola fire e o lg optimus pro tem o android e um processador com uma menor
+	android,20-27,NP,
+	850mhz,42-48,Ja-corrigido,
+	motorola,89-97,NP,
+	fire,98-102,NP,
+	lg,107-109,NP,
+	optimus,110-117,NP,
+	android,128-135,NP,
+
+
+comprei essa lava loucas e fui surpreendido logo de inicio ela eh bem compacta por fora e gigante por dentro cabe de tudo toda louca de uma familia de pessoas inclusive as panelas e sai tdo limpissimo brilhando e bem seco bem lava loucas vale mto a pena aposentamos de vez a pia
+	inicio,52-58,OC,início
+	eh,63-65,O,é
+	familia,140-147,O,família
+	tdo,186-189,O,tudo
+	limpissimo,190-200,O,limpíssimo
+	mto,243-246,AB,muito
+
+
+muito dificil a limpesa das paletas que direcionam o ar porque elas desmontam
+	dificil,6-13,O,difícil
+	limpesa,16-23,O,limpeza
+	direcionam,40-50,Ja-corrigido,
+
+
+sera que a thread pro comeback de winner
+	sera,0-4,O,será
+	thread,11-17,ES,
+	comeback,22-30,NP,
+	winner,34-40,ES,
+
+
+vou tomar banho pr ir ali cm a viih
+	pr,16-18,AB,para
+	cm,26-28,AB,com
+	viih,31-35,NP,
+
+
+idd iludida do duduzinho kkkkkkk dps dessa eu vou a jega
+	idd,0-3,Lixo,
+	duduzinho,15-24,NP,
+	kkkkkkk,25-32,Lixo,
+	dps,33-36,AB,depois
+	jega,52-56,Lixo,
+
+
+af essas coisas acabam cmg af
+	af,0-2,Lixo,
+	cmg,23-26,AB,comigo
+	af,27-29,Lixo,
+
+
+darren criss foi nessa ver ele todo montado de salto cantando e pulando de carros performando eu choro
+	darren,0-6,NP,
+	criss,7-12,NP,
+	performando,82-93,ES,
+
+
+quanto ao player ele realmente lendo mais formatos de mas nem se compara com a samsung pois testei varios formatos e nem todos rodam mais estranho por rodar alguns filmes avi e outros e teve um avi que simplesmente travava a tv
+	samsung,79-86,NP,
+	varios,99-105,O,vários
+	avi,171-174,SI,audio video interleave
+	avi,194-197,SI,audio video interleave
+	tv,225-227,AB,televisão
+
+
+oi meu amor amor aqui ja eh boa noite mas pra vc eu dou goodmorning sem problema nem um viu te amo e descansa pfv vai comer 1pao
+	ja,22-24,O,já
+	eh,25-27,IN,é
+	vc,46-48,AB,você
+	goodmorning,56-67,SC,good morning
+	pfv,110-113,AB,por favor
+	1pao,124-128,SC,um pão
+
+
+poxa aaron a gente sabe q vc quer saber dela pq vc faz isso ein
+	aaron,5-10,NP,
+	q,24-25,AB,que
+	vc,26-28,AB,você
+	pq,45-47,AB,porque
+	vc,48-50,AB,você
+	ein,60-63,Lixo,
+
+
+o nokia lumia sem duvidas um produto excelente e valeu cada centavo que gastei nele o sistema windows phone simples intuitivo leve e bonito e aliado ao design da nokia se torna um aparelho arrasador
+	nokia,2-7,NP,
+	nokia,2-7,NP,
+	lumia,8-13,NP,
+	duvidas,18-25,OC,dúvidas
+	gastei,72-78,Ja-corrigido,
+	windows,94-101,NP,
+	phone,102-107,NP,
+	design,152-158,ES,
+	nokia,162-167,NP,
+	nokia,162-167,NP,
+
+
+o foi o seguinte a noite estava indo de mal a pior enquanto angela reivindicava seu direito de peidar na frente dos outros como os homens podem antes da meia noite todos ir dormir e a resolveu mandar um cooler e tocar umas musiquinhas ae
+	angela,60-66,NP,
+	cooler,203-209,ES,
+	musiquinhas,223-234,Ja-corrigido,
+	ae,235-237,IN,aí
+
+
+gente to mt cachorrona q isso
+	to,6-8,AB,estou
+	mt,9-11,AB,muito
+	cachorrona,12-22,Ja-corrigido,
+	q,23-24,AB,que
+
+
+mew ki mina feia ducarai eh essa
+	mew,0-3,IN,meu
+	ki,4-6,IN,que
+	ducarai,17-24,IN,do caralho
+	eh,25-27,IN,é
+
+
+kleber bambam afirma que multiplicou por dez o de r mil que ganho na primeira do hoje considerado modesto perto dos r das
+	kleber,0-6,NP,
+	bambam,7-13,NP,
+	r,50-51,Lixo,
+	r,116-117,Lixo,
+
+
+chorei um pouquinho vendo whindersson pedi a namorada em casamento pq fiquei aaaaa eu quero um tb
+	whindersson,26-37,NP,
+	pq,67-69,AB,porque
+	aaaaa,77-82,Lixo,
+	tb,95-97,AB,também
+
+
+olha o meu falando pretty girls eat jdjsjsnsjja
+	pretty,19-25,Lixo,
+	girls,26-31,Lixo,
+	eat,32-35,Lixo,
+	jdjsjsnsjja,36-47,Lixo,
+
+
+fui stalkear a lavi e o perfil dela carregando aaaaa
+	stalkear,4-12,ES,
+	lavi,15-19,NP,
+	aaaaa,47-52,Lixo,
+
+
+foda que quando nasceu deus disse vou fazer a feminina plau veio a tefah aqui hahahahha
+	plau,55-59,Lixo,
+	tefah,67-72,NP,
+	hahahahha,78-87,Lixo,
+
+
+ppv ta chato ou eles ficam mostrando a emilly comendo ou sendo comida
+	ppv,0-3,SI,pay per view
+	ta,4-6,AB,está
+	emilly,39-45,NP,
+
+
+pontos o se amarra em um seco principalmente se ele vier acompanhado de we are the champions
+	we,72-74,NP,
+	the,79-82,NP,
+	champions,83-92,NP,
+
+
+nao me enganei lol nao me difames
+	nao,0-3,O,não
+	lol,15-18,SI,league of legends
+	nao,19-22,O,não
+	difames,26-33,Ja-corrigido,
+
+
+q n rola mas nenhum som do costa com o luccas c mas n hahahaha sacanagem dos cara
+	q,0-1,AB,que
+	n,2-3,AB,não
+	luccas,39-45,O,lucas
+	c,46-47,AB,com
+	n,52-53,AB,não
+	hahahaha,54-62,Lixo,
+
+
+a marien carretero disposta a investir na carreira de atriz e modelo a mineira que participou da do reality show de marcada para o rio de janeiro com objetivo de alavancar os trabalhos nesta para divulgar a nova empreitada ela fez uma de fotos para de sensuais nas imagens ela aparece nua e com sexy com jaqueta de couro lingerie shortinho e decote
+	marien,2-8,NP,
+	carretero,9-18,NP,
+	reality,100-107,NP,
+	alavancar,162-171,SC,
+	shortinho,330-339,Ja-corrigido,
+
+
+anciosa para as datas de sp vou tentar ir nos dias assim msm de longe vou ver os mais
+	anciosa,0-7,O,ansiosa
+	sp,25-27,SI,são paulo
+	msm,57-60,AB,mesmo
+
+
+morto me deixando maluco eu sou noob em kpop caralho
+	noob,32-36,IN,novato
+	kpop,40-44,NP,
+	caralho,45-52,Ja-corrigido,
+
+
+pra vc lindona vou dormir porq preciso a ganhar dindim cedinho
+	vc,4-6,AB,você
+	lindona,7-14,Ja-corrigido,
+	porq,26-30,AB,porque
+	dindim,48-54,IN,dinheiro
+	cedinho,55-62,Ja-corrigido,
+
+
+voltes a dizer isso pf te vai acontecer nd se eu pensasse assim o q achas q me tinha acontecido
+	pf,20-22,SI,por favor
+	nd,40-42,AB,nada
+	q,66-67,AB,que
+	q,74-75,AB,que
+
+
+eu tenho certeza que todos os brasileiros estao pra baixo com um sentimento de perda o penta que teima em nao vim para nos eu nao consigo entender como uma pessoa que se diz brasileira consegue se aproveitar desta situacao nao sente o que os brasileiros estao sentindo neste momento
+	estao,42-47,O,estão
+	nao,106-109,O,não
+	nao,126-129,O,não
+	situacao,214-222,O,situação
+	nao,223-226,O,não
+	estao,254-259,O,estão
+
+
+me aquelas bolinha que amplia o som via bluetooth p eu tomar banho oubindo minhas musiquinha
+	bluetooth,40-49,NP,
+	p,50-51,AB,para
+	oubindo,67-74,O,ouvindo
+	musiquinha,82-92,Ja-corrigido,
+
+
+sai de lm e ao dos mixers falarem das favs so falam de 5h kkkkkk
+	lm,7-9,NP,
+	mixers,19-25,NP,
+	favs,38-42,AB,favoritas
+	so,43-45,O,só
+	5h,55-57,Ja-corrigido,
+	kkkkkk,58-64,Lixo,
+
+
+sla qnd eu digo desabafar eu digo de vdd mesmo
+	sla,0-3,IN,sei lá
+	qnd,4-7,AB,quando
+	vdd,37-40,AB,verdade
+
+
+eu rodava todo dia en uma ranger cabine simples era muito facil ela rodar a traseira no asfalto ela batia en uma e rodava era bastante perigosa
+	en,19-21,O,em
+	facil,58-63,O,fácil
+	en,106-108,O,em
+
+
+tal que o boni em seu livro e tbm em entrevistas confessa q elegeu o color o pai do confisco da caderneta de dos brasileiros eqnto o povo se ferrava tendo que se virar com o q eles liberavam cardoso e seus amigos do da fazenda faziam reformas suntuosas em seus apartamentos em
+	boni,10-14,NP,
+	tbm,30-33,AB,também
+	q,58-59,AB,que
+	color,69-74,NP,
+	eqnto,125-130,AB,enquanto
+	q,174-175,AB,que
+	cardoso,191-198,NP,
+
+
+pouco comparado com os novos smartphone top como por exemplo samsung galaxy slll
+	smartphone,29-39,NP,
+	top,40-43,ES,topo
+	samsung,61-68,NP,
+	galaxy,69-75,NP,
+	slll,76-80,NP,
+
+
+caguei mas quando na portinha hoje nao o caso kkkkk ai nao consigo
+	nao,35-38,O,não
+	kkkkk,46-51,Lixo,
+	ai,52-54,O,aí
+	nao,55-58,O,não
+
+
+eu to rindo mas to chorando creide
+	to,3-5,AB,estou
+	to,16-18,AB,estou
+	creide,28-34,NP,
+
+
+daqui a pouco vai ser um tal de pjl no facebook pqp
+	pjl,32-35,SI,paz justiça e liberdade
+	facebook,39-47,NP,
+	pqp,48-51,SI,puta que pariu
+
+
+finalmente se deu conta que nao pode abrir contas para agredir outros users e principalmente se passando por outros acorda linda o tempo em que voce se divertia sem consequencias acabou quando voce resolveu pegar no pe da brasuca
+	nao,28-31,O,não
+	users,70-75,ES,
+	voce,144-148,O,você
+	consequencias,165-178,O,consequências
+	voce,193-197,O,você
+	pe,216-218,OC,pé
+	brasuca,222-229,IN,
+
+
+atencao tropa amanha torcida para o rodrigao ser lider diana no paredao se ele nao for ainda acredito que ela ira pela casa entao vamos nos unir nao importa quem for com ela para eliminarmos essa persona non grata fora diana perdemos uma batalha mas nao perdemos a guerra nao podemos deixar que alguem como ela chegue a final o terceiro lugar ainda e demais para ela
+	atencao,0-7,O,atenção
+	amanha,14-20,O,amanhã
+	rodrigao,36-44,NP,
+	lider,49-54,O,líder
+	diana,55-60,NP,
+	paredao,64-71,O,paredão
+	nao,79-82,O,não
+	ira,110-113,OC,irá
+	entao,124-129,O,então
+	nao,145-148,O,não
+	persona,196-203,ES,
+	non,204-207,ES,
+	diana,219-224,NP,
+	nao,250-253,O,não
+	nao,272-275,O,não
+	alguem,295-301,O,alguém
+
+
+possui edge e a qualidade da fotos a noite da melhores a sonyericsson diz que vai melhorar com o proximo update de software que pode ser feito pela net para qualquer aparelho
+	edge,7-11,NP,
+	sonyericsson,57-69,SC,sony ericsson
+	proximo,97-104,O,próximo
+	update,105-111,ES,atualização
+	software,115-123,NP,
+	net,148-151,NP,
+
+
+o grande vampeta foda mesmo os porqueiras e os viadinhos bambis putos com ele
+	vampeta,9-16,NP,
+	viadinhos,47-56,Ja-corrigido,
+	bambis,57-63,Ja-corrigido,
+
+
+kamilla e elieser param de se beijar durante o churrasco carrefour logo o primeiro beijo fernanda vai conversar com marcello a sister diz que sabia que isso ia acontecer e o carioca aprova depois eu converso vou falar nada agora
+	kamilla,0-7,NP,
+	elieser,10-17,NP,
+	carrefour,57-66,NP,
+	fernanda,89-97,NP,
+	marcello,116-124,NP,
+	sister,127-133,ES,
+
+
+permite a de servidores de videos tem um navegador web para acessar qualquer site enquanto a philips e outras concorrentes possuem
+	videos,27-33,O,vídeos
+	web,51-54,NP,
+	acessar,60-67,Ja-corrigido,
+	site,77-81,ES,
+	philips,93-100,NP,
+
+
+para quem precisa estar conectado o tempo todo o iconia tab a500 pode ter um grave problema a falta de modem 3g embutido
+	iconia,49-55,NP,
+	tab,56-59,NP,
+	a500,60-64,NP,
+	3g,109-111,SI,third generation
+
+
+kkkkk o foda foi a do menino quando eu falei que curtia garotas kkk ele falo a porra se quer da fora fala precisa menti kkkkk ue
+	kkkkk,0-5,Lixo,
+	kkk,64-67,Lixo,
+	kkkkk,120-125,Lixo,
+	ue,126-128,O,ué
+
+
+foda que quando nasceu deus disse vou fazer a feminina plau veio a tefah aqui hahahahha
+	plau,55-59,NP,
+	tefah,67-72,NP,
+	hahahahha,78-87,Lixo,
+
+
+ente a maroca animada precisamos disso no bbb a voz dela chata mas o resto rsrsrs
+	maroca,7-13,NP,
+	bbb,42-45,AB,
+	rsrsrs,75-81,Lixo,
+
+
+so dor de brodi sdds fase boa
+	so,0-2,O,só
+	brodi,10-15,O,brother
+	sdds,16-20,AB,saudades
+
+
+precisa fingir me ver ao contrario de todos vcs sei bem separar as coisas e porque convivo mais c vcs q nn vo cumprimentar
+	contrario,25-34,OC,contrário
+	vcs,44-47,AB,vocês
+	c,96-97,AB,com
+	vcs,98-101,AB,vocês
+	q,102-103,AB,que
+	nn,104-106,O,nem
+	vo,107-109,O,vou
+
+
+referente ao jogo propriamente dito nenhuma ou igual a que sempre tenho pela fazenda de porque sou sempre otimista e tenho medo em me decepcionar estou escolada ao longo do reality vou hora tirando pontos hora acrescentando e por vai acredito no marketing de bones e carelli que o bbb sai com vantagens e falo
+	reality,173-180,ES,
+	bones,259-264,NP,
+	carelli,267-274,NP,
+	bbb,281-284,SI,
+
+
+bah que palha isso vei eu essa hora indo dormir kkkk
+	bah,0-3,Lixo,
+	vei,19-22,O,velho
+	kkkk,48-52,Lixo,
+
+
+ronan pede a munik e sister nega estou com um pingo de
+	ronan,0-5,NP,
+	munik,13-18,NP,
+	sister,21-27,ES,
+
+
+salva os links dos gifs no seu eeee quem sabe um dia voce fica melhor que o povo da nasa rsrsrsrsrs
+	links,9-14,ES,
+	gifs,19-23,SI,
+	eeee,31-35,IN,e
+	voce,53-57,O,você
+	nasa,84-88,SI,national aeronautics and space administration
+	rsrsrsrsrs,89-99,Lixo,
+
+
+bom dia pessoas ainda to chocada com os ultimos acontecimentos mas espero que o bbb nos de mais alegrias beijos a todos
+	to,22-24,O,estou
+	ultimos,40-47,O,últimos
+	bbb,80-83,SI,
+
+
+comprei o produto no de por imagem incrivel belo design controles facil base giratoria e show leve sem prob de sombra ou claridade no dvd fica cinema
+	incrivel,35-43,O,incrível
+	design,49-55,ES,
+	facil,66-71,O,fácil
+	giratoria,77-86,O,giratória
+	prob,103-107,IN,problema
+	dvd,134-137,SI,
+
+
+marcos foi homem de fala d n fosse ele n dessa joga mais marcos
+	marcos,0-6,NP,
+	d,25-26,Lixo,
+	n,27-28,AB,não
+	n,39-40,AB,não
+	marcos,57-63,AB,
+
+
+dia da gi e dia do meu pai fiz a montagem dos dois nao vou deixar p hora sim
+	gi,7-9,NP,
+	nao,51-54,O,não
+	p,66-67,AB,para
+
+
+para essa menina so padsa vergonha nojoooo
+	so,17-19,O,só
+	padsa,20-25,O,passa
+	nojoooo,35-42,IN,nojo
+
+
+deus eu ja to desejando eh a morte da veia qualquer coisa pra ela sair de perto da emilly um infarto avc olha que horror sai de perto dela
+	ja,8-10,O,já
+	to,11-13,O,estou
+	eh,24-26,IN,é
+	emilly,83-89,NP,
+	avc,101-104,SI,acidente vascular cerebral
+
+
+eu quero morrer q esse tinder maluco deu super like na inimiga
+	q,16-17,O,que
+	tinder,23-29,NP,
+	like,47-51,ES,
+
+
+um temaki de 1kg pra agora please god
+	temaki,3-9,ES,
+	1kg,13-16,Ja-corrigido,
+	please,27-33,ES,
+	god,34-37,NP,
+
+
+eliminar quem ja ta em num contigente de quase pode ser considerado e sim q ficou entre os finalista
+	ja,14-16,O,já
+	ta,17-19,O,está
+	contigente,27-37,O,contingente
+	q,74-75,AB,que
+
+
+crlh mane vagabundo fala pa crlh nem minha tia quer me ver feliz pprt
+	crlh,0-4,AB,caralho
+	mane,5-9,OC,mané
+	pa,25-27,O,para
+	crlh,28-32,AB,caralho
+	pprt,65-69,IN,por perto
+
+
+caguei mas quando na portinha hoje nao o caso kkkkk ai nao consigo
+	nao,35-38,O,não
+	kkkkk,46-51,Lixo,
+	ai,52-54,OC,aí
+	nao,55-58,O,não
+
+
+acabou tem outra forma de se comunicar somente vai guardar as e as coisas boas q viveu c ela qdo sua morre como
+	q,79-80,AB,que
+	c,87-88,AB,com
+	qdo,93-96,AB,quando
+
+
+se a o sucesso a igual a x mais y mais o trabalho x y o lazer e z manter a boca fechada
+	x,25-26,Ja-corrigido,
+	y,32-33,Ja-corrigido,
+	x,50-51,Ja-corrigido,
+	y,52-53,Ja-corrigido,
+	z,64-65,Ja-corrigido,
+
+
+design atraente time machine ready suporte via usb para divx hd
+	design,0-6,ES,
+	machine,21-28,NP,
+	ready,29-34,NP,
+	usb,47-50,SI,
+	divx,56-60,NP,
+	hd,61-63,SI,
+
+
+oi kat vc salvando a e postando foto sizzy
+	kat,3-6,NP,
+	vc,7-9,AB,você
+	sizzy,37-42,NP,
+
+
+ehe e n q fiquei mesmo
+	ehe,0-3,Lixo,
+	n,6-7,AB,não
+	q,8-9,AB,que
+
+
+muito pouco mas vamos ver a samsung inovou as dslr antes muitos grandes hoje com a samsung o tamanho delas diminui muito mas perdemos um pouco da da bateria mas ganhamos portabilidade
+	samsung,28-35,NP,
+	dslr,46-50,SI,
+	samsung,83-90,NP,
+
+
+celular simples porem de boa qualidade tem um otimo display radio fm bluetooth pequeno leve tem uma tela externa muito boa
+	porem,16-21,OC,porém
+	otimo,46-51,O,ótimo
+	display,52-59,ES,
+	radio,60-65,OC,rádio
+	fm,66-68,SI,
+	bluetooth,69-78,NP,
+
+
+cada trinta segundos nos breaks do reality show custando r mil
+	breaks,25-31,ES,
+	reality,35-42,ES,
+	r,57-58,SC,r$
+
+
+aaaiii mds aparece gente loka na minha vida
+	aaaiii,0-6,IN,ah
+	mds,7-10,IN,meu deus
+	loka,25-29,IN,louca
+
+
+quels screens jposte presque pas de screens de mes convos
+	quels,0-5,Lixo,
+	screens,6-13,Lixo,
+	jposte,14-20,Lixo,
+	presque,21-28,Lixo,
+	pas,29-32,Lixo,
+	screens,36-43,Lixo,
+	mes,47-50,Lixo,
+	convos,51-57,Lixo,
+
+
+nem acho ela bonita assim mas mesmo assim eu prefiro uma xerosa mais ou menos do q uma bonita fedida sem a menor de asseio e ainda por cima mal gente como a kamilla pra acabar com a de qualquer um mesmo q esteja meses na seca
+	xerosa,57-63,O,cheirosa
+	q,81-82,AB,que
+	kamilla,157-164,NP,
+	q,203-204,AB,que
+
+
+qndo eu falei batolage eu levei para o lado de q o programa uma mentira como vc vai julgar um grupo musical se parte da playback se eles conhecem o q julgam diriam mas como mais preocupados em aparecer para fins tdo vira uma batolage
+	qndo,0-4,AB,quando
+	batolage,14-22,IN,
+	q,47-48,AB,que
+	vc,77-79,AB,você
+	q,148-149,AB,que
+	tdo,212-215,AB,tudo
+	batolage,225-233,IN,
+
+
+marcos e emilly ouviram merda de ieda e mari fizeram de td para impedir emy de ir marcos marcos falou
+	marcos,0-6,NP,
+	emilly,9-15,NP,
+	ieda,33-37,NP,
+	mari,40-44,NP,
+	td,56-58,AB,tudo
+	emy,72-75,NP,
+	marcos,82-88,NP,
+	marcos,89-95,NP,
+
+
+welly vc viu que as lgs sendo odiadas novamente eu ro rindo das falsas
+	welly,0-5,NP,
+	vc,6-8,AB,você
+	lgs,20-23,NP,
+	ro,51-53,SC,estou
+
+
+camera de video dispoe de qualidade baixa 96x128 e media 144x176
+	camera,0-6,O,câmera
+	video,10-15,O,vídeo
+	dispoe,16-22,O,dispõe
+	96x128,42-48,Lixo,
+	media,51-56,OC,média
+	144x176,57-64,Lixo,
+
+
+foda que quando nasceu deus disse vou fazer a feminina plau veio a tefah aqui hahahahha
+	plau,55-59,Lixo,
+	tefah,67-72,NP,
+	hahahahha,78-87,Lixo,
+
+
+nico marcando gol e paulao se lesionando talvez hoje o zago se mate de desgosto
+	nico,0-4,NP,
+	paulao,20-26,NP,
+	lesionando,30-40,O,lesionado
+	zago,55-59,NP,
+
+
+inveja eu tenho da rihanna de vc eu tenho pena lindona
+	rihanna,19-26,NP,
+	vc,30-32,AB,você
+	lindona,47-54,IN,
+
+
+os pontos fracos mesmo o caps que avisa nem na tela quando em e a bateria que dura no horas com bluetooth desligado wifi no modo de economia e tela no brilho
+	caps,25-29,ES,
+	bluetooth,96-105,NP,
+	wifi,116-120,ES,
+
+
+ela para para para cheia de ensiaos na agenda a kamilla salgado compartilhou com seus seguidores do instagram mais uma foto de seus trabalhos como modelo desta vez a morena posou com uma superflor
+	ensiaos,28-35,O,ensaios
+	kamilla,48-55,NP,
+	instagram,100-109,NP,
+	superflor,187-196,IN,
+
+
+caguei mas quando na portinha hoje nao o caso kkkkk ai nao consigo
+	nao,35-38,O,não
+	kkkkk,46-51,Lixo,
+	ai,52-54,OC,aí
+	nao,55-58,O,não
+
+
+munik e o ousadoo se seguiram no instaaa
+	munik,0-5,NP,
+	ousadoo,10-17,IN,
+	instaaa,33-40,IN,
+
+
+minha vo eh maravilhosa dimai essa mulher
+	vo,6-8,O,vou
+	eh,9-11,IN,é
+	dimai,24-29,IN,
+
+
+na verdade vei tu que sabe meme interno hsuabsjaa
+	vei,11-14,IN,
+	meme,27-31,IN,
+	hsuabsjaa,40-49,Lixo,
+
+
+otimo celular justo muito facil de se usar e com otimos recursos
+	otimo,0-5,O,ótimo
+	facil,26-31,O,fácil
+	otimos,49-55,O,ótimos
+
+
+voce tem senha rs nao e fake
+	voce,0-4,O,você
+	rs,15-17,Lixo,
+	nao,18-21,O,não
+	fake,24-28,ES,
+
+
+a voz do russ grande cena men bue unica e diferente
+	russ,9-13,NP,
+	men,26-29,IN,homem
+	bue,30-33,SC,
+	unica,34-39,O,única
+
+
+credooo pois bem responda q eu quero ver kk
+	credooo,0-7,IN,
+	q,26-27,AB,que
+	kk,41-43,Lixo,
+
+
+prefiro a dieckmann a ivete pecou pelo cabelo que estragou o look parecendo q ainda arrumada
+	dieckmann,10-19,NP,
+	ivete,22-27,NP,
+	look,61-65,ES,
+	q,76-77,AB,que
+
+
+sua sabe q vc esta acordado essa hr
+	q,9-10,AB,que
+	vc,11-13,AB,você
+	esta,14-18,OC,está
+	hr,33-35,AB,hora
+
+
+cassio exagerou feio e diego como sempre apesar de tudo ficou na dele polly sua preferida apenas defendeu seu amigo apesar de uma scrock admito que foi linear e apoiou o amigo na casa
+	cassio,0-6,NP,
+	diego,23-28,NP,
+	polly,70-75,NP,
+	scrock,130-136,IN,
+
+
+agora seria bem melhor tirar esses escrotos de marcos e ilmar deixa a vivian ieda e emilly depois oq da
+	marcos,47-53,NP,
+	ilmar,56-61,NP,
+	vivian,70-76,NP,
+	ieda,77-81,NP,
+	emilly,84-90,NP,
+	oq,98-100,AB,o que
+
+
+o cartomante promete garantir momentos curiosos no em um post de dezembro de disse vejo tv nem escuto radio tem coisa ruim negativa e agora o facebook nessa namorar se tem namorado ou
+	post,57-61,ES,
+	tv,88-90,AB,televisão
+	radio,102-107,OC,rádio
+	facebook,142-150,NP,
+
+
+eu to com tanta sdd q td q tu fizer ta perdoado
+	to,3-5,AB,estou
+	sdd,16-19,AB,saudade
+	q,20-21,AB,que
+	td,22-24,AB,tudo
+	q,25-26,AB,que
+	ta,36-38,AB,está
+
+
+oh vc pode ser bandido traficante eu vou guardar sempre cmg nosso tempo de amigo e a brincadeira de mlk
+	oh,0-2,Ja-corrigido,
+	vc,3-5,AB,você
+	cmg,56-59,AB,comigo
+	mlk,100-103,IN,moleque
+
+
+a camera digital fujifilm finefix de apresentar um designer moderno de aparencia muito delicada excelente no que diz respeito qualidade das fotos assim como a estabilidade de imagens muito boa
+	camera,2-8,O,câmera
+	fujifilm,17-25,NP,
+	finefix,26-33,NP,
+	aparencia,71-80,O,aparência
+
+
+os guris nao sabem como passar as musicas direto pro iphone sem aplicativo pra musica muito burros kkkkkkkkkkkkkkk
+	nao,9-12,O,não
+	musicas,34-41,O,músicas
+	iphone,53-59,NP,
+	musica,79-85,O,música
+	kkkkkkkkkkkkkkk,99-114,Lixo,
+
+
+foda que quando nasceu deus disse vou fazer a feminina plau veio a tefah aqui hahahahha
+	plau,55-59,Lixo,
+	tefah,67-72,NP,
+	hahahahha,78-87,Lixo,
+
+
+muito bom le o que coloco no pen drive controle tem bons recursos mas esperava mais recomendo pra quem gosta de videos e otimo pra ler so nao tem muitas opcoes nos controles
+	le,10-12,O,lê
+	pen,29-32,ES,
+	drive,33-38,ES,
+	videos,112-118,O,vídeos
+	otimo,121-126,O,ótimo
+	so,135-137,O,só
+	nao,138-141,O,não
+	opcoes,153-159,O,opções
+
+
+nego tem q aprender a da valor a qm cntg sempre fechando a e pra uns amigos de rua
+	q,9-10,AB,que
+	qm,33-35,AB,quem
+	cntg,36-40,AB,contigo
+
+
+quandoo pensoo que ja vi de tudoo
+	quandoo,0-7,IN,quando
+	pensoo,8-14,IN,penso
+	ja,19-21,O,já
+	tudoo,28-33,IN,tudo
+
+
+estou no resuminho da minhalinda prof
+	resuminho,9-18,Ja-corrigido,
+	minhalinda,22-32,SC,
+	prof,33-37,AB,professora
+
+
+xt e um celular com um bom completo e bonito tem um sistema rapido que o android alem de um processador 800mhz e 512mb que te deixa na roda bem alguns jogos 3d com gangstar a bateria e grande o flash da camera e boa a do videos e vga igual a camera frontal
+	xt,0-2,NP,
+	rapido,60-66,O,rápido
+	android,73-80,NP,
+	alem,81-85,O,além
+	800mhz,104-110,Ja-corrigido,800 megahertz
+	512mb,113-118,Ja-corrigido,512 megabytes
+	3d,157-159,Ja-corrigido,3 dimensões
+	gangstar,164-172,NP,
+	flash,194-199,ES,
+	camera,203-209,O,câmera
+	videos,221-227,O,vídeos
+	vga,230-233,SI,video graphics array
+	camera,242-248,O,câmera
+
+
+a de green light ta aqui no do meu minas gerais
+	green,5-10,NP,
+	light,11-16,NP,
+	ta,17-19,O,está
+
+
+gosto mais qnd ele assiste my little poney legendado kkkkkkkkkkkk
+	qnd,11-14,AB,quando
+	my,27-29,NP,
+	little,30-36,NP,
+	poney,37-42,NP,
+	kkkkkkkkkkkk,53-65,Lixo,
+
+
+caguei mas quando na portinha hoje nao o caso kkkkk ai nao consigo
+	nao,35-38,O,não
+	kkkkk,46-51,Lixo,
+	ai,52-54,OC,aí
+	nao,55-58,O,não
+
+
+angela marcelo e tatiele formaram o grupo azul vanessa clara e valter foram os integrantes do grupo branco no grupo amarelo estavam diego franciele e
+	angela,0-6,NP,
+	marcelo,7-14,NP,
+	tatiele,17-24,NP,
+	vanessa,47-54,NP,
+	clara,55-60,NP,
+	valter,63-69,NP,
+	diego,132-137,NP,
+	franciele,138-147,NP,
+
+
+ja deveria ter tomado o remedio e estar dormindo mas to aqui esperando o celular descarregar na minha cara
+	ja,0-2,O,já
+	remedio,24-31,OC,remédio
+	to,53-55,AB,estou
+
+
+caraca mlk tirei em pot e em ed f fodaaa dmsss
+	caraca,0-6,IN,
+	mlk,7-10,AB,mulek
+	pot,20-23,SC,
+	ed,29-31,SC,
+	f,32-33,SC,foda
+	fodaaa,34-40,IN,foda
+	dmsss,41-46,IN,demais
+
+
+boaaa tardee pra quem acordouu milionariaaaa
+	boaaa,0-5,IN,boa
+	tardee,6-12,IN,tarde
+	acordouu,22-30,IN,acordou
+	milionariaaaa,31-44,IN,milionária
+
+
+no bbb das clanessas angela parei de assistir pior nem a final eu vi nessa fazenda estarei de volta na
+	bbb,3-6,SI,big brother brasil
+	clanessas,11-20,NP,
+	angela,21-27,NP,
+
+
+fani teve um dia de modelo no a abriu um desfile em japeri na baixada fluminense durante a noite a loira interagiu com o e foi recebida com uma salva de palmas vestindo um look jsto e curtinho que deixava as pernas mostra a noite foi de muito trabalho de fani seguiu direto para outros dois eventos um deles ao lado do marcelo
+	fani,0-4,NP,
+	japeri,52-58,NP,
+	look,172-176,ES,
+	jsto,177-181,AB,justo
+	fani,255-259,NP,
+	marcelo,319-326,NP,
+
+
+so q vc boto que tira e poem algo melhor tu ta me trocando ou ficando maluca
+	so,0-2,O,só
+	q,3-4,AB,que
+	vc,5-7,AB,você
+	poem,24-28,IN,põe
+	ta,44-46,O,estás
+
+
+esse frio ta tao lindo q vo chama ele d evan peters
+	ta,10-12,O,está
+	tao,13-16,O,tão
+	q,23-24,AB,que
+	vo,25-27,AB,vou
+	d,38-39,AB,de
+	evan,40-44,NP,
+	peters,45-51,NP,
+
+
+eu tentei mas a covarde nao se manifestou agora e so esperar para descobrir quem sera o meu proximo casinho e so isso que ela sabe fazer
+	nao,24-27,O,não
+	so,50-52,O,só
+	sera,81-85,O,será
+	proximo,92-99,O,próximo
+	casinho,100-107,Ja-corrigido,
+	so,110-112,O,só
+
+
+vc eh a mulher mais chique da timeline
+	vc,0-2,AB,você
+	eh,3-5,IN,é
+	timeline,30-38,ES,
+
+
+fernanda diz que apoia a pois acha elieser uma pessoa bacana eu acho que se ficar com elieser eu acho que marien fica chateada pondera fernanda fica dispara andressa todo mundo sabe que ele quer nada com ela inclusive ela ressalta a esteticista que conta que elieser faz elogios a kamilla
+	fernanda,0-8,NP,
+	elieser,35-42,NP,
+	elieser,86-93,NP,
+	marien,106-112,NP,
+	fernanda,135-143,NP,
+	andressa,157-165,NP,
+	elieser,259-266,NP,
+	kamilla,281-288,NP,
+
+
+nem lembro como q a gnt se conheceu sei q tu eh bem massa e tem um papo bom
+	q,16-17,AB,que
+	gnt,20-23,AB,gente
+	q,40-41,O,que
+	eh,45-47,IN,é
+
+
+tem gente que quer espera gostar dela mais ela msm se gosta se valoriza bgl doido kkkk
+	msm,47-50,AB,mesma
+	bgl,72-75,SC,
+	kkkk,82-86,Lixo,
+
+
+e pra wendy tbm pq ela me ajudou no trabalho d ed fisica
+	wendy,6-11,NP,
+	tbm,12-15,AB,também
+	pq,16-18,AB,porque
+	d,45-46,AB,de
+	ed,47-49,AB,educação
+	fisica,50-56,O,física
+
+
+foda que quando nasceu deus disse vou fazer a feminina plau veio a tefah aqui hahahahha
+	plau,55-59,Lixo,
+	tefah,67-72,NP,
+	hahahahha,78-87,Lixo,
+
+
+eu quero uma nova unit com conceito estilo trouble maker eu quero trouble maker aka hyuna e hyunseung sua lixo
+	unit,18-22,ES,
+	trouble,43-50,NP,
+	maker,51-56,NP,
+	trouble,66-73,NP,
+	maker,74-79,NP,
+	aka,80-83,SI,also known as
+	hyuna,84-89,NP,
+	hyunseung,92-101,NP,
+
+
+soooooooooooooooooooooo voce nao e o meu marido ta preocupada com o que
+	soooooooooooooooooooooo,0-23,Lixo,
+	voce,24-28,O,você
+	nao,29-32,O,não
+	ta,48-50,AB,está
+
+
+no papel bem ruim kk observar shaylon junior tinha q ser poupado
+	kk,18-20,Lixo,
+	shaylon,30-37,NP,
+	junior,38-44,NP,
+	q,51-52,AB,que
+
+
+esses avatares do painel do bem intitulada por voce em assunto de tpc eu retirei apenas de quem
+	avatares,6-14,Ja-corrigido,
+	voce,47-51,O,você
+	tpc,66-69,AB,tópico
+
+
+essa vai ficar boa quando emilly e ilmar sairem
+	emilly,26-32,NP,
+	ilmar,35-40,NP,
+	sairem,41-47,O,saírem
+
+
+aah vou dormi qe acordo 11hrs kkk
+	aah,0-3,Lixo,
+	qe,14-16,O,que
+	11hrs,24-29,Ja-corrigido,
+	kkk,30-33,Lixo,
+
+
+ai cala boca caralho ninguem te aguenta mais toda hora eh o mesmo discurso cliche sai dae jao
+	ai,0-2,Ja-corrigido,
+	caralho,13-20,Ja-corrigido,
+	ninguem,21-28,O,ninguém
+	eh,55-57,IN,é
+	cliche,75-81,O,clichê
+	dae,86-89,O,daí
+	jao,90-93,Lixo,
+
+
+soh provou ki o bolinho soh vai roubar
+	soh,0-3,IN,só
+	ki,11-13,O,que
+	soh,24-27,IN,só
+
+
+sinceramente nada para uma tv de que mais barata do mercado tem resursos que nem outras tv apos s de marca conhecida tem
+	tv,27-29,AB,televisão
+	resursos,64-72,O,recursos
+	tv,88-90,AB,televisões
+	s,96-97,Lixo,
+
+
+kkkkkk ser eu sou nao coloco em kkkkk
+	kkkkkk,0-6,Lixo,
+	nao,18-21,O,não
+	kkkkk,32-37,Lixo,
+
+
+caguei mas quando na portinha hoje nao o caso kkkkk ai nao consigo
+	nao,35-38,O,não
+	kkkkk,46-51,Lixo,
+	ai,52-54,Ja-corrigido,
+	nao,55-58,O,não
+
+
+mais facil o luan mas serio se a talita nao sair pura marmelada
+	facil,5-10,O,fácil
+	luan,13-17,NP,
+	serio,22-27,OC,sério
+	talita,33-39,NP,
+	nao,40-43,O,não
+
+
+opaaa filme com a megan fox perdi o sono essa mulher maravilhosaaa
+	opaaa,0-5,IN,
+	megan,18-23,NP,
+	fox,24-27,NP,
+	maravilhosaaa,53-66,IN,maravilhosa
+
+
+com sono deitada 5h e consigo dormir pq pq ansiosa
+	5h,17-19,Ja-corrigido,
+	pq,37-39,AB,porque
+	pq,40-42,AB,porque
+
+
+the get down volta semana que vem vamoooooooooooo
+	the,0-3,NP,
+	get,4-7,NP,
+	down,8-12,NP,
+	vamoooooooooooo,34-49,IN,vamos
+
+
+sendo q a belieber desde o mas pelo menos ele n foi a essa festa e n teve contato com a testuda
+	q,6-7,O,que
+	belieber,10-18,ES,
+	n,46-47,AB,não
+	n,67-68,AB,não
+
+
+meu fator de pela compra do notebook hp pavilion foi a na marca hp
+	notebook,28-36,ES,
+	hp,37-39,SI,
+	pavilion,40-48,NP,
+	hp,64-66,SI,
+
+
+a sinceridade de paula leite dos quilos que emagreceu talvez expliquem o sucesso da roraimense nas redes sociais a que participou da do brother brasil e ficou conhecida por ser a primeira participante gordinha do reality show conta hoje com mil seguidores no twitter mil no instagram e mil amigos no facebook isso tudo fora os dez de apoio que a loira com cerca de mulheres em cada chat do whats app
+	paula,17-22,NP,
+	brother,136-143,NP,
+	brasil,144-150,NP,
+	reality,213-220,ES,
+	twitter,259-266,ES,
+	instagram,274-283,NP,
+	facebook,300-308,NP,
+	chat,382-386,ES,
+
+
+a essa autura do campeonato sou obrigado a ver nego comparando nog com luccas carlos por isso que eu odeio ta vendo
+	autura,7-13,O,altura
+	nog,63-66,NP,
+	luccas,71-77,NP,
+	carlos,78-84,NP,
+	ta,107-109,AB,está
+
+
+o nosso forrest gump do bbb tal qual o do filme e educado tem cara de bom longe de ter qualquer poder de ou entrosamento com as demais pessoas da casa e passa de um tremendo no sentido mais inocente da palavra
+	forrest,8-15,NP,
+	gump,16-20,NP,
+	bbb,24-27,SI,big brother brasil
+
+
+o ps3 passa os disco de disc e os quase perfeitos nos jogos precisa de memory card os controles sem fios precisa pagar para jogar online e tem os melhores jogos exclusivos
+	ps3,2-5,SI,
+	disc,24-28,Lixo,
+	memory,71-77,ES,
+	card,78-82,ES,
+	online,130-136,ES,
+
+
+na minha opniao esses aparelhos deviam ter um mais em conta preferencialmente pois tecnologia exige conhecimento e conhecimento gera concorrencia enfim acho q um bom concorrente faria um ideal para varias classes medias tbm poderem usufluir de algo tao generoso e excelente
+	opniao,9-15,O,opinião
+	concorrencia,133-145,O,concorrência
+	q,157-158,AB,que
+	varias,198-204,OC,várias
+	medias,213-219,OC,médias
+	tbm,220-223,AB,também
+	usufluir,232-240,O,usufruir
+	tao,249-252,O,tão
+
+
