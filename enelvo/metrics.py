@@ -4,7 +4,11 @@
 
 import editdistance
 import numpy as np
+METRICS_DICT = dict()
 
+def get_dict():
+    global METRICS_DICT
+    return METRICS_DICT
 
 def edit_distance(x, y):
     '''Calculates the edit distance between two strings.
@@ -16,9 +20,30 @@ def edit_distance(x, y):
     Returns:
         int: The edit distance between x and y. 0 = same string.
     '''
+    METRICS_DICT = get_dict()
+    if 'ed' not in METRICS_DICT:
+        METRICS_DICT['ed'] = dict()
+        METRICS_DICT['ed'][x] = dict()
+        ed = editdistance.eval(x, y)
+        METRICS_DICT['ed'][x][y] = ed
+        return ed
+    else:
+        if x in METRICS_DICT['ed']:
+            if y in METRICS_DICT['ed'][x]:
+                return METRICS_DICT['ed'][x][y]
+            else:
+                ed = editdistance.eval(x, y)
+                METRICS_DICT['ed'][x][y] = ed
+                return ed
+        else:
+            METRICS_DICT['ed'][x] = dict()
+            ed = editdistance.eval(x, y)
+            METRICS_DICT['ed'][x][y] = ed
+            return ed
+
+def edc(x,y):
     return editdistance.eval(x, y)
-
-
+    
 # TODO: Implement in C for better performance
 def lcs(x, y):
     '''Calculates the length of the longest common subsequence between two strings.

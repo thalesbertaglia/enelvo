@@ -76,7 +76,7 @@ class Tokenizer:
     _default_args = dict(
         lowercase=True, allcapskeep=True, normalize=3, usernames='USERNAME',
         urls='URL', hashtags='HASHTAG',
-        phonenumbers='PHONENUMBER', times='TIME', numbers='NUMBER',
+        phonenumbers='NUMBER', times='NUMBER', numbers='NUMBER',
         ignorequotes=False, ignorestopwords=False
     )
     _lexicons = path.join(path.dirname(
