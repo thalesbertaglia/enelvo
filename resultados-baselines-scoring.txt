@@ -1,0 +1,17 @@
+ED-1 para O
+	 freq_top1 = 0.587489 freq_top5 = 0.782412 freq_top10 = 0.795558
+	 hassan_top1 = 0.697189 hassan_top5 = 0.781052 hassan_top10 = 0.793291
+
+TIME = 528.9088530540466
+
+ED-2 para O
+	 freq_top1 = 0.230734 freq_top5 = 0.572983 freq_top10 = 0.649592
+	 hassan_top1 = 0.734361 hassan_top5 = 0.828649 hassan_top10 = 0.851315
+
+TIME = 519.6967628002167
+
+ED-3 para O
+	 freq_top1 = 0.066183 freq_top5 = 0.198096 freq_top10 = 0.376247
+	 hassan_top1 = 0.735267 hassan_top5 = 0.830916 hassan_top10 = 0.853581
+
+TIME = 583.2460098266602

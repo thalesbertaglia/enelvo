@@ -1,3 +1,5 @@
+import time
+
 from enelvo import analytics
 from enelvo import preprocessing
 from enelvo import candidate_generation
@@ -22,57 +24,72 @@ cands = candidate_generation.baselines.generate_by_similarity_metric(
     lex=lex, word=tokens[oov[3]], n_cands=-1)
 top = candidate_scoring.baselines.score_by_similarity_metrics(lex=lex, candidates=cands, n_cands=10)
 print(top)'''
-
-lex_file = open('enelvo/resources/lexicons/unitex-full-clean+enelvo-ja-corrigido.txt')
+log_file = open('results.txt','w')
+lex_file = open(
+    'enelvo/resources/lexicons/unitex-full-clean+enelvo-ja-corrigido.txt')
 lex = {w.strip(): 0 for w in lex_file.readlines()}
-corpus = loaders.load_enelvo_format_full('correcoes-enelvo/correcoes-todas-formato-full.txt')
-erros_O = loaders.filter_corpus_category(corpus, 'O')
-'''
-# ED 1
-sum_len = 0
-cands_O_ed1 = list()
-for i in range(len(erros_O)):
-    e, _ = erros_O[i]
-    #print('%.2f%%' % (i/len(erros_O)))
-    cands = candidate_generation.generate_by_similarity_metric(lex=lex, word=e, threshold=1)
-    cands_O_ed1.append(cands[1])
-    sum_len += len(cands[1])
-print('ED-1 = ', evaluation.evaluate_candidate_generation(erros_O,cands_O_ed1))
-print('AVG_NUM_CANDS = %f' % (sum_len/len(cands_O_ed1)))
+corpus = loaders.load_enelvo_format_full(
+    'correcoes-enelvo/correcoes-todas-formato-full.txt')
+lex_freq = {w.strip().split(',')[0]: int(w.strip().split(',')[1]) for w in open(
+    'enelvo/resources/lexicons/freq-cgu.txt').readlines()}
+erros = dict()
+erros['O'] = loaders.filter_corpus_category(corpus, 'O')
+erros['AB'] = loaders.filter_corpus_category(corpus, 'AB')
+erros['IN'] = loaders.filter_corpus_category(corpus, 'IN')
+ed = [1, 2, 3]
+clcsr = [0.2, 0.5, 0.8]
 
-# ED 2
-sum_len = 0
-cands_O_ed2 = list()
-for i in range(len(erros_O)):
-    e, _ = erros_O[i]
-    #print('%.2f%%' % (i/len(erros_O)))
-    cands = candidate_generation.generate_by_similarity_metric(lex=lex, word=e, threshold=2)
-    cands_O_ed2.append(cands[1])
-    sum_len += len(cands[1])
-print('ED-2 = ', evaluation.evaluate_candidate_generation(erros_O,cands_O_ed2))
-print('AVG_NUM_CANDS = %f' % (sum_len/len(cands_O_ed2)))'''
-# ED 3
-sum_len = 0
-cands_O_ed3 = list()
-for i in range(len(erros_O)):
-    e, _ = erros_O[i]
-    #print('%.2f%%' % (i/len(erros_O)))
-    cands = candidate_generation.generate_by_similarity_metric(lex=lex, word=e, threshold=3)
-    cands_O_ed3.append(cands[1])
-    sum_len += len(cands[1])
-print('ED-3 = ', evaluation.evaluate_candidate_generation(erros_O,cands_O_ed3))
-print('AVG_NUM_CANDS = %f' % (sum_len/len(cands_O_ed3)))
+for r in erros:
+    for t in ed:
+        start = time.time()
+        sum_len = 0
+        cands_ed = list()
 
-# LCS
-cands_O_lcs = dict()
-for t in [0.4,0.6,0.8]:
-    sum_len = 0
-    cands_O_lcs[t] = list()
-    for i in range(len(erros_O)):
-        e, _ = erros_O[i]
-        #print('%.2f%%' % (i/len(erros_O)))
-        cands = candidate_generation.generate_by_similarity_metric(lex=lex, word=e, metric=metrics.c_lcs_ratio )
-        cands_O_lcs[t] = cands[1]
-        sum_len += len(cands[1])
-    print('C-LCS-R-'+str(t)+' = ', evaluation.evaluate_candidate_generation(erros_O,cands_O_lcs[t]))
-    print('AVG_NUM_CANDS = %f' % (sum_len/len(cands_O_lcs[t])))
+        for i in range(len(erros[r])):
+            e, c = erros[r][i]
+            #print('%.2f%%' % (i/len(erros_O)))
+            cands = candidate_generation.generate_by_similarity_metric(
+                lex=lex, word=e, threshold=t)
+            cands_ed.append(cands[1])
+            sum_len += len(cands[1])
+
+        log_file.write('ED-' + str(t) + ' para ' + r + ' = ',
+              evaluation.evaluate_candidate_generation(erros[r], cands_ed)+'\n')
+        log_file.write('AVG_NUM_CANDS = %f' % (sum_len / len(cands_ed))+'\n')
+        log_file.write('TIME = '+str(time.time()-start)+'\n')
+
+
+    for t in clcsr:
+        start = time.time()
+        # LCS
+        sum_len = 0
+        cands_lcs = list()
+        for i in range(len(erros[r])):
+            e, _ = erros[r][i]
+            #print('%.2f%%' % (i/len(erros_O)))
+            cands = candidate_generation.generate_by_similarity_metric(
+                lex=lex, word=e, metric=metrics.c_lcs_ratio, threshold=t)
+            cands_lcs.append(cands[1])
+            sum_len += len(cands[1])
+        log_file.write('C-LCS-R-' + str(t) + ' para ' + r + ' = ',
+              evaluation.evaluate_candidate_generation(erros[r], cands_lcs)+'\n')
+        log_file.write('AVG_NUM_CANDS = %f' % (sum_len / len(cands_lcs))+'\n')
+        log_file.write('TIME = ' + str(time.time() - start)+'\n')
+
+
+    for t in clcsr:
+        start = time.time()
+        # HASSAN
+        sum_len = 0
+        cands_hassan = list()
+        for i in range(len(erros[r])):
+            e, _ = erros[r][i]
+            #print('%.2f%%' % (i/len(erros_O)))
+            cands = candidate_generation.generate_by_similarity_metric(
+                lex=lex, word=e, metric=metrics.c_hassan_similarity, threshold=t)
+            cands_hassan.append(cands[1])
+            sum_len += len(cands[1])
+        log_file.write('C-HASSAN-R-' + str(t) + ' para ' + r + ' = ',
+              evaluation.evaluate_candidate_generation(erros[r], cands_hassan)+'\n')
+        log_file.write('AVG_NUM_CANDS = %f' % (sum_len / len(cands_hassan))+'\n')
+        log_file.write('TIME = ' + str(time.time() - start)+'\n')
