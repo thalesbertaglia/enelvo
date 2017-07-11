@@ -34,7 +34,7 @@ lex_freq = {w.strip().split(',')[0]: int(w.strip().split(',')[1]) for w in open(
     'enelvo/resources/lexicons/freq-cgu.txt').readlines()}
 erros = dict()
 erros['O'] = loaders.filter_corpus_category(corpus, 'O')
-erros['AB'] = loaders.filter_corpus_category(corpus, 'AB')
+#erros['AB'] = loaders.filter_corpus_category(corpus, 'AB')
 erros['IN'] = loaders.filter_corpus_category(corpus, 'IN')
 ed = [1, 2, 3]
 clcsr = [0.2, 0.5, 0.8]

@@ -24,7 +24,7 @@ def edit_distance(x, y):
     Returns:
         int: The edit distance between x and y. 0 = same string.
     '''
-    METRICS_DICT = get_dict()
+    '''METRICS_DICT = get_dict()
     if x not in METRICS_DICT:
         METRICS_DICT[x] = dict()
         METRICS_DICT[x][y] = dict()
@@ -43,7 +43,8 @@ def edit_distance(x, y):
             METRICS_DICT[x][y] = dict()
             ed = editdistance.eval(x, y)
             METRICS_DICT[x][y][0] = ed
-            return ed
+            return ed'''
+    return editdistance.eval(x, y)
 
 def edc(x,y):
     return editdistance.eval(x, y)
@@ -86,22 +87,15 @@ def lcs(x, y):
     METRICS_DICT = get_dict()
     if x not in METRICS_DICT:
         METRICS_DICT[x] = dict()
-        METRICS_DICT[x][y] = dict()
         lcsv = eval_lcs(x, y)
-        METRICS_DICT[x][y][1] = lcsv
+        METRICS_DICT[x][y] = lcsv
         return lcsv
     else:
         if y in METRICS_DICT[x]:
-            if 1 in METRICS_DICT[x][y]:
-                return METRICS_DICT[x][y][1]
-            else:
-                lcsv = eval_lcs(x, y)
-                METRICS_DICT[x][y][1] = lcsv
-                return lcsv
+            return METRICS_DICT[x][y]
         else:
-            METRICS_DICT[x][y] = dict()
             lcsv = eval_lcs(x, y)
-            METRICS_DICT[x][y][1] = lcsv
+            METRICS_DICT[x][y] = lcsv
             return lcsv
 
 
