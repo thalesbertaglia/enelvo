@@ -208,6 +208,7 @@ def c_hassan_similarity(x, y):
             return hassan'''
     edit = edit_distance(x, y) - diacritic_sym(x, y)
     hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
+    return hassan
 
 
 # Not exactly a metric, but it is here for the sake of organization.

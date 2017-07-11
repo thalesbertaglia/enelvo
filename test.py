@@ -1,5 +1,5 @@
 import time
-
+import re
 from enelvo import analytics
 from enelvo import preprocessing
 from enelvo import candidate_generation
@@ -52,6 +52,10 @@ for r in erros:
 
         for i in range(len(erros[r])):
             e, c = erros[r][i]
+
+            e = re.sub(r'(.)\1+', r'\1\1\1', e)
+            if not isinstance(c, str): continue
+
             print('%.4f%% analisando %s-%s' % ( (i/len(erros[r])) *100, e, c))
             cands = candidate_generation.generate_by_similarity_metric(
                 lex=lex, word=e, threshold=t)
@@ -103,6 +107,10 @@ for r in erros:
 
         for i in range(len(erros[r])):
             e, c = erros[r][i]
+
+            e = re.sub(r'(.)\1+', r'\1\1\1', e)
+            if not isinstance(c, str): continue
+
             print('%.4f%% analisando %s-%s' % ( (i/len(erros[r])) *100, e, c))
             cands = candidate_generation.generate_by_similarity_metric(
                 lex=lex, word=e, metric=metrics.c_lcs_ratio, threshold=t)
