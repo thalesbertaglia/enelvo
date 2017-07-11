@@ -15,3 +15,25 @@ ED-3 para O
 	 hassan_top1 = 0.735267 hassan_top5 = 0.830916 hassan_top10 = 0.853581
 
 TIME = 583.2460098266602
+
+ED-1 para IN
+         freq_top1 = 0.082443 freq_top5 = 0.094656 freq_top10 = 0.102290
+         hassan_top1 = 0.042748 hassan_top5 = 0.087023 hassan_top10 = 0.091603
+
+TIME = 5239.473389148712
+
+ED-3 para IN                                                                                                                                                                                                                                 │
+         freq_top1 = 0.076336 freq_top5 = 0.155725 freq_top10 = 0.177099                                                                                                                                                                     │
+         hassan_top1 = 0.056489 hassan_top5 = 0.135878 hassan_top10 = 0.192366
+
+ C-LCS-R0.5 para IN                                                                                                                                                                                                                           │
+          freq_top1 = 0.111450 freq_top5 = 0.204580 freq_top10 = 0.241221                                                                                                                                                                     │
+          hassan_top1 = 0.064122 hassan_top5 = 0.141985 hassan_top10 = 0.189313                                                                                                                                                               │
+                                                                                                                                                                                                                                              │
+ TIME = 9759.512353181839
+
+ C-LCS-R0.8 para IN                                                                                                                                                                                                                           │
+         freq_top1 = 0.024427 freq_top5 = 0.070229 freq_top10 = 0.090076                                                                                                                                                                     │
+         hassan_top1 = 0.064122 hassan_top5 = 0.149618 hassan_top10 = 0.212214                                                                                                                                                               │
+                                                                                                                                                                                                                                             │
+TIME = 9615.363800048828 

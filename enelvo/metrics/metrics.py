@@ -183,7 +183,7 @@ def hassan_similarity(x, y):
 def c_hassan_similarity(x, y):
     '''
     '''
-    METRICS_DICT = get_dict()
+    '''METRICS_DICT = get_dict()
     if x not in METRICS_DICT:
         METRICS_DICT[x] = dict()
         METRICS_DICT[x][y] = dict()
@@ -205,7 +205,9 @@ def c_hassan_similarity(x, y):
             edit = edit_distance(x, y) - diacritic_sym(x, y)
             hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
             METRICS_DICT[x][y][2] = hassan
-            return hassan
+            return hassan'''
+    edit = edit_distance(x, y) - diacritic_sym(x, y)
+    hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
 
 
 # Not exactly a metric, but it is here for the sake of organization.

@@ -24,7 +24,7 @@ cands = candidate_generation.baselines.generate_by_similarity_metric(
     lex=lex, word=tokens[oov[3]], n_cands=-1)
 top = candidate_scoring.baselines.score_by_similarity_metrics(lex=lex, candidates=cands, n_cands=10)
 print(top)'''
-log_file = open('results.txt','w')
+log_file = open('log-baseline-scoring.log','w')
 lex_file = open(
     'enelvo/resources/lexicons/unitex-full-clean+enelvo-ja-corrigido.txt')
 lex = {w.strip(): 0 for w in lex_file.readlines()}
@@ -39,57 +39,107 @@ erros['IN'] = loaders.filter_corpus_category(corpus, 'IN')
 ed = [1, 2, 3]
 clcsr = [0.2, 0.5, 0.8]
 
+ftop1, ftop5, ftop10 = 0,0,0
+top1, top5, top10 = 0,0,0
+
 for r in erros:
     for t in ed:
+        print('ED para %s com %f' % (r, t))
+        ftop1, ftop5, ftop10 = 0,0,0
+        top1, top5, top10 = 0,0,0
         start = time.time()
-        sum_len = 0
         cands_ed = list()
 
         for i in range(len(erros[r])):
             e, c = erros[r][i]
-            #print('%.2f%%' % (i/len(erros_O)))
+            print('%.4f%% analisando %s-%s' % ( (i/len(erros[r])) *100, e, c))
             cands = candidate_generation.generate_by_similarity_metric(
                 lex=lex, word=e, threshold=t)
-            cands_ed.append(cands[1])
-            sum_len += len(cands[1])
 
-        log_file.write('ED-' + str(t) + ' para ' + r + ' = ',
-              evaluation.evaluate_candidate_generation(erros[r], cands_ed)+'\n')
-        log_file.write('AVG_NUM_CANDS = %f' % (sum_len / len(cands_ed))+'\n')
-        log_file.write('TIME = '+str(time.time()-start)+'\n')
+            scored_freq = candidate_scoring.baselines.score_by_frequency(lex=lex_freq,candidates=cands)
+            scored_hassan = candidate_scoring.baselines.score_by_similarity_metrics(lex=lex_freq, candidates=cands,
+            metrics=[metrics.c_hassan_similarity])
+
+            if len(scored_freq[1]) > 0:
+                if c in scored_freq[1][0]: ftop1 += 1
+                if len(scored_freq[1]) >= 5:
+                    if c in [w[0] for w in scored_freq[1][:5]]: ftop5 += 1
+                else:
+                    if c in [w[0] for w in scored_freq[1]]: ftop5 += 1
+
+                if len(scored_freq[1]) >= 10:
+                    if c in [w[0] for w in scored_freq[1][:10]]: ftop10 += 1
+                else:
+                    if c in [w[0] for w in scored_freq[1]]: ftop10 += 1
+
+            if len(scored_hassan[1]) > 0:
+                if c in scored_hassan[1][0]: top1 += 1
+                if len(scored_hassan[1]) >= 5:
+                    if c in [w[0] for w in scored_hassan[1][:5]]: top5 += 1
+                else:
+                    if c in [w[0] for w in scored_hassan[1]]: top5 += 1
+                if len(scored_hassan[1]) >= 10:
+                    if c in [w[0] for w in scored_hassan[1][:10]]: top10 += 1
+                else:
+                    if c in [w[0] for w in scored_hassan[1]]: top10 += 1
+
+        '''log_file.write('ED-%s para %s \n\t freq_top1 = %f freq_top5 = %f freq_top10 = %f \n\t hassan_top1 = %f hassan_top5 = %f hassan_top10 = %f\n'
+         % (str(t), r, ftop1/len(erros[r]), ftop5/len(erros[r]), ftop10/len(erros[r]), top1/len(erros[r]), top5/len(erros[r]), top10/len(erros[r])))'''
+
+        print('ED-%s para %s \n\t freq_top1 = %f freq_top5 = %f freq_top10 = %f \n\t hassan_top1 = %f hassan_top5 = %f hassan_top10 = %f\n'
+         % (str(t), r, ftop1/len(erros[r]), ftop5/len(erros[r]), ftop10/len(erros[r]), top1/len(erros[r]), top5/len(erros[r]), top10/len(erros[r])))
+        log_file.write('ED-%s para %s \n\t freq_top1 = %f freq_top5 = %f freq_top10 = %f \n\t hassan_top1 = %f hassan_top5 = %f hassan_top10 = %f\n'
+         % (str(t), r, ftop1/len(erros[r]), ftop5/len(erros[r]), ftop10/len(erros[r]), top1/len(erros[r]), top5/len(erros[r]), top10/len(erros[r])))
+        log_file.flush()
+        print('TIME = '+str(time.time()-start)+'\n')
 
 
     for t in clcsr:
+        print('LCS para %s com %f' % (r, t))
+        ftop1, ftop5, ftop10 = 0,0,0
+        top1, top5, top10 = 0,0,0
         start = time.time()
-        # LCS
-        sum_len = 0
-        cands_lcs = list()
+        cands_ed = list()
+
         for i in range(len(erros[r])):
-            e, _ = erros[r][i]
-            #print('%.2f%%' % (i/len(erros_O)))
+            e, c = erros[r][i]
+            print('%.4f%% analisando %s-%s' % ( (i/len(erros[r])) *100, e, c))
             cands = candidate_generation.generate_by_similarity_metric(
                 lex=lex, word=e, metric=metrics.c_lcs_ratio, threshold=t)
-            cands_lcs.append(cands[1])
-            sum_len += len(cands[1])
-        log_file.write('C-LCS-R-' + str(t) + ' para ' + r + ' = ',
-              evaluation.evaluate_candidate_generation(erros[r], cands_lcs)+'\n')
-        log_file.write('AVG_NUM_CANDS = %f' % (sum_len / len(cands_lcs))+'\n')
-        log_file.write('TIME = ' + str(time.time() - start)+'\n')
 
+            scored_freq = candidate_scoring.baselines.score_by_frequency(lex=lex_freq,candidates=cands)
+            scored_hassan = candidate_scoring.baselines.score_by_similarity_metrics(lex=lex_freq, candidates=cands,
+            metrics=[metrics.c_hassan_similarity])
 
-    for t in clcsr:
-        start = time.time()
-        # HASSAN
-        sum_len = 0
-        cands_hassan = list()
-        for i in range(len(erros[r])):
-            e, _ = erros[r][i]
-            #print('%.2f%%' % (i/len(erros_O)))
-            cands = candidate_generation.generate_by_similarity_metric(
-                lex=lex, word=e, metric=metrics.c_hassan_similarity, threshold=t)
-            cands_hassan.append(cands[1])
-            sum_len += len(cands[1])
-        log_file.write('C-HASSAN-R-' + str(t) + ' para ' + r + ' = ',
-              evaluation.evaluate_candidate_generation(erros[r], cands_hassan)+'\n')
-        log_file.write('AVG_NUM_CANDS = %f' % (sum_len / len(cands_hassan))+'\n')
-        log_file.write('TIME = ' + str(time.time() - start)+'\n')
+            if len(scored_freq[1]) > 0:
+                if c in scored_freq[1][0]: ftop1 += 1
+                if len(scored_freq[1]) >= 5:
+                    if c in [w[0] for w in scored_freq[1][:5]]: ftop5 += 1
+                else:
+                    if c in [w[0] for w in scored_freq[1]]: ftop5 += 1
+
+                if len(scored_freq[1]) >= 10:
+                    if c in [w[0] for w in scored_freq[1][:10]]: ftop10 += 1
+                else:
+                    if c in [w[0] for w in scored_freq[1]]: ftop10 += 1
+
+            if len(scored_hassan[1]) > 0:
+                if c in scored_hassan[1][0]: top1 += 1
+                if len(scored_hassan[1]) >= 5:
+                    if c in [w[0] for w in scored_hassan[1][:5]]: top5 += 1
+                else:
+                    if c in [w[0] for w in scored_hassan[1]]: top5 += 1
+                if len(scored_hassan[1]) >= 10:
+                    if c in [w[0] for w in scored_hassan[1][:10]]: top10 += 1
+                else:
+                    if c in [w[0] for w in scored_hassan[1]]: top10 += 1
+
+        '''log_file.write('ED-%s para %s \n\t freq_top1 = %f freq_top5 = %f freq_top10 = %f \n\t hassan_top1 = %f hassan_top5 = %f hassan_top10 = %f\n'
+         % (str(t), r, ftop1/len(erros[r]), ftop5/len(erros[r]), ftop10/len(erros[r]), top1/len(erros[r]), top5/len(erros[r]), top10/len(erros[r])))'''
+
+        print('C-LCS-R%s para %s \n\t freq_top1 = %f freq_top5 = %f freq_top10 = %f \n\t hassan_top1 = %f hassan_top5 = %f hassan_top10 = %f\n'
+         % (str(t), r, ftop1/len(erros[r]), ftop5/len(erros[r]), ftop10/len(erros[r]), top1/len(erros[r]), top5/len(erros[r]), top10/len(erros[r])))
+        log_file.write('C-LCS-R%s para %s \n\t freq_top1 = %f freq_top5 = %f freq_top10 = %f \n\t hassan_top1 = %f hassan_top5 = %f hassan_top10 = %f\n'
+         % (str(t), r, ftop1/len(erros[r]), ftop5/len(erros[r]), ftop10/len(erros[r]), top1/len(erros[r]), top5/len(erros[r]), top10/len(erros[r])))
+        log_file.flush()
+        print('TIME = '+str(time.time()-start)+'\n')
