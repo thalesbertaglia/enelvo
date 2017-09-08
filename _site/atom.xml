@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Normalização Textual de CGU</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-09-08T18:15:45-03:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Thales Bertaglia</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>O Projeto</title>
+   <link href="http://localhost:4000/2016/06/26/oprojeto/"/>
+   <updated>2016-06-26T00:00:00-03:00</updated>
+   <id>http://localhost:4000/2016/06/26/oprojeto</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  Um normalizador textual flexível de conteúdo gerado por usuário para o português brasileiro.
+&lt;/div&gt;
+
+&lt;p&gt;Projeto de Mestrado em Ciências de Computação e Matemática Computacional no ICMC-USP. Orientado por &lt;strong&gt;Maria das Graças Volpe Nunes&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;resumo&quot;&gt;Resumo&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[Contexto]&lt;/code&gt;&lt;/strong&gt; Conteúdo gerado por usuário (UGC, do inglês &lt;em&gt;user-generated content&lt;/em&gt;) está disponível em larga escala na &lt;em&gt;web&lt;/em&gt; e oferece uma rica fonte de informação para empresas e consumidores.
+Sistemas de Processamento de Linguagem Natural (PLN) são frequentemente utilizados para extrair conhecimento desse tipo de conteúdo. &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[Lacuna]&lt;/code&gt;&lt;/strong&gt; No entanto, UGC tem como característica um 
+descompromisso com a norma culta da língua, apresentando desvios de ortografia, gramática, gírias e abreviaturas. Esses ruídos dificultam o funcionamento de técnicas de PLN, afetando assim sua
+eficiência. O processo de identificar e corrigir ruídos em textos é denominado normalização textual. Há escassez de sistemas capazes de efetuar normalização, especialmente de UGC. Os poucos sistemas 
+existentes são criados para domínios restritos ou lidam com uma quantia limitada de ruído. &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[Propósito]&lt;/code&gt;&lt;/strong&gt; O objetivo deste projeto é desenvolver um normalizador textual flexível de UGC para o
+português brasileiro, capaz de lidar com diferentes domínios e identificar e corrigir ruídos de maneira personalizada à aplicação de PLN desejada. O normalizador proposto poderá ser acoplado 
+a sistemas de PLN e seu funcionamento será flexível de modo a permitir modificações conforme as necessidades da tarefa. &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[Método]&lt;/code&gt;&lt;/strong&gt; Arquiteturas neurais com técnicas de aprendizagem profunda vêm sendo 
+empregadas para normalização textual pelos trabalhos que atingem o estado da arte. Essas técnicas serão estudadas na revisão bibliográfica de modo a elencar as mais adequadas ao projeto, que então serão
+adaptadas e implementadas no sistema. &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[Resultados]&lt;/code&gt;&lt;/strong&gt; O resultado esperado é um sistema de normalização que possa ser utilizado para identificar e corrigir ruídos em UGC. Espera-se que o sistema obtenha
+resultados satisfatórios na avaliação intrínseca (acurácia de correção de ruído) e na extrínseca (melhoria no desempenho de tarefas de PLN).&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

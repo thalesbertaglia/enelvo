@@ -7,11 +7,11 @@ permalink:        pretty
 
 
 # Setup
-title:            UGCNormal
+title:            Normalização Textual de CGU
 tagline:          'Um normalizador textual para o português brasileiro'
 description:      'Um normalizador textual de conteúdo gerado por usuário para o português brasileiro.'
-url:              tfcbertaglia.github.io/ugcnormal
-baseurl:          /ugcnormal
+url:              tfcbertaglia.github.io/enelvo
+baseurl:          /enelvo
 
 author:
   name:           'Thales Bertaglia'

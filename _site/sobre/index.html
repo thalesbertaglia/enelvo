@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Visão Geral &middot; Normalização Textual de CGU
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/enelvo/public/css/poole.css">
+  <link rel="stylesheet" href="/enelvo/public/css/syntax.css">
+  <link rel="stylesheet" href="/enelvo/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/enelvo/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/enelvo/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <!--<div class="container sidebar-sticky">-->
+    <div class="sidebar-about">
+      <h1>
+        <a href="/enelvo">
+          Normalização Textual de CGU
+        </a>
+      </h1>
+      <p class="lead">Um normalizador textual de conteúdo gerado por usuário para o português brasileiro.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/enelvo">O Projeto</a>
+
+      
+	
+	<!--
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/enelvo/contato/">Contato</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/enelvo/pesquisadores/">Pesquisadores</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/enelvo/publicacoes/">Publicações</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/enelvo/recursos/">Recursos</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="/enelvo/sobre/">Visão Geral</a>
+          
+        
+      
+      -->
+      <!--<a class="sidebar-nav-item" href="/enelvo/projeto">O Projeto</a>-->
+      <a class="sidebar-nav-item" href="/enelvo/sobre">Visão Geral</a>
+      <a class="sidebar-nav-item" href="/enelvo/pesquisadores">Pesquisadores</a>
+      <a class="sidebar-nav-item" href="/enelvo/publicacoes">Publicações</a>
+      <a class="sidebar-nav-item" href="/enelvo/recursos">Recursos</a>
+      <a class="sidebar-nav-item" href="/enelvo/contato">Contato</a>
+
+    </nav>
+
+    <p>Núcleo Interinstitucional de Linguística Computacional - USP</p>
+  </div>
+</div>
+
+    <div class="content container">
+      <div class="page">
+  <img src="/enelvo/public/LOGO-ICMC-RGB.jpg" style="float:top;width:230px;height:100px;">	
+  <img src="/enelvo/public/logo-nilc.png" style="margin-top:-15px;float:right;width:230px;height:100px;">	
+  <h1 class="page-title">Visão Geral</h1>
+  <p class="message">
+  Mais informações sobre o projeto.
+</p>
+
+<p><strong>Tema:</strong> Normalização textual.</p>
+
+<p><strong>Título:</strong> Métodos avançados de normalização textual para conteúdo gerado por usuário.</p>
+
+<h2 id="lacunas">Lacunas</h2>
+
+<p>Conteúdos criados por usuários da Web, especialmente em redes sociais, blogs, sites de reclamações etc. têm como característica um descompromisso com a norma culta da língua, apresentando desvios de 
+ortografia, gramática e idiossincrasias próprias do meio digital, como erros de digitação, influência da oralidade na escrita, e vocabulário criado na internet (internetês). 
+A esse tipo de texto é comumente atribuído o termo UGC (user-generated content), cuja tradução é “conteúdo gerado por usuário”. Quando se pensa em processar esses textos para algum fim, 
+entram em cena as ferramentas de Processamento de Língua Natural (PLN), usualmente desenvolvidas para processar textos sem ruídos, ou que tenham sido “corrigidos” anteriormente. 
+Tokenizadores, sentenciadores, taggers, parsers, analisadores semânticos são exemplos de ferramentas de PLN que assumem textos bem-escritos como entrada. Entradas com muitos ruídos causam efeitos 
+devastadores no desempenho dessas ferramentas. E, como consequência, as aplicações que as usam certamente sentirão o mesmo efeito. O processo de identificar e corrigir ruídos em textos é denominado normalização textual. Há escassez de sistemas capazes de efetuar normalização, especialmente de UGC. Os poucos sistemas 
+existentes são criados para domínios restritos ou lidam com uma quantia limitada de ruído.</p>
+
+<h2 id="hipóteses">Hipóteses</h2>
+
+<p>O uso de um normalizador textual pode melhorar o desempenho de técnicas de PLN. Algumas questões de pesquisa:</p>
+
+<ul>
+  <li>É possível desenvolver um normalizador flexível independente de domínio?</li>
+  <li>É possível identificar diversos tipos de ruídos e normalizá-los de acordo com a necessidade da tarefa?</li>
+  <li>É possível desenvolver um normalizador que possa ser acoplado ao <em>pipeline</em> de tarefas de PLN e adaptado conforme necessidade?</li>
+</ul>
+
+<h2 id="objetivos">Objetivos</h2>
+
+<p>Desenvolver um normalizador textual flexível de UGC para o
+português brasileiro, capaz de lidar com diferentes domínios e identificar e corrigir ruídos de maneira personalizada à aplicação de PLN desejada. O normalizador proposto poderá ser acoplado 
+a sistemas de PLN e seu funcionamento será flexível de modo a permitir modificações conforme as necessidades da tarefa.</p>
+
+<h2 id="método">Método</h2>
+
+<p>Realizar revisão bibliográfica da área, entender e implementar técnicas de identificação e correção de ruídos. Reunir córpus de textos gerados por usuários em diferentes 
+domínios (como blogs e redes sociais) e analisá-los de modo a identificar diferentes tipos de ruídos. Avaliar métodos para identificação automática de ruídos e métodos que efetuem 
+sugestões para correção. Comparar os resultados obtidos com trabalhos já publicados para o português brasileiro e possivelmente com outros idiomas.</p>
+
+<h2 id="avaliação">Avaliação</h2>
+
+<p>O projeto será avaliado de maneira intrínseca (acurácia de correção) e extrínseca (impacto da normalização em tarefas de PLN). Espera-se que o sistema obtenha
+resultados satisfatórios que confirmem sua utilidade e eficácia de correção.</p>
+
+<h2 id="contribuições-esperadas">Contribuições Esperadas</h2>
+
+<p>Buscamos obter resultados de estado da arte para o português brasileiro, focando em resultados obtidos para outros idiomas com os modelos propostos nos trabalhos recuperados com a revisão bibliográfica.
+Todos os métodos e os recursos desenvolvidos ao decorrer do trabalho serão disponibilizados publicamente no <a href="https://github.com/tfcbertaglia/ugcnormal">repositório do projeto.</a></p>
+
+</div>
+
+    </div>
+
+  </body>
+</html>
