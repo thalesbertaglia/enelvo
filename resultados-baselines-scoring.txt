@@ -1,39 +1,42 @@
-ED-1 para O
-	 freq_top1 = 0.587489 freq_top5 = 0.782412 freq_top10 = 0.795558
-	 hassan_top1 = 0.697189 hassan_top5 = 0.781052 hassan_top10 = 0.793291
-
-TIME = 528.9088530540466
-
-ED-2 para O
-	 freq_top1 = 0.230734 freq_top5 = 0.572983 freq_top10 = 0.649592
-	 hassan_top1 = 0.734361 hassan_top5 = 0.828649 hassan_top10 = 0.851315
-
-TIME = 519.6967628002167
-
-ED-3 para O
-	 freq_top1 = 0.066183 freq_top5 = 0.198096 freq_top10 = 0.376247
-	 hassan_top1 = 0.735267 hassan_top5 = 0.830916 hassan_top10 = 0.853581
-
-TIME = 583.2460098266602
-
 ED-1 para IN
-         freq_top1 = 0.082443 freq_top5 = 0.094656 freq_top10 = 0.102290
-         hassan_top1 = 0.042748 hassan_top5 = 0.087023 hassan_top10 = 0.091603
-
-TIME = 5239.473389148712
-
-ED-3 para IN                                                                                                                                                                                                                                 │
-         freq_top1 = 0.076336 freq_top5 = 0.155725 freq_top10 = 0.177099                                                                                                                                                                     │
-         hassan_top1 = 0.056489 hassan_top5 = 0.135878 hassan_top10 = 0.192366
-
- C-LCS-R0.5 para IN                                                                                                                                                                                                                           │
-          freq_top1 = 0.111450 freq_top5 = 0.204580 freq_top10 = 0.241221                                                                                                                                                                     │
-          hassan_top1 = 0.064122 hassan_top5 = 0.141985 hassan_top10 = 0.189313                                                                                                                                                               │
-                                                                                                                                                                                                                                              │
- TIME = 9759.512353181839
-
- C-LCS-R0.8 para IN                                                                                                                                                                                                                           │
-         freq_top1 = 0.024427 freq_top5 = 0.070229 freq_top10 = 0.090076                                                                                                                                                                     │
-         hassan_top1 = 0.064122 hassan_top5 = 0.149618 hassan_top10 = 0.212214                                                                                                                                                               │
-                                                                                                                                                                                                                                             │
-TIME = 9615.363800048828 
+	 freq_top1 = 0.029008 freq_top5 = 0.038168 freq_top10 = 0.045802
+	 hassan_top1 = 0.006107 hassan_top5 = 0.032061 hassan_top10 = 0.035115
+ED-2 para IN
+	 freq_top1 = 0.183206 freq_top5 = 0.235115 freq_top10 = 0.273282
+	 hassan_top1 = 0.051908 hassan_top5 = 0.140458 hassan_top10 = 0.215267
+ED-3 para IN
+	 freq_top1 = 0.111450 freq_top5 = 0.218321 freq_top10 = 0.244275
+	 hassan_top1 = 0.054962 hassan_top5 = 0.145038 hassan_top10 = 0.221374
+C-LCS-R0.2 para IN
+	 freq_top1 = 0.018321 freq_top5 = 0.024427 freq_top10 = 0.024427
+	 hassan_top1 = 0.012214 hassan_top5 = 0.024427 hassan_top10 = 0.024427
+C-LCS-R0.5 para IN
+	 freq_top1 = 0.114504 freq_top5 = 0.213740 freq_top10 = 0.259542
+	 hassan_top1 = 0.051908 hassan_top5 = 0.145038 hassan_top10 = 0.207634
+C-LCS-R0.8 para IN
+	 freq_top1 = 0.015267 freq_top5 = 0.064122 freq_top10 = 0.085496
+	 hassan_top1 = 0.054962 hassan_top5 = 0.149618 hassan_top10 = 0.227481
+ED-1 para O
+	 freq_top1 = 0.555304 freq_top5 = 0.747960 freq_top10 = 0.761106
+	 hassan_top1 = 0.677697 hassan_top5 = 0.750680 hassan_top10 = 0.757933
+ED-2 para O
+	 freq_top1 = 0.239347 freq_top5 = 0.568903 freq_top10 = 0.644606
+	 hassan_top1 = 0.728015 hassan_top5 = 0.822303 hassan_top10 = 0.845422
+ED-3 para O
+	 freq_top1 = 0.077969 freq_top5 = 0.212149 freq_top10 = 0.387579
+	 hassan_top1 = 0.728921 hassan_top5 = 0.825023 hassan_top10 = 0.850408
+C-LCS-R0.2 para O
+	 freq_top1 = 0.364461 freq_top5 = 0.442430 freq_top10 = 0.446056
+	 hassan_top1 = 0.394832 hassan_top5 = 0.442430 hassan_top10 = 0.446056
+C-LCS-R0.5 para O
+	 freq_top1 = 0.158658 freq_top5 = 0.377607 freq_top10 = 0.466908
+	 hassan_top1 = 0.728468 hassan_top5 = 0.822756 hassan_top10 = 0.848141
+C-LCS-R0.8 para O
+	 freq_top1 = 0.005893 freq_top5 = 0.134633 freq_top10 = 0.140979
+ 	 hassan_top1 = 0.728468 hassan_top5 = 0.825023 hassan_top10 = 0.850861
+ED-3 para AB
+ 	freq_top1 = 0.009835 freq_top5 = 0.221479 freq_top10 = 0.298190
+ 	hassan_top1 = 0.012195 hassan_top5 = 0.260425 hassan_top10 = 0.366640
+C-LCS-R0.8 para AB
+ 	freq_top1 = 0.312746 freq_top5 = 0.462234 freq_top10 = 0.469709
+ 	hassan_top1 = 0.012195 hassan_top5 = 0.260425 hassan_top10 = 0.369394

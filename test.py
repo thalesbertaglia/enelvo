@@ -32,9 +32,11 @@ corpus = loaders.load_enelvo_format_full(
     'correcoes-enelvo/correcoes-todas-formato-full.txt')
 lex_freq = {w.strip().split(',')[0]: int(w.strip().split(',')[1]) for w in open(
     'enelvo/resources/lexicons/freq-cgu.txt').readlines()}
+lex_reduzido = {w: 0 for w in lex_freq if lex_freq[w] >= 10}
+lex = lex_reduzido
 erros = dict()
 erros['O'] = loaders.filter_corpus_category(corpus, 'O')
-#erros['AB'] = loaders.filter_corpus_category(corpus, 'AB')
+erros['AB'] = loaders.filter_corpus_category(corpus, 'AB')
 erros['IN'] = loaders.filter_corpus_category(corpus, 'IN')
 ed = [1, 2, 3]
 clcsr = [0.2, 0.5, 0.8]
