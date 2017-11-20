@@ -3,6 +3,32 @@
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
 
+def load_lex(file_path):
+    '''Loads a lexicon in word list format to a dictionary
+
+    Args:
+        file_path (str): File containing the lexicon.
+
+    Return:
+        dict(str:int): Word and 0.
+    '''
+    return {w.strip(): 0 for w in open(file_path).readlines()}
+
+
+def load_lex_freq(file_path, freq=10):
+    '''Loads a lexicon in (word,frequency) format to a dictionary
+
+    Args:
+        file_path (str): File containing the lexicon.
+        freq (int): Minimum frequency to add word to the dictionary.
+
+    Return:
+        dict(str:int): Word and frequency.
+    '''
+    return {w.strip().split(',')[0]: int(w.strip().split(',')[1])
+            for w in open(filepath).readlines() if int(w.strip().split(',')[1]) >= freq}
+
+
 def load_enelvo_format_full(file_path):
     '''Loads the entire Corpus to a dictionary.
 
@@ -22,7 +48,8 @@ def load_enelvo_format_full(file_path):
     for i in range(len(anns)):
         ann = anns[i]
         parts = ann.strip().split('\n')
-        if len(parts) == 1: continue
+        if len(parts) == 1:
+            continue
         modality = parts[0].split('\t')[0]
         sentence = parts[0].split('\t')[1]
 
@@ -62,8 +89,9 @@ def filter_corpus_category(corpus, category):
     for i in corpus:
         for e in corpus[i]['errs']:
             if e['cat'] == category:
-                corrs.append((e['word'],e['corr']))
+                corrs.append((e['word'], e['corr']))
     return corrs
+
 
 def load_enelvo_format(file_path, category, only_most_frequent=True):
     '''Loads a file of annotated noisy words in Enelvo Corpus format to a dictionary.
@@ -101,7 +129,8 @@ def load_enelvo_format(file_path, category, only_most_frequent=True):
                     corrs = [corr.split(',')[0] for corr in elements[1:] if corr.split(',')[
                         1] == category and not corr.split(',')[0] == '#']
                     if len(corrs) > 0:
-                        corrections[elements[0]] = corrs[0] if len(corrs) == 1 else corrs
+                        corrections[elements[0]] = corrs[0] if len(
+                            corrs) == 1 else corrs
             else:
                 if elements[1].split(',')[1] == category and elements[1].split(',')[0] != '#':
                     corrections[elements[0]] = elements[1].split(',')[0]
