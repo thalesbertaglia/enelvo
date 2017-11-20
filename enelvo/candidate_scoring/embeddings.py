@@ -6,6 +6,19 @@ from enelvo import metrics
 
 
 def score_by_embedding_model(lex, embedding_model, candidates, lex_sim_weight=0.8, n_cands=-1):
+    '''Described in "Exploring Word Embeddings for Unsupervised Textual User-Generated
+    Content Normalization, Bertaglia and Nunes(2016)"
+
+    Args:
+        lex (dict): The lexicon dictionary.
+        embedding_model (obj): The embedding model in word2vec format. Must be readable by gensim.
+        k (int): Number of neares neighbours to evaluate (all experiments ran with k=25).
+        lex_sim_weight (float): Weight given to the lexical similarity.
+        n_cands (int): Number of candidates to be returned.
+
+    Returns:
+        dict(str: list(str)): Top ``n_cands`` scored corrections for each word.
+    '''
     scored_candidates = dict()
 
     for word in candidates:

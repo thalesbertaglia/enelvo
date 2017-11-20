@@ -5,9 +5,18 @@
 import gensim
 
 
-'''
-'''
 def generate_by_embedding_model(lex, embedding_model, k=25):
+    '''Described in "Exploring Word Embeddings for Unsupervised Textual User-Generated
+    Content Normalization, Bertaglia and Nunes(2016)"
+
+    Args:
+        lex (dict): The lexicon dictionary.
+        embedding_model (obj): The embedding model in word2vec format. Must be readable by gensim.
+        k (int): Number of neares neighbours to evaluate (all experiments ran with k=25).
+
+    Returns:
+        dict(str: list(str)): A list of possible corrections for each word.
+    '''
     cands = dict()
     corrs = dict()
 
@@ -23,6 +32,18 @@ def generate_by_embedding_model(lex, embedding_model, k=25):
 
 
 def generate_and_score(lex, embedding_model, k=25, lex_sim_weight=0.8):
+    '''Described in "Exploring Word Embeddings for Unsupervised Textual User-Generated
+    Content Normalization, Bertaglia and Nunes(2016)"
+
+    Args:
+        lex (dict): The lexicon dictionary.
+        embedding_model (obj): The embedding model in word2vec format. Must be readable by gensim.
+        k (int): Number of neares neighbours to evaluate (all experiments ran with k=25).
+        lex_sim_weight (float): Weight given to the lexical similarity.
+
+    Returns:
+        dict(str: list(str)): A list of scored possible corrections for each word.
+    '''
     cands = dict()
     corrs = dict()
 
@@ -40,6 +61,6 @@ def generate_and_score(lex, embedding_model, k=25, lex_sim_weight=0.8):
             corrs[c].append((word, similarity))
 
     for c in corrs: corrs[c] = sorted(corrs[c], key=lambda x: x[1], reverse=True)
-    
+
     print(time.time()-start)
     return corrs

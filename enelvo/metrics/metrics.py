@@ -141,7 +141,14 @@ def c_lcs(x, y):
 
 
 def diacritic_sym(x, y):
-    '''
+    '''Number of characters alligned to their accented version.
+
+    Args:
+        x (str): The first string.
+        y (str): The second string.
+
+    Returns:
+        int: Number of characters alligned to their accented version.
     '''
     diacritics = dict()
     diacritics['a'] = {'á', 'ã', 'à', 'â'}
@@ -162,20 +169,29 @@ def diacritic_sym(x, y):
 
 
 def lcs_ratio_sym(x, y):
-    '''
+    '''The length of the longest common subsequence between two strings + the
+    diacritic_sym normalized by the length of longest one.
+
+    Args:
+        x (str): The first string.
+        y (str): The second string.
+
+    Returns:
+        float: The normalized length of the longest common subsequence between x and y.
     '''
     return (lcs(x, y) + diacritic_sym(x, y)) / max(len(x), len(y))
 
 
 def hassan_similarity(x, y):
-    '''
+    '''Similarity measure proposed by Hassan and Menezes (2013) in
+    "Social Text Normalization using Contextual Graph Random Walks"
     '''
     edit = edit_distance(x, y) - diacritic_sym(x, y)
     return lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y)
 
 
 def c_hassan_similarity(x, y):
-    '''
+    '''Complement of hassan_similarity
     '''
     '''METRICS_DICT = get_dict()
     if x not in METRICS_DICT:
