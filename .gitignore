@@ -8,3 +8,10 @@ teste.py
 lexicos-enelvo/
 lexicos-lucas/
 lexicos-anotacao/
+correcoes-enelvo/
+test-ugnormal/
+log-baseline-scoring.log
+log-baseline-scoring.txt
+resultados-baselines-scoring.txt
+resultados-baselines.txt
+test.py
