@@ -4,6 +4,7 @@
 
 import editdistance
 import numpy as np
+from enelvo.metrics.cythonlcs import cython_eval_lcs
 
 
 METRICS_DICT = dict()
@@ -60,7 +61,7 @@ def eval_lcs(x, y):
     Returns:
         int: The length of the longest common subsequence between x and y.
     '''
-    m = len(x)
+    '''m = len(x)
     n = len(y)
     # An (m+1) times (n+1) matrix
     C = np.zeros((m + 1, n + 1), dtype=np.int32)
@@ -71,7 +72,8 @@ def eval_lcs(x, y):
                 C[i][j] = C[i - 1][j - 1] + 1
             else:
                 C[i][j] = max(C[i][j - 1], C[i - 1][j])
-    return C[len(C) - 1][len(C[0]) - 1]
+    return C[len(C) - 1][len(C[0]) - 1]'''
+    return cython_eval_lcs(x,y)
 
 
 def lcs(x, y):

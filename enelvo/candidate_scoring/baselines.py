@@ -46,7 +46,7 @@ def score_by_similarity_metrics(lex, candidates, metrics=[metrics.edit_distance]
         candidates (list (function)): The list of metrics to be applied.
         ncands (int): Number of candidates to be returned (i.e, top ``n_cands`` will be returned according to their position).
                       By default, all candidates (-1) are returned.
-        reverse (boolean): Which order to sort the candidate list. False = in ascending order.
+        reverse (boolean): Which order to sort the candidate list. False = in ascending order according to the metric (higher value = higher similarity).
 
     Returns:
         list (tuple): A list of tuples with the top ``n_cands`` sorted by each of the metrics and the scores.

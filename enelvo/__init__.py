@@ -6,12 +6,14 @@ A flexible normalizer for user-generated content.
 :copyright: (c) 2017 by Thales Bertaglia
 :licence: MIT, see LICENSE for more details
 """
+import logging
+
 __prog__ = 'enelvo'
 __title__ = 'Enelvo'
 __summary__ = 'A flexible normalizer for user-generated content.'
 __uri__ = 'https://www.github.com/tfcbertaglia/enelvo'
 
-__version__ = '0.0.1-alpha'
+__version__ = '0.0.2'
 
 __author__ = 'Thales Bertaglia'
 __email__ = 'thalesbertaglia@gmail.com'

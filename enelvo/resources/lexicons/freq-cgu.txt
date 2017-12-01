@@ -109791,7 +109791,6 @@ kbytes,6
 kc,189
 kcal,88
 kcs,5
-kd,11843
 keane,95
 keanu,109
 keaton,120
@@ -124925,7 +124924,6 @@ mútuas,11
 mútuo,612
 mútuos,31
 müller,198
-n,1033748
 n'sync,14
 n.º,100
 na,2460693
@@ -145957,7 +145955,6 @@ pútrida,3
 pútridas,2
 pútrido,9
 pútridos,1
-q,2246078
 qaeda,32
 qatar,135
 qtd,94
@@ -159872,7 +159869,6 @@ rústica,161
 rústicas,43
 rústico,168
 rústicos,39
-s,57846
 s.a.,100
 s.d.,100
 s.n.,100

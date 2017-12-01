@@ -1,7 +1,7 @@
 '''Methods for loading corpus and resources'''
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
-
+import re
 
 def load_lex(file_path):
     '''Loads a lexicon in word list format to a dictionary
@@ -12,7 +12,19 @@ def load_lex(file_path):
     Return:
         dict(str:int): Word and 0.
     '''
-    return {w.strip(): 0 for w in open(file_path).readlines()}
+    return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip()): 0 for w in open(file_path).readlines()}
+
+def load_lex_corr(file_path):
+    '''Loads a lexicon in (word,correction) format to a dictionary
+
+    Args:
+        file_path (str): File containing the lexicon.
+
+    Return:
+        dict(str:int): Word and frequency.
+    '''
+    return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip().split(',')[0]): re.sub(r'(.)\1+', r'\1\1\1', w.strip().split(',')[1])
+            for w in open(file_path).readlines()}
 
 
 def load_lex_freq(file_path, freq=10):
@@ -25,8 +37,8 @@ def load_lex_freq(file_path, freq=10):
     Return:
         dict(str:int): Word and frequency.
     '''
-    return {w.strip().split(',')[0]: int(w.strip().split(',')[1])
-            for w in open(filepath).readlines() if int(w.strip().split(',')[1]) >= freq}
+    return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip().split(',')[0]): int(w.strip().split(',')[1])
+            for w in open(file_path).readlines() if int(w.strip().split(',')[1]) >= freq}
 
 
 def load_enelvo_format_full(file_path):

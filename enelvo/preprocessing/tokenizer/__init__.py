@@ -5,7 +5,7 @@
 # Copyright: (c) 2013, Jared Suttles. All rights reserved.
 # License: BSD, see LICENSE for details.
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+# Adapted to Portuguese by Thales Bertaglia <thalesbertaglia@gmail.com>
 """
 Tokenization and pre-processing for social media data used to train classifiers.
 Focused on classification of sentiment, emotion, or mood.
@@ -24,6 +24,6 @@ __title__ = 'tweetokenize'
 __version__ = '1.0.1'
 __author__ = 'Jared Suttles'
 __license__ = 'Modified BSD'
-__copyright__ = 'Copyright 2013 Jared Suttles'
+__copyright__ = 'Copyright 2017 Jared Suttles, modified by Thales Bertaglia'
 
 from .tokenizer import Tokenizer
