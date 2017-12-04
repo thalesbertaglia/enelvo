@@ -7,4 +7,4 @@ title: Contato
   Dúvidas, críticas ou sugestões?
 </p>
 
-**Responsável pelo repositório:** Thales Felipe Costa Bertaglia ([@tfcbertaglia](http://tfcbertaglia.github.io)).
+**Responsável pelo repositório:** Thales Felipe Costa Bertaglia ([@tfcbertaglia](thalesbertaglia.com)).

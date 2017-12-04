@@ -9,13 +9,13 @@ permalink:        pretty
 # Setup
 title:            Normalização Textual de CGU
 tagline:          'Um normalizador textual para o português brasileiro'
-description:      'Um normalizador textual de conteúdo gerado por usuário para o português brasileiro.'
-url:              tfcbertaglia.github.io/enelvo
+description:      'Ferramentas e recursos para normalização textual de conteúdo gerado por usuário'
+url:              thalesbertaglia.com
 baseurl:          /enelvo
 
 author:
   name:           'Thales Bertaglia'
-  url:            tfcbertaglia.github.io
+  url:            thalesbertaglia.com
 
 paginate:         5
 
