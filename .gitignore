@@ -16,3 +16,4 @@ resultados-baselines-scoring.txt
 resultados-baselines.txt
 test.py
 *.so
+enelvo/resources/embeddings/*
