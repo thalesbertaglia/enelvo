@@ -19,10 +19,10 @@ def score_by_embedding_model(lex, embedding_model, candidates, lex_sim_weight=0.
     Returns:
         dict(str: list(str)): Top ``n_cands`` scored corrections for each word.
     '''
-    scored_candidates = dict()
+    scored_candidates = {}
 
     for word in candidates:
-        cands_list = list()
+        cands_list = []
         for cand in candidates[word]:
             similarity = (lex_sim_weight * metrics.hassan_similarity(word, cand)) + \
                 ((1 - lex_sim_weight) * embedding_model.similarity(word, cand))

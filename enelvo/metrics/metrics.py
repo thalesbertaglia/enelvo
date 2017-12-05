@@ -7,7 +7,7 @@ import numpy as np
 from enelvo.metrics.cythonlcs import cython_eval_lcs
 
 
-METRICS_DICT = dict()
+METRICS_DICT = {}
 
 # Dict for optimizing metric calculation. Stores already calculated strings.
 # 0 = ED, 1 = LCS, 2 = HASSAN
@@ -27,8 +27,8 @@ def edit_distance(x, y):
     '''
     '''METRICS_DICT = get_dict()
     if x not in METRICS_DICT:
-        METRICS_DICT[x] = dict()
-        METRICS_DICT[x][y] = dict()
+        METRICS_DICT[x] = {}
+        METRICS_DICT[x][y] = {}
         ed = editdistance.eval(x, y)
         METRICS_DICT[x][y][0] = ed
         return ed
@@ -41,7 +41,7 @@ def edit_distance(x, y):
                 METRICS_DICT[x][y][0] = ed
                 return ed
         else:
-            METRICS_DICT[x][y] = dict()
+            METRICS_DICT[x][y] = {}
             ed = editdistance.eval(x, y)
             METRICS_DICT[x][y][0] = ed
             return ed'''
@@ -88,7 +88,7 @@ def lcs(x, y):
     '''
     METRICS_DICT = get_dict()
     if x not in METRICS_DICT:
-        METRICS_DICT[x] = dict()
+        METRICS_DICT[x] = {}
         lcsv = eval_lcs(x, y)
         METRICS_DICT[x][y] = lcsv
         return lcsv
@@ -152,7 +152,7 @@ def diacritic_sym(x, y):
     Returns:
         int: Number of characters alligned to their accented version.
     '''
-    diacritics = dict()
+    diacritics = {}
     diacritics['a'] = {'á', 'ã', 'à', 'â'}
     diacritics['e'] = {'é', 'ê'}
     diacritics['i'] = {'í'}
@@ -197,8 +197,8 @@ def c_hassan_similarity(x, y):
     '''
     '''METRICS_DICT = get_dict()
     if x not in METRICS_DICT:
-        METRICS_DICT[x] = dict()
-        METRICS_DICT[x][y] = dict()
+        METRICS_DICT[x] = {}
+        METRICS_DICT[x][y] = {}
         edit = edit_distance(x, y) - diacritic_sym(x, y)
         hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
         METRICS_DICT[x][y][2] = hassan
@@ -213,7 +213,7 @@ def c_hassan_similarity(x, y):
                 METRICS_DICT[x][y][2] = hassan
                 return hassan
         else:
-            METRICS_DICT[x][y] = dict()
+            METRICS_DICT[x][y] = {}
             edit = edit_distance(x, y) - diacritic_sym(x, y)
             hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
             METRICS_DICT[x][y][2] = hassan

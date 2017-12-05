@@ -54,7 +54,7 @@ def load_enelvo_format_full(file_path):
     Returns:
         dict: A dictionary containing every corpus annotation, organized as explained above.
     '''
-    corpus = dict()
+    corpus = {}
     text = open(file_path).read()
     anns = text.split('<ann>')
     for i in range(len(anns)):
@@ -65,10 +65,10 @@ def load_enelvo_format_full(file_path):
         modality = parts[0].split('\t')[0]
         sentence = parts[0].split('\t')[1]
 
-        corpus[i] = dict()
+        corpus[i] = {}
         corpus[i]['mod'] = modality
         corpus[i]['sent'] = sentence
-        corpus[i]['errs'] = list()
+        corpus[i]['errs'] = []
 
         for err in parts[1:]:
             word = err.strip().split(',')[0]
@@ -77,7 +77,7 @@ def load_enelvo_format_full(file_path):
             corr = err.strip().split(',')[3]
             corr = corr if len(corr) > 1 else -1
 
-            entry = dict()
+            entry = {}
             entry['word'] = word
             entry['pos'] = (ini_pos, end_pos)
             entry['cat'] = cat
@@ -97,7 +97,7 @@ def filter_corpus_category(corpus, category):
     Returns:
         list A list of tuples with format (noisy_word,correction) if noisy_word belongs to ``category``.
     '''
-    corrs = list()
+    corrs = []
     for i in corpus:
         for e in corpus[i]['errs']:
             if e['cat'] == category:
@@ -121,7 +121,7 @@ def load_enelvo_format(file_path, category, only_most_frequent=True):
         dict: A dictionary with keys being noisy words and the elements lists of their possible corrections.
               If ``only_most_frequent`` the element will be a single string.
     '''
-    corrections = dict()
+    corrections = {}
     with open(file_path) as f:
         for line in f:
             elements = line.split()
