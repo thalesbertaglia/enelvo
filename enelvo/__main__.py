@@ -60,6 +60,10 @@ def load_options():
         help='threshold for candidate generation. The higher the number, the higher the number of possible candidates generated - therefore execution takes longer')
     parser.add_argument('-ncds','--n-cands', default=-1, type=int,
         help='number of candidates to be considered for scoring. -1 = all')
+    parser.add_argument('-fclst','--force-list', default=None, type=str,
+        help='path to force list file. Force list is a list of words that will be considered noisy even if contained in the language lexicon.')
+    parser.add_argument('-iglst','--ignore-list', default=None, type=str,
+        help='path to ignore list file. Ignore list is a list of words that will be considered correct even if not contained in the language lexicon.')
 
     argument_config = parser.parse_args()
     return argument_config
@@ -79,20 +83,26 @@ def run(options):
     pn_lex = loaders.load_lex(file_path=corrs_path+'pns.txt')
     # Lexicon of acronyms
     ac_lex = loaders.load_lex(file_path=corrs_path+'acs.txt')
+    # Force list
+    fc_list = loaders.load_lex(file_path=options.force_list) if options.force_list else None
+    # Ignore list
+    ig_list = loaders.load_lex(file_path=options.ignore_list) if options.ignore_list else None
     # Combined lexicon of 'ok' words
     ok_lex = {**main_lex, **es_lex, **pn_lex, **ac_lex}
     # Lexicon of internet slang
     in_lex = loaders.load_lex_corr(file_path=corrs_path+'in.txt')
     ok_lex = {k: ok_lex[k] for k in ok_lex if k not in in_lex}
+    ok_lex = {**ok_lex, **ig_list} if options.ignore_list else ok_lex
     # Creates the tokenizer
     tokenizer = preprocessing.new_readable_tokenizer() if options.tokenizer == 'readable' else None
     # Processing:
+    print(options.force_list)
     with open(options.input) as f, open(options.output, 'w') as o:
         for line in f:
             # Applies all preprocessing steps
             pp_line = preprocessing.tokenize(text=line, tokenizer=tokenizer)
             # Indexes of all oov (noisy) words
-            oov_tokens = analytics.identify_oov(lex=ok_lex, ignore_list=in_lex, tokens=pp_line)
+            oov_tokens = analytics.identify_oov(lex=ok_lex, force_list=fc_list, tokens=pp_line) if options.force_list else analytics.identify_oov(lex=ok_lex, tokens=pp_line)
             # Normalization process
             for i in oov_tokens:
                 if pp_line[i] in in_lex:
