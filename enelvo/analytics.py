@@ -17,9 +17,10 @@ def identify_oov(lex, ignore_list, tokens):
     '''
     oov = list()
     p = re.compile('(kk)+|(ha)+|(rs)+|(ks)+|(he)+|(hua)+|(hau)+|(hue)+')
+    placeholders = ['username', 'url', 'number', 'emoji']
     for i in range(len(tokens)):
         t = tokens[i].lower()
-        if str.isalpha(t) and not p.match(t) and len(t) < 15 and (t not in lex or t in ignore_list):
+        if str.isalpha(t) and not p.match(t) and not t in placeholders and len(t) < 15 and (t not in lex or t in ignore_list):
             oov.append(i)
     '''return [i for i in range(len(tokens)) if (tokens[i].lower() not in lex and str.isalpha(tokens[i]))
             or (tokens[i].lower() in ignore_list)]'''
