@@ -27,6 +27,6 @@ def generate_by_similarity_metric(lex, word, metric=metrics.edit_distance, thres
     # Comparison function changes according to ``geq`` flag.
     comp = lambda x, y: x >= y if geq else x <= y
 
-    #candidates = sorted([c for c in lex if comp(metric(word, c), threshold)])
-    candidates = ([c for c in lex if comp(metric(word, c), threshold)])
+    candidates = sorted([c for c in lex if comp(metric(word, c), threshold)])
+    #candidates = ([c for c in lex if comp(metric(word, c), threshold)])
     return (word,candidates) if n_cands == -1 else (word,candidates[:n_cands])

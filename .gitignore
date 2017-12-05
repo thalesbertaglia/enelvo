@@ -15,3 +15,4 @@ log-baseline-scoring.txt
 resultados-baselines-scoring.txt
 resultados-baselines.txt
 test.py
+*.so
