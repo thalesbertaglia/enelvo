@@ -29,7 +29,8 @@ def generate_by_embedding_model(lex, embedding_model, k=25):
 
     for word in cands:
         for c in cands[word]:
-            if c not in corrs: corrs[c] = []
+            if c not in corrs:
+                corrs[c] = []
             corrs[c].append(word)
 
     return corrs
@@ -58,7 +59,8 @@ def generate_and_score(lex, embedding_model, k=25, lex_sim_weight=0.8, dump_pick
     for word in cands:
         cands_list = []
         for c in cands[word]:
-            if c not in corrs: corrs[c] = []
+            if c not in corrs:
+                corrs[c] = []
             similarity = (lex_sim_weight * metrics.hassan_similarity(word, c)) + \
                 ((1 - lex_sim_weight) * embedding_model.similarity(word, c))
             corrs[c].append((word, similarity))
@@ -68,9 +70,12 @@ def generate_and_score(lex, embedding_model, k=25, lex_sim_weight=0.8, dump_pick
         if w not in corrs:
             ed_cands = baselines.generate_by_similarity_metric(lex=lex, word=w)
             scored_cands = candidate_scoring.baselines.score_by_similarity_metrics(lex=lex,
-            candidates=ed_cands, metrics=[metrics.hassan_similarity], n_cands=1, reverse=True)
-            if scored_cands[1]: corrs[w] = [scored_cands[1][0]]
+                                                                                   candidates=ed_cands, metrics=[metrics.hassan_similarity], n_cands=1, reverse=True)
+            if scored_cands[1]:
+                corrs[w] = [scored_cands[1][0]]
 
-    for c in corrs: corrs[c] = sorted(corrs[c], key=lambda x: x[1], reverse=True)
-    if dump_pickle: pickle.dump(corrs, open('norm_lexicon.pickle', 'wb'))
+    for c in corrs:
+        corrs[c] = sorted(corrs[c], key=lambda x: x[1], reverse=True)
+    if dump_pickle:
+        pickle.dump(corrs, open('norm_lexicon.pickle', 'wb'))
     return corrs
