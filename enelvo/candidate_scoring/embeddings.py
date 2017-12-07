@@ -2,6 +2,7 @@
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
+import pickle
 from enelvo import metrics
 
 
@@ -30,3 +31,17 @@ def score_by_embedding_model(lex, embedding_model, candidates, lex_sim_weight=0.
         scored_candidates[word] = sorted(
             cands_list, key=lambda x: x[1], reverse=True)
     return scored_candidates if n_cands == -1 or len(scored_candidates) < n_cands else scored_candidates[:n_cands]
+
+
+def score_single_word(pickle_lex, word):
+    '''Returns the best scored correction for a single word, given the lexicon learnt by candidate_generation.
+
+    Args:
+        pickle_lex (str): Path to the pickle file containing the learnt normalisation lexicon.
+        word (str): Word to be normalised.
+
+    Returns:
+        tuple (str, float): Best candidate and its score.
+    '''
+    corrs = pickle.load(open(pickle_lex, 'rb'))
+    return max(corrs[word], key=lambda x: x[1])
