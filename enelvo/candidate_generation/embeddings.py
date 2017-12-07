@@ -3,6 +3,7 @@
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
 import gensim
+from enelvo import metrics
 
 
 def generate_by_embedding_model(lex, embedding_model, k=25):
@@ -53,7 +54,7 @@ def generate_and_score(lex, embedding_model, k=25, lex_sim_weight=0.8):
     for word in cands:
         i += 1
         cands_list = []
-        print('%.4f%%' % (i/len(cands)*100))
+        #print('%.4f%%' % (i/len(cands)*100))
         for c in cands[word]:
             if c not in corrs: corrs[c] = []
             similarity = (lex_sim_weight * metrics.hassan_similarity(word, c)) + \
@@ -61,6 +62,4 @@ def generate_and_score(lex, embedding_model, k=25, lex_sim_weight=0.8):
             corrs[c].append((word, similarity))
 
     for c in corrs: corrs[c] = sorted(corrs[c], key=lambda x: x[1], reverse=True)
-
-    print(time.time()-start)
     return corrs
