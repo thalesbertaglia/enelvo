@@ -17,3 +17,4 @@ resultados-baselines.txt
 test.py
 *.so
 enelvo/resources/embeddings/*.model
+enelvo/resources/embeddings/*.pickle
