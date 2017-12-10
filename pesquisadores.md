@@ -21,5 +21,5 @@ title: Pesquisadores
 
 <p class="message">
  Possui mestrado em Ciências de Computação e Matemática Computacional pela Universidade de São Paulo (USP) e graduação em Bacharelado em Ciência da Computação pela Universidade Estadual do Oeste do Paraná (UNIOESTE), campus de Cascavel.
- Atualmente é doutorando em Ciência da Computação na Universidade de Sheffield, Reino Unido. Desenvolve pesquisa na área de Processamento de Língua Natural, trabalhando principalmente com *multimodal machine translation*.
+ Atualmente é doutorando em Ciência da Computação na Universidade de Sheffield, Reino Unido. Desenvolve pesquisa na área de Processamento de Língua Natural, trabalhando principalmente com <i>multimodal machine translation</i>.
 </p>
