@@ -6,6 +6,7 @@ import gensim
 import pickle
 from enelvo import metrics
 from enelvo import candidate_scoring
+from enelvo import utils
 from enelvo.candidate_generation import baselines
 
 
@@ -55,7 +56,6 @@ def generate_and_score(lex, embedding_model, k=25, lex_sim_weight=0.8, dump_pick
 
     cands = {word: [sims[0] for sims in embedding_model.most_similar(
         word, topn=k) if sims[0] not in lex] for word in lex if word in embedding_model}
-    i = -1
     for word in cands:
         cands_list = []
         for c in cands[word]:
@@ -65,15 +65,15 @@ def generate_and_score(lex, embedding_model, k=25, lex_sim_weight=0.8, dump_pick
                 ((1 - lex_sim_weight) * embedding_model.similarity(word, c))
             corrs[c].append((word, similarity))
     # Expansion step (read the paper for more details):
-    noisy_words = list(embedding_model.vocab.keys())
+    v = {w: 0 for w in list(embedding_model.vocab.keys())}
+    noisy_words = {w: 0 for w in v if w not in corrs and w not in lex}
     for w in noisy_words:
-        if w not in corrs:
-            ed_cands = baselines.generate_by_similarity_metric(lex=lex, word=w)
-            scored_cands = candidate_scoring.baselines.score_by_similarity_metrics(lex=lex,
-                                                                                   candidates=ed_cands, metrics=[metrics.hassan_similarity], n_cands=1, reverse=True)
-            if scored_cands[1]:
-                corrs[w] = [scored_cands[1][0]]
-
+        ed_cands = baselines.generate_by_similarity_metric(lex=lex, word=w)
+        scored_cands = candidate_scoring.baselines.score_by_similarity_metrics(lex=lex,
+                                                                               candidates=ed_cands, metrics=[metrics.hassan_similarity], n_cands=1, reverse=True)
+        if scored_cands[1]:
+            corrs[w] = [scored_cands[1][0]]
+    # Sorting the list by score
     for c in corrs:
         corrs[c] = sorted(corrs[c], key=lambda x: x[1], reverse=True)
     if dump_pickle:
