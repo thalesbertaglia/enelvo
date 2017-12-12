@@ -12,6 +12,8 @@ from enelvo.log import configure_stream
 import argparse
 import logging
 import os
+import pickle
+#import gensim
 
 from enelvo import __prog__, __title__, __summary__, __uri__, __version__
 from enelvo import analytics
@@ -64,7 +66,11 @@ def load_options():
         help='path to force list file. Force list is a list of words that will be considered noisy even if contained in the language lexicon.')
     parser.add_argument('-iglst','--ignore-list', default=None, type=str,
         help='path to ignore list file. Ignore list is a list of words that will be considered correct even if not contained in the language lexicon.')
-
+    # TODO: add an option to learn a normalisation lexicon given an embedding model
+    '''parser.add_argument('-embs','--embeddings', default=None, type=str,
+        help='path to the embedding model.')'''
+    parser.add_argument('-normlex','--normlex', default=None, type=str,
+        help='path to the learnt normalisation lexicon pickle.')
     argument_config = parser.parse_args()
     return argument_config
 
@@ -95,6 +101,11 @@ def run(options):
     in_lex = loaders.load_lex_corr(file_path=corrs_path+'in.txt')
     ok_lex = {k: ok_lex[k] for k in ok_lex if k not in in_lex}
     ok_lex = {**ok_lex, **ig_list} if options.ignore_list else ok_lex
+    # Loads pickle if parameter is set
+    norm_lex = pickle.load(open(options.normlex,'rb')) if options.normlex else None
+    '''emb_model = gensim.models.KeyedVectors.load_word2vec_format(options.embeddings,
+                binary=True, unicode_errors='ignore') if options.embeddings else None'''
+    # Loads embedding model
     logger.info('Lexicons loaded!')
     # Creates the tokenizer
     tokenizer = preprocessing.new_readable_tokenizer() if options.tokenizer == 'readable' else None
@@ -112,17 +123,24 @@ def run(options):
             # Normalization process
             for i in oov_tokens:
                 if pp_line[i] in in_lex:
-                    print(pp_line[i], in_lex[pp_line[i]])
                     pp_line[i] = in_lex[pp_line[i]]
                 else:
-                    cands = candidate_generation.generate_by_similarity_metric(
-                        lex=main_lex, word=pp_line[i], threshold=options.threshold,
-                        n_cands=options.n_cands)
-                    x = pp_line[i]
-                    pp_line[i] = candidate_scoring.score_by_similarity_metrics(lex=main_lex,
-                        candidates=cands, metrics=[metrics.hassan_similarity], reverse=True,
-                        n_cands=1)[1][0][0]
-                    print(x, pp_line[i])
+                    # First option is to normalise according to the learnt lexicon
+                    if options.normlex:
+                        if pp_line[i] in norm_lex:
+                            pp_line[i] = max(norm_lex[pp_line[i]], key=lambda x: x[1])[0]
+                    # If a given noisy word has not been learnt, it is normalised by lexical similarity
+                        else:
+                            cands = candidate_generation.generate_by_similarity_metric(
+                                lex=main_lex, word=pp_line[i], threshold=options.threshold,
+                                n_cands=options.n_cands)
+                            best_cand = candidate_scoring.score_by_similarity_metrics(lex=main_lex,
+                                candidates=cands, metrics=[metrics.hassan_similarity], reverse=True,
+                                n_cands=1)
+                            if best_cand[1]:
+                                pp_line[i] = best_cand[1][0][0]
+                            else:
+                                logger.error('Failed to normalise word \"'+ pp_line[i] + '\"!')
             # Re-sanitizing the text after normalization
             normalized_line = preprocessing.preprocess(text=' '.join(pp_line), tokenizer=tokenizer,
                 pn_lex=pn_lex, ac_lex=ac_lex, capitalize_inis=options.capitalize_inis,
