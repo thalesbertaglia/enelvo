@@ -1,3 +1,3 @@
 # enelvo
-A flexible normalizer for user-generated content
+A flexible normaliser for user-generated content
 ~

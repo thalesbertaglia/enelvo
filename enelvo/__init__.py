@@ -10,7 +10,7 @@ import logging
 
 __prog__ = 'enelvo'
 __title__ = 'Enelvo'
-__summary__ = 'A flexible normalizer for user-generated content.'
+__summary__ = 'A flexible normaliser for user-generated content.'
 __uri__ = 'https://www.github.com/tfcbertaglia/enelvo'
 
 __version__ = '0.0.3'
