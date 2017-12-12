@@ -75,6 +75,8 @@ def run(options):
     main_path = os.path.split(os.path.abspath(__file__))[0]
     lexicons_path = os.path.join(main_path, 'resources/lexicons/')
     corrs_path = os.path.join(main_path, 'resources/corr-lexicons/')
+    embs_path = os.path.join(main_path, 'resources/embeddings/')
+    logger.info('Loading lexicons')
     # Lexicon of words considered correct
     main_lex = loaders.load_lex(file_path=lexicons_path+options.lex)
     # Lexicon of foreign words
@@ -93,12 +95,16 @@ def run(options):
     in_lex = loaders.load_lex_corr(file_path=corrs_path+'in.txt')
     ok_lex = {k: ok_lex[k] for k in ok_lex if k not in in_lex}
     ok_lex = {**ok_lex, **ig_list} if options.ignore_list else ok_lex
+    logger.info('Lexicons loaded!')
     # Creates the tokenizer
     tokenizer = preprocessing.new_readable_tokenizer() if options.tokenizer == 'readable' else None
     # Processing:
-    print(options.force_list)
+    total_lines = sum(1 for line in open(options.input))
+    line_i = 0
     with open(options.input) as f, open(options.output, 'w') as o:
         for line in f:
+            line_i += 1
+            logger.info('Processing line '+str(line_i)+' of '+str(total_lines)+'!')
             # Applies all preprocessing steps
             pp_line = preprocessing.tokenize(text=line, tokenizer=tokenizer)
             # Indexes of all oov (noisy) words
@@ -123,6 +129,7 @@ def run(options):
                 capitalize_pns=options.capitalize_pns, capitalize_acs=options.capitalize_acs,
                 do_sanitize=options.sanitize, as_string=True)
             o.write(normalized_line+'\n')
+        logger.info('Done! Normalised text written to '+options.output)
 
 
 
