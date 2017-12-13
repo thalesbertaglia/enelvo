@@ -1,6 +1,6 @@
-gensim==2.2.0
-emoji==0.4.5
-tabulate==0.7.7
-editdistance==0.3.1
-numpy==1.13.3
+gensim>=2.2.0
+emoji>=0.4.5
+tabulate>=0.7.7
+editdistance>=0.3.1
+numpy>=1.13.3
 cython
