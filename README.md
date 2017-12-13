@@ -82,3 +82,14 @@ There are some other arguments used to control the internal functioning of the n
 Everything described here is related to using Enelvo as a *tool*. However, it can be personalised and configured way further when used as an API. It is possible to generate and score candidates using a lot of different metrics and methods -- you can even use your own metrics! Have a look at ``__main__.py`` to understand how to start. The code is reasonably well-commented, so it shouldn't be too difficult to understand what is happening.
 
 If you have any questions, comments, suggestions or problems with Enelvo, please feel free to [contact me](http://thalesbertaglia.com).
+
+## Acknowledgements
+Many people were fundamental in carrying out this project (and my master's in general), so I would like to thank some of them.
+
+Huge thanks to Graça Nunes, Henrico Brum, Rafael Martins, Raphael Silva, and Thiago Pardo, who devoted a (big) portion of their valuable time to annotate the corpus that served as the basis for this project.
+
+Thanks to Marcos Treviso for helping me organise and implement many parts os this project, and for teaching a great deal of what I know about NLP.
+
+Thanks to all my fellow labmates from NILC for helping throughout my whole master's.
+
+Thank you all! 😬
