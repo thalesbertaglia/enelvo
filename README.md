@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="thalesbertaglia.com/enelvo"><img src="https://github.com/tfcbertaglia/enelvo/raw/master/enelvo-logo.png" alt="Enelvo" width="400"></a>
+  <a href="http://thalesbertaglia.com/enelvo"><img src="https://github.com/tfcbertaglia/enelvo/raw/master/enelvo-logo.png" alt="Enelvo" width="400"></a>
 </h1>
 
 <h4 align="center">A flexible normaliser for user-generated content in Portuguese.</h4>
