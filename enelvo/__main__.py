@@ -112,7 +112,7 @@ def run(options):
     # Processing:
     total_lines = sum(1 for line in open(options.input, encoding='utf-8'))
     line_i = 0
-    with open(options.input, encoding='utf-8')) as f, open(options.output, 'w', encoding='utf-8') as o:
+    with open(options.input, encoding='utf-8') as f, open(options.output, 'w', encoding='utf-8') as o:
         for line in f:
             line_i += 1
             logger.info('Processing line '+str(line_i)+' of '+str(total_lines)+'!')
