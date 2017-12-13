@@ -6,7 +6,7 @@
 <h4 align="center">A flexible normaliser for user-generated content.</h4>
 Enelvo is a tool for normalising noisy words in user-generated content -- such as tweets, blog posts, and product reviews. It is capable of identifying and normalising spelling mistakes, internet slang, acronyms, proper nouns, and others.
 
-The tool was developed as part of my master's project. You can find more details about how it works in my [dissertation](http://www.teses.usp.br/teses/disponiveis/55/55134/tde-10112017-170919/en.php) (in Portuguese) or in [this paper](http://anthology.aclweb.org/W/W16/W16-3916.pdf) (in English). For more information in Portuguese, please visit the [project website](thalesbertaglia.com/enelvo).
+The tool was developed as part of my master's project. You can find more details about how it works in my [dissertation](http://www.teses.usp.br/teses/disponiveis/55/55134/tde-10112017-170919/en.php) (in Portuguese) or in [this paper](http://anthology.aclweb.org/W/W16/W16-3916.pdf) (in English). For more information in Portuguese, please visit the [project website](www.thalesbertaglia.com/enelvo).
 
 ## Getting Started
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Python>=3](https://www.python.org/) installed on your computer. First of all, download the repository as a ZIP or run from your command line:
