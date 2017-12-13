@@ -110,55 +110,101 @@
   <img src="/enelvo/public/LOGO-ICMC-RGB.jpg" style="float:top;width:230px;height:100px;">	
   <img src="/enelvo/public/logo-nilc.png" style="margin-top:-15px;float:right;width:230px;height:100px;">	
   <h1 class="page-title">A Ferramenta</h1>
-  <p class="message">
-  A ferramenta de normalização Enelvo.
-</p>
+  <h1 align="center">
+  <br />
+  <a href="thalesbertaglia.com/enelvo"><img src="https://github.com/tfcbertaglia/enelvo/raw/master/enelvo-logo.png" alt="Enelvo" width="400" /></a>
+</h1>
 
-<p><strong>Tema:</strong> Normalização textual.</p>
+<h4 align="center">Um normalizador textual de conteúdo gerado por usuário.</h4>
+<p>Enelvo é uma ferramenta de normalização de CGU desenvolvida para o português. Ela é capaz de identificar e corrigir ruídos em textos da <em>web</em>, como <em>tweets</em>, <em>reviews</em> de produtos e <em>posts</em> em redes sociais. Os principais ruídos tratados são erros ortográficos, internetês, acrônimos, nomes próprios, entre outros.</p>
 
-<p><strong>Título:</strong> Métodos avançados de normalização textual para conteúdo gerado por usuário.</p>
+<p>A ferramenta foi desenvolvida como parte de meu projeto de mestrado. Uma explicação completa de todo os métodos implementados e de como a ferramenta funciona pode ser encontrada em minha <a href="http://www.teses.usp.br/teses/disponiveis/55/55134/tde-10112017-170919/en.php">dissertação</a> (em português). Uma explicação sucinta do principal método utilizado para normalização está disponível <a href="http://anthology.aclweb.org/W/W16/W16-3916.pdf">neste artigo</a> (em inglês).</p>
 
-<h2 id="lacunas">Lacunas</h2>
+<p>O código da ferramenta está totalmente disponível em um <a href="https://github.com/tfcbertaglia/enelvo">repositório do GitHub</a>.</p>
 
-<p>Conteúdos criados por usuários da Web, especialmente em redes sociais, blogs, sites de reclamações etc. têm como característica um descompromisso com a norma culta da língua, apresentando desvios de
-ortografia, gramática e idiossincrasias próprias do meio digital, como erros de digitação, influência da oralidade na escrita, e vocabulário criado na internet (internetês).
-A esse tipo de texto é comumente atribuído o termo UGC (user-generated content), cuja tradução é “conteúdo gerado por usuário”. Quando se pensa em processar esses textos para algum fim,
-entram em cena as ferramentas de Processamento de Língua Natural (PLN), usualmente desenvolvidas para processar textos sem ruídos, ou que tenham sido “corrigidos” anteriormente.
-Tokenizadores, sentenciadores, taggers, parsers, analisadores semânticos são exemplos de ferramentas de PLN que assumem textos bem-escritos como entrada. Entradas com muitos ruídos causam efeitos
-devastadores no desempenho dessas ferramentas. E, como consequência, as aplicações que as usam certamente sentirão o mesmo efeito. O processo de identificar e corrigir ruídos em textos é denominado normalização textual. Há escassez de sistemas capazes de efetuar normalização, especialmente de UGC. Os poucos sistemas
-existentes são criados para domínios restritos ou lidam com uma quantia limitada de ruído.</p>
+<h2 id="começando">Começando</h2>
+<p>Para usar a ferramenta, o primeiro passo é obter os arquivos necessários. É necessário ter <a href="https://git-scm.com">Git</a> e <a href="https://www.python.org/">Python&gt;=3</a> instalados em seu computador. Você pode baixar o projeto como um arquivo ZIP, diretamente na página do GitHub, ou usar o <code class="highlighter-rouge">git</code> para clonar o repositório executando o seguinte comando:</p>
 
-<h2 id="hipóteses">Hipóteses</h2>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c"># Clonando o repositório</span>
+<span class="gp">$ </span>git clone https://github.com/tfcbertaglia/enelvo.git
 
-<p>O uso de um normalizador textual pode melhorar o desempenho de técnicas de PLN. Algumas questões de pesquisa:</p>
+<span class="c"># Indo para o diretório do repositório</span>
+<span class="gp">$ </span><span class="nb">cd </span>enelvo
+</code></pre>
+</div>
 
-<ul>
-  <li>É possível desenvolver um normalizador flexível independente de domínio?</li>
-  <li>É possível identificar diversos tipos de ruídos e normalizá-los de acordo com a necessidade da tarefa?</li>
-  <li>É possível desenvolver um normalizador que possa ser acoplado ao <em>pipeline</em> de tarefas de PLN e adaptado conforme necessidade?</li>
-</ul>
+<h2 id="instalação">Instalação</h2>
+<p>É necessário instalar todas as dependências do projeto. Se você usa o <a href="https://pypi.python.org/pypi/pip">pip</a>, é só executar o comando <code class="highlighter-rouge">pip install -r requirements.txt</code> para instalar tudo.</p>
 
-<h2 id="objetivos">Objetivos</h2>
+<p>Em seguida, execute <code class="highlighter-rouge">python3 setup.py install</code> para instalar a Enelvo.</p>
 
-<p>Desenvolver um normalizador textual flexível de UGC para o
-português brasileiro, capaz de lidar com diferentes domínios e identificar e corrigir ruídos de maneira personalizada à aplicação de PLN desejada. O normalizador proposto poderá ser acoplado
-a sistemas de PLN e seu funcionamento será flexível de modo a permitir modificações conforme as necessidades da tarefa.</p>
+<p>Para ter certeza que a instalação funcionou, execute o comando:</p>
 
-<h2 id="método">Método</h2>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>python3 -m enelvo --input <span class="k">in</span>.txt --output out.txt
+</code></pre>
+</div>
 
-<p>Realizar revisão bibliográfica da área, entender e implementar técnicas de identificação e correção de ruídos. Reunir córpus de textos gerados por usuários em diferentes
-domínios (como blogs e redes sociais) e analisá-los de modo a identificar diferentes tipos de ruídos. Avaliar métodos para identificação automática de ruídos e métodos que efetuem
-sugestões para correção. Comparar os resultados obtidos com trabalhos já publicados para o português brasileiro e possivelmente com outros idiomas.</p>
+<p>Se tudo deu certo, algumas mensagens serão impressas no terminal e o arquivo <code class="highlighter-rouge">out.txt</code> será gerado – contendo a versão normalizada do <code class="highlighter-rouge">in.txt</code>.</p>
 
-<h2 id="avaliação">Avaliação</h2>
+<h2 id="usando-a-ferramenta">Usando a Ferramenta</h2>
+<p>Para executar a ferramenta com a configuração padrão, basta utilizar o comando:</p>
 
-<p>O projeto será avaliado de maneira intrínseca (acurácia de correção) e extrínseca (impacto da normalização em tarefas de PLN). Espera-se que o sistema obtenha
-resultados satisfatórios que confirmem sua utilidade e eficácia de correção.</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>python3 -m enelvo --input <span class="k">in</span>.txt --output out.txt
+</code></pre>
+</div>
 
-<h2 id="contribuições-esperadas">Contribuições Esperadas</h2>
+<p>Dois argumentos são <strong>obrigatórios</strong>: <code class="highlighter-rouge">--input</code> (caminho para o arquivo de entrada) e <code class="highlighter-rouge">--output</code> (caminho+nome do arquivo de saída que será escrito). Enelvo considera que cada linha do arquivo de entrada é uma sentença, então formate-o dessa maneira. A opção <code class="highlighter-rouge">-h</code> mostra a lista completa de argumentos e a descrição de cada um.</p>
 
-<p>Buscamos obter resultados de estado da arte para o português brasileiro, focando em resultados obtidos para outros idiomas com os modelos propostos nos trabalhos recuperados com a revisão bibliográfica.
-Todos os métodos e os recursos desenvolvidos ao decorrer do trabalho serão disponibilizados publicamente no <a href="https://github.com/tfcbertaglia/ugcnormal">repositório do projeto.</a></p>
+<p>Os principais argumentos serão explicados na próxima seção.</p>
+
+<h2 id="argumentos">Argumentos</h2>
+<p>Alguns argumentos podem ser utilizados para personalizar o funcionamento da ferramenta. A lista completa pode ser vista utilizando as opções <code class="highlighter-rouge">-h</code> ou <code class="highlighter-rouge">--help</code> ao executar o código. As próximas subseções vão descrever detalhadamente os principais argumentos.</p>
+
+<h3 id="alterando-o-léxico">Alterando o Léxico</h3>
+<p>O argumento <code class="highlighter-rouge">-l</code> ou <code class="highlighter-rouge">--lex</code> permite que você selecione qual léxico de palavras corretas será utilizado – ou seja, esse argumento determina qual é o dicionário da língua. A entrada deve ser o caminho completo do arquivo (por exemplo <code class="highlighter-rouge">../some/folder/dict-pt.txt</code>).</p>
+
+<h3 id="as-listas-ignore-e-force">As Listas <em>Ignore</em> e <em>Force</em></h3>
+<p>Infelizmente, o léxico do português utilizado na ferramenta não é perfeito. Às vezes ele erroneamente contém palavras que não são de fato corretas (reconhecidas pela língua), fazendo com que não seja possível normalizá-las. Também há casos que ele não contém palavras que são corretas e que deveriam estar lá, consequentemente fazendo com que elas sejam marcadas como ruído. Para amenizar esse problema, Enelvo implementa as listas <strong>ignore</strong> e <strong>force</strong>.</p>
+
+<p>A lista <em>ignore</em> é uma lista de palavras que vão <em>sempre</em> ser consideradas como <strong>corretas</strong> – mesmo que não contidas no léxicos. Ou seja, é uma lista de palavras que serão ignoradas pelo normalizador. Para usar, adicione os argumentos <code class="highlighter-rouge">-iglst caminho_da_lista</code> ou <code class="highlighter-rouge">-ignore-list caminho_da_lista</code>. A entrada deve ser o caminho completo do arquivo que contém a lista, que deve conter uma palavra por linha.</p>
+
+<p>A lista <em>force</em> é uma lista de palavra que vão <em>sempre</em> ser consideradas como <strong>ruído</strong> – mesmo que estejam contidas no léxico. Ou seja, as palavras dessa lista vão sempre passar pelo processo de normalização. Para usar, adicione os argumentos <code class="highlighter-rouge">-fclst caminho_da_lista</code> ou <code class="highlighter-rouge">-force-list caminho_da_lista</code>. A entrada deve ser o caminho completo do arquivo que contém a lista, que deve conter uma palavra por linha.</p>
+
+<h3 id="alterando-o-tokenizador">Alterando o Tokenizador</h3>
+<p>Por padrão, o tokenizador utilizado pela Enelvo substitui algumas entidades por <em>tags</em> pré-definidas. Nomes de usuários do Twitter são substituídos por <code class="highlighter-rouge">USERNAME</code>, números (incluindo datas, telefones etc) por <code class="highlighter-rouge">NUMBER</code>, <em>hashtags</em> por <code class="highlighter-rouge">HASHTAG</code>, urls por <code class="highlighter-rouge">URL</code> etc.</p>
+
+<p>Para evitar que essa substituição ocorra, basta usar <code class="highlighter-rouge">-t readable</code> ou <code class="highlighter-rouge">--tokenizer readable</code>.</p>
+
+<h3 id="capitalizando-entidades">Capitalizando Entidades</h3>
+<p>Enelvo pode capitalizar diferentes entidades por meio de léxicos. É necessário usar um argumento para cada tipo de entidade a ser capitalizada.</p>
+
+<p>Para capitalizar nomes próprios, adicione <code class="highlighter-rouge">-cpns</code> ou <code class="highlighter-rouge">--capitalize-pns</code>.</p>
+
+<p>Para capitalizar acrônimos, adicione <code class="highlighter-rouge">-cacs</code> ou <code class="highlighter-rouge">--capitalize-acs</code>.</p>
+
+<p>Para capitalizar iniciais (após pontuação ou início de sentença), adicione <code class="highlighter-rouge">-cinis</code> ou <code class="highlighter-rouge">--capitalize-inis</code>.</p>
+
+<h3 id="limpando-o-texto">Limpando o Texto</h3>
+<p>Enelvo também possui alguns métodos para “limpar” o texto. Se quiser remover pontuação, <em>emojis</em> e <em>emoticons</em> de todas as sentenças do arquivo de entrada, basta adicionar <code class="highlighter-rouge">-sn</code> ou <code class="highlighter-rouge">--sanitize</code>.</p>
+
+<h3 id="outros-argumentos">Outros Argumentos</h3>
+<p>Existem outros argumentos de uso interno da ferramenta, usados para controlar o funcionamento dos métodos de normnalização. Use <code class="highlighter-rouge">-h</code> ou <code class="highlighter-rouge">--help</code> para ver mais detalhes.</p>
+
+<h2 id="algo-mais">Algo Mais?</h2>
+<p>Toda explicação até agora é sobre o uso da Enelvo como uma <em>ferramenta</em>. No entanto, ela pode ser ainda mais personalizada e configurada se for usada como uma API. É possível, por exemplo, gerar e ranquear candidatos utilizando diversas métricas e métodos – inclusive você pode implementar suas próprias métricas! O arquivo <code class="highlighter-rouge">__main__.py</code> é um bom ponto inicial para entender como usar o código como uma biblioteca Python. O código em geral está bem comentado e organizado, então não será tão difícil entender como tudo funciona.</p>
+
+<p>Se tiver dúvidas, críticas, comentários, sugestões ou problemas com a Enelvo, entre em <a href="http://thalesbertaglia.com">contato comigo</a>.</p>
+
+<h2 id="agradecimentos">Agradecimentos</h2>
+<p>Muitas pessoas foram fundamentais para o desenvolvimento deste projeto (e de meu mestrado no geral), então gostaria de agradecer algumas.</p>
+
+<p>Muito obrigado a Graça Nunes, Henrico Brum, Rafael Martins, Raphael Silva e Thiago Pardo por terem disponibilizado uma (grande) parte de seu valioso tempo para anotar o córpus que serviu como base para o projeto.</p>
+
+<p>Obrigado ao Marcos Treviso por me ajudar a organizar e implementar várias partes do projeto e por me ensinar um bom tanto do que sei sobre PLN.</p>
+
+<p>Obrigado a todos os colegas do NILC, por ajudarem em várias coisas ao longo do mestrado.</p>
+
+<p>Valeu! 😬</p>
 
 </div>
 
