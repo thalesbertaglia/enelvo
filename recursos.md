@@ -16,6 +16,14 @@ Minha <a href="http://www.teses.usp.br/teses/disponiveis/55/55134/tde-10112017-1
 </li>
 <br>
 <li>
+O <a href="https://drive.google.com/open?id=1qtCDkLtBp-cXHcv9xcojnXZQlupZCb-m">modelo de <i>word embeddings</i></a> que apresentou os melhores resultados nos experimentos de meu mestrado.
+</li>
+<br>
+<li>
+O <a href="https://drive.google.com/file/d/1LqcQMh0pdQnUzDrNiRszDo8v11iwVJrJ/view?usp=sharing">léxico de normalização</a> aprendido por meio do método de normalização proposto utilizando o modelo de <i>embeddings</i> acima.
+</li>
+<br>
+<li>
 A <a href="https://www.dropbox.com/s/p94cmky3nmkxegz/apresentacao-diss.pdf?dl=0">apresentação</a> utilizada em minha defesa de mestrado.
 </li>
 <br>
