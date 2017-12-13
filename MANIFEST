@@ -27,7 +27,8 @@ enelvo/resources/corr-lexicons/acs.txt
 enelvo/resources/corr-lexicons/es.txt
 enelvo/resources/corr-lexicons/in.txt
 enelvo/resources/corr-lexicons/pns.txt
-enelvo/resources/lexicons/ABOUT
+enelvo/resources/embeddings/norm_lexicon.pickle
+enelvo/resources/lexicons/README
 enelvo/resources/lexicons/freq-cgu.txt
 enelvo/resources/lexicons/lex-ugcnormal-cb100.txt
 enelvo/resources/lexicons/unitex-full-clean+enelvo-ja-corrigido.txt

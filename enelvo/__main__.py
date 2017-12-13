@@ -69,7 +69,7 @@ def load_options():
     # TODO: add an option to learn a normalisation lexicon given an embedding model
     '''parser.add_argument('-embs','--embeddings', default=None, type=str,
         help='path to the embedding model.')'''
-    parser.add_argument('-normlex','--normlex', default='norm_lex.pickle', type=str,
+    parser.add_argument('-normlex','--normlex', default='norm_lexicon.pickle', type=str,
         help='path to the learnt normalisation lexicon pickle.')
     argument_config = parser.parse_args()
     return argument_config
