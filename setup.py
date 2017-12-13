@@ -27,7 +27,7 @@ setup(
         'emoji>=0.4.5',
         'tabulate>=0.7.7',
         'editdistance>=0.3.1',
-        'numpy>=1.13.3'],
+        'numpy>=1.13.3', 'cython'],
     cmdclass={'build_ext': build_ext},
     ext_modules=ext_modules,
     options={'build_ext':{'inplace':True, 'force':True}},
