@@ -18,3 +18,5 @@ test.py
 *.so
 enelvo/resources/embeddings/*.model
 enelvo/resources/embeddings/*.pickle
+dist/
+build/

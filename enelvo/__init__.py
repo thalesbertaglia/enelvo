@@ -16,7 +16,7 @@ __uri__ = 'https://www.github.com/tfcbertaglia/enelvo'
 __version__ = '0.0.3'
 
 __author__ = 'Thales Bertaglia'
-__email__ = 'thalesbertaglia@gmail.com'
+__email__ = 'contact@thalesbertaglia.com'
 
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2017 Thales Bertaglia'
