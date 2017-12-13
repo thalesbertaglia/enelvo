@@ -88,7 +88,7 @@ Many people were fundamental in carrying out this project (and my master's in ge
 
 Huge thanks to Graça Nunes, Henrico Brum, Rafael Martins, Raphael Silva, and Thiago Pardo, who devoted a (big) portion of their valuable time to annotate the corpus that served as the basis for this project.
 
-Thanks to Marcos Treviso for helping me organise and implement many parts os this project, and for teaching a great deal of what I know about NLP.
+Thanks to Marcos Treviso for helping me organise and implement many parts os this project, and for teaching me a great deal of what I know about NLP.
 
 Thanks to all my fellow labmates from NILC for helping throughout my whole master's.
 
