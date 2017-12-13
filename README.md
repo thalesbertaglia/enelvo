@@ -9,7 +9,7 @@ Enelvo is a tool for normalising noisy words in user-generated content written i
 The tool was developed as part of my master's project. You can find more details about how it works in my [dissertation](http://www.teses.usp.br/teses/disponiveis/55/55134/tde-10112017-170919/en.php) (in Portuguese) or in [this paper](http://anthology.aclweb.org/W/W16/W16-3916.pdf) (in English). For more information in Portuguese, please visit the [project website](http://thalesbertaglia.com/enelvo).
 
 ## Getting Started
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Python>=3](https://www.python.org/) installed on your computer. First of all, download the repository as a ZIP or run from your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Python>=3.5](https://www.python.org/) installed on your computer. First of all, download the repository as a ZIP or run from your command line:
 
 ```bash
 # Clone this repository
