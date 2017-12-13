@@ -45,3 +45,40 @@ There are two **required** arguments: ``--input`` (path to the input file) and `
 Each of the arguments and their usage will be explained in the following section.
 
 ## Arguments
+There are some arguments that allow you to personalise how Enelvo works. You can find the details by adding ``-h`` or ``--help`` when running the tool or by reading the sections below.
+
+### Changing the Lexicon
+Argument ``-l`` or ``--lex`` lets you choose the lexicon of words considered correct -- i.e, this argument sets the language dictionary. The input must be the full file path (e.g. ``../some/folder/dict-pt.txt``).
+
+### Ignore and Force Lists
+Unfortunately, the language lexicons we use are not perfect. Sometimes they contain words that are not in fact correct, therefore preventing them from being normalised. They also sometimes don't contain words that are correct, thus wrongly marking them as noise.
+In order to ease this problem, Enelvo implements **ignore** and **force** lists.
+
+An ignore list is a list of words that will *always* be considered **correct** -- even if not contained in the language lexicon. To use it, add ``-iglst path_to_list`` or ``-ignore-list path_to_list``. The input must be the full path file and the file must contain a single word per line.
+
+A force list is a list of words that will *always* be considered **noisy** -- even if contained in the language lexicon. Thus, these words will alway be normalised. To use it, add ``-fclst path_to_list`` or ``-force-list path_to_list``. The input must be the full path file and the file must contain a single word per line.
+
+### Changing the Tokeniser
+By default, the tokeniser used in Enelvo replaces some entities with pre-defined tags. Twitter usernames become ``USERNAME``, numbers (including dates, phone numbers etc) -> ``NUMBER``, URLs -> ``URL``, Twitter hashtags -> ``HASHTAG``, emojis -> ``EMOJI`` etc.
+
+If you want to keep the tokens as they are (so no replacement tags), use ``-t readable`` or ``--tokenizer readable``.
+
+### Capitalising Entities
+Enelvo can capitalise different entities using lexicons. In order to do so, you just need to set a flag for each entity that you want to capitalise.
+
+To capitalise proper nouns, set ``-cpns`` or ``--capitalize-pns``.
+
+To capitalise acronyms, set ``-cacs`` or ``--capitalize-acs``.
+
+To capitalise initials (first letter after punctuation or at the beggining of a sentence), set ``-cinis`` or ``--capitalize-inis``.
+
+### Cleaning the Text
+Enelvo also provides some methods for "cleaning" the text. If you want to remove punctuation, emojis, and emoticons from all sentences, simply set ``-sn``or ``--sanitize``.
+
+### Other Arguments
+There are some other arguments used to control the internal functioning of the normalisation methods (like thresholds etc). Use ``-h`` or ``--help`` to see further details.
+
+## What Else?
+Everything described here is related to using Enelvo as a *tool*. However, it can be personalised and configured way further when used as an API. It is possible to generate and score candidates using a lot of different metrics and methods -- you can even use your own metrics! Have a look at ``__main__.py`` to understand how to start. The code is reasonably well-commented, so it shouldn't be too difficult to understand what is happening.
+
+If you have any questions, comments, suggestions or problems with Enelvo, please feel free to [contact me](http://thalesbertaglia.com).
