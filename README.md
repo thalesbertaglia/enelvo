@@ -31,14 +31,11 @@ python3 -m enelvo --input in.txt --output out.txt
 
 If eveything went correctly, ``out.txt`` will be written -- containing the normalised version of ``in.txt``.
 
-Before you start using the normaliser, make sure you download the [normalisation lexicon](https://drive.google.com/file/d/1LqcQMh0pdQnUzDrNiRszDo8v11iwVJrJ/view?usp=sharing). This is a dictionary of pre-calculated normalisations that were learnt from a word embedding model, using the approach described in my dissertation. The lexicon contains many frequent noisy words found on user-generated content and their normalised version. It is used to optimise the tool execution time, so save it in a directory you remember because it will be necessary later!
-
 ## Running
 You can use the tool, with the most simple configuration, by running:
 ```bash
-python3 -m enelvo --input in.txt --output out.txt -normlex norm_lex.pickle
+python3 -m enelvo --input in.txt --output out.txt
 ```
-Replace ``norm_lex.pickle`` by the full path of the file you downloaded previously (e.g. ``/enelvo/data/norm_lex.pickle``).
 
 There are two **required** arguments: ``--input`` (path to the input file) and ``--output`` (path+file name to which Enelvo will write the output). Enelvo considers that each line in the input file is a sentence, so format it accordingly. Use option ``-h`` to see the full list of arguments and their explanation.
 

@@ -69,7 +69,7 @@ def load_options():
     # TODO: add an option to learn a normalisation lexicon given an embedding model
     '''parser.add_argument('-embs','--embeddings', default=None, type=str,
         help='path to the embedding model.')'''
-    parser.add_argument('-normlex','--normlex', default=None, type=str,
+    parser.add_argument('-normlex','--normlex', default='norm_lex.pickle', type=str,
         help='path to the learnt normalisation lexicon pickle.')
     argument_config = parser.parse_args()
     return argument_config
@@ -102,7 +102,7 @@ def run(options):
     ok_lex = {k: ok_lex[k] for k in ok_lex if k not in in_lex}
     ok_lex = {**ok_lex, **ig_list} if options.ignore_list else ok_lex
     # Loads pickle if parameter is set
-    norm_lex = pickle.load(open(options.normlex,'rb')) if options.normlex else None
+    norm_lex = pickle.load(open(embs_path+options.normlex,'rb')) if options.normlex else None
     '''emb_model = gensim.models.KeyedVectors.load_word2vec_format(options.embeddings,
                 binary=True, unicode_errors='ignore') if options.embeddings else None'''
     # Loads embedding model
