@@ -17,7 +17,7 @@ setup(
                     '../setup_cython.py', '../build/*',
                     'preprocessing/tokenizer/lexicons/*'] },
     license='MIT',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     author='Thales Bertaglia',
     author_email='contact@thalesbertaglia.com',
     url='https://github.com/tfcbertaglia/enelvo',

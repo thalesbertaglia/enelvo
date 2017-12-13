@@ -110,9 +110,9 @@ def run(options):
     # Creates the tokenizer
     tokenizer = preprocessing.new_readable_tokenizer() if options.tokenizer == 'readable' else None
     # Processing:
-    total_lines = sum(1 for line in open(options.input))
+    total_lines = sum(1 for line in open(options.input, encoding='utf-8'))
     line_i = 0
-    with open(options.input) as f, open(options.output, 'w') as o:
+    with open(options.input) as f, open(options.output, 'w', encoding='utf-8') as o:
         for line in f:
             line_i += 1
             logger.info('Processing line '+str(line_i)+' of '+str(total_lines)+'!')

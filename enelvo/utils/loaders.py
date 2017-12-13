@@ -12,7 +12,7 @@ def load_lex(file_path):
     Return:
         dict(str:int): Word and 0.
     '''
-    return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip()): 0 for w in open(file_path).readlines()}
+    return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip()): 0 for w in open(file_path, encoding='utf-8').readlines()}
 
 def load_lex_corr(file_path):
     '''Loads a lexicon in (word,correction) format to a dictionary
@@ -24,7 +24,7 @@ def load_lex_corr(file_path):
         dict(str:int): Word and frequency.
     '''
     return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip().split(',')[0]): re.sub(r'(.)\1+', r'\1\1\1', w.strip().split(',')[1])
-            for w in open(file_path).readlines()}
+            for w in open(file_path, encoding='utf-8').readlines()}
 
 
 def load_lex_freq(file_path, freq=10):
@@ -38,7 +38,7 @@ def load_lex_freq(file_path, freq=10):
         dict(str:int): Word and frequency.
     '''
     return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip().split(',')[0]): int(w.strip().split(',')[1])
-            for w in open(file_path).readlines() if int(w.strip().split(',')[1]) >= freq}
+            for w in open(file_path, encoding='utf-8').readlines() if int(w.strip().split(',')[1]) >= freq}
 
 
 def load_enelvo_format_full(file_path):
@@ -55,7 +55,7 @@ def load_enelvo_format_full(file_path):
         dict: A dictionary containing every corpus annotation, organized as explained above.
     '''
     corpus = {}
-    text = open(file_path).read()
+    text = open(file_path, encoding='utf-8').read()
     anns = text.split('<ann>')
     for i in range(len(anns)):
         ann = anns[i]
@@ -122,7 +122,7 @@ def load_enelvo_format(file_path, category, only_most_frequent=True):
               If ``only_most_frequent`` the element will be a single string.
     '''
     corrections = {}
-    with open(file_path) as f:
+    with open(file_path, encoding='utf-8') as f:
         for line in f:
             elements = line.split()
             if len(elements) > 2:
