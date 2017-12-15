@@ -20,3 +20,4 @@ enelvo/resources/embeddings/*.model
 dist/
 build/
 out.txt
+i.txt

@@ -435,6 +435,7 @@ wap
 widi
 wlan
 wma
+sbt
 wmv
 wow
 wps

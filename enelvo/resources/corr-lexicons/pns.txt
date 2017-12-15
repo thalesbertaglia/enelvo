@@ -9503,7 +9503,6 @@ band
 boni
 coisica
 color
-sbt
 tdo
 slll
 smartphones
@@ -10277,21 +10276,9 @@ software
 web
 band
 boni
-coisica
 color
-sbt
-tdo
-slll
 smartphones
 tablet
-top
-cheers
-faci
-things
-vtmnc
-creide
-fake
-feel
 good
 lollipop
 whindersson
@@ -10339,7 +10326,6 @@ coisica2
 dianao
 emoji
 gnt
-happybvanessagiacomo
 lin
 marauders
 jikook

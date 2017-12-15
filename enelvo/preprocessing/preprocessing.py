@@ -98,6 +98,25 @@ def capitalize_proper_nouns(lex, tokens, as_string=False):
     return tokens if not as_string else ' '.join(tokens)
 
 
+def capitalize_acronyms(lex, tokens, as_string=False):
+    '''Capitalizes all acronyms in ``tokens``.
+
+    Args:
+        lex (dict): Lexicon dictionary containing the list of acronyms.
+        tokens (list (str)): Tokenized text to be capitalized.
+        as_string (boolean): Whether to return the tokens as a list (False) or a string (True).
+
+    Returns:
+        list (str): List of tokens if ``as_string`` = False.
+        str: Tokenized text if ``as_string`` = True.
+    '''
+    for i in range(len(tokens)):
+        if tokens[i] in lex:
+            tokens[i] = tokens[i].upper()
+
+    return tokens if not as_string else ' '.join(tokens)
+
+
 def preprocess(text, tokenizer=None, pn_lex=None, ac_lex=None, capitalize_inis=True, capitalize_pns=False, capitalize_acs=False, do_sanitize=False, as_string=False):
     '''Applies all preprocessing steps.
 
@@ -127,7 +146,7 @@ def preprocess(text, tokenizer=None, pn_lex=None, ac_lex=None, capitalize_inis=T
         tokens = capitalize_proper_nouns(pn_lex, tokens)
 
     if capitalize_acs:
-        tokens = capitalize_proper_nouns(ac_lex, tokens)
+        tokens = capitalize_acronyms(ac_lex, tokens)
 
     if do_sanitize:
         tokens = sanitize(tokens)
