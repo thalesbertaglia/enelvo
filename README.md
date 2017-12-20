@@ -39,6 +39,11 @@ python3 -m enelvo --input in.txt --output out.txt
 
 There are two **required** arguments: ``--input`` (path to the input file) and ``--output`` (path+file name to which Enelvo will write the output). Enelvo considers that each line in the input file is a sentence, so format it accordingly. Use option ``-h`` to see the full list of arguments and their explanation.
 
+You can also run Enelvo in **interactive mode**. In this case, you will be able to type in sentences and their normalised version will be displayed in real-time. To use interactive mode, just run:
+```bash
+python3 -m enelvo --interactive
+```
+
 Each of the arguments and their usage will be explained in the following section.
 
 ## Arguments
