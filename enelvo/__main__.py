@@ -22,6 +22,7 @@ from enelvo import candidate_generation
 from enelvo import candidate_scoring
 from enelvo import metrics
 from enelvo.preprocessing import tokenizer
+from enelvo.normaliser import Normaliser
 from enelvo.utils import evaluation
 from enelvo.utils import loaders
 
@@ -84,70 +85,36 @@ def run(options):
     embs_path = os.path.join(main_path, 'resources/embeddings/')
     logger.info('Loading lexicons')
     # Lexicon of words considered correct
-    main_lex = loaders.load_lex(file_path=lexicons_path+options.lex)
+    main_lex = lexicons_path+options.lex
     # Lexicon of foreign words
-    es_lex = loaders.load_lex(file_path=corrs_path+'es.txt')
+    es_lex = corrs_path+'es.txt'
     # Lexicon of proper nouns
-    pn_lex = loaders.load_lex(file_path=corrs_path+'pns.txt')
+    pn_lex = corrs_path+'pns.txt'
     # Lexicon of acronyms
-    ac_lex = loaders.load_lex(file_path=corrs_path+'acs.txt')
+    ac_lex = corrs_path+'acs.txt'
     # Force list
     fc_list = loaders.load_lex(file_path=options.force_list) if options.force_list else None
     # Ignore list
     ig_list = loaders.load_lex(file_path=options.ignore_list) if options.ignore_list else None
-    # Combined lexicon of 'ok' words
-    ok_lex = {**main_lex, **es_lex, **pn_lex, **ac_lex}
     # Lexicon of internet slang
-    in_lex = loaders.load_lex_corr(file_path=corrs_path+'in.txt')
-    ok_lex = {k: ok_lex[k] for k in ok_lex if k not in in_lex}
-    ok_lex = {**ok_lex, **ig_list} if options.ignore_list else ok_lex
-    # Loads pickle if parameter is set
-    norm_lex = pickle.load(open(embs_path+options.normlex,'rb')) if options.normlex else None
+    in_lex = corrs_path+'in.txt'
+    # Pickle
+    norm_lex = embs_path+options.normlex if options.normlex else None
     '''emb_model = gensim.models.KeyedVectors.load_word2vec_format(options.embeddings,
                 binary=True, unicode_errors='ignore') if options.embeddings else None'''
-    # Loads embedding model
-    logger.info('Lexicons loaded!')
     # Creates the tokenizer
     tokenizer = preprocessing.new_readable_tokenizer() if options.tokenizer == 'readable' else None
     # Processing:
     total_lines = sum(1 for line in open(options.input, encoding='utf-8'))
+    # Normaliser object, initialised using the input arguments
+    normaliser = Normaliser(main_lex, es_lex, pn_lex, ac_lex, in_lex, norm_lex, fc_list, ig_list, tokenizer, options.threshold, options.n_cands, options.capitalize_inis, options.capitalize_pns, options.capitalize_acs, options.sanitize, logger)
     line_i = 0
     with open(options.input, encoding='utf-8') as f, open(options.output, 'w', encoding='utf-8') as o:
         for line in f:
             line_i += 1
             logger.info('Processing line '+str(line_i)+' of '+str(total_lines)+'!')
-            # Applies all preprocessing steps
-            pp_line = preprocessing.tokenize(text=line, tokenizer=tokenizer)
-            # Indexes of all oov (noisy) words
-            oov_tokens = analytics.identify_oov(lex=ok_lex, force_list=fc_list, tokens=pp_line) if options.force_list else analytics.identify_oov(lex=ok_lex, tokens=pp_line)
-            # Normalization process
-            for i in oov_tokens:
-                if pp_line[i] in in_lex:
-                    pp_line[i] = in_lex[pp_line[i]]
-                else:
-                    # First option is to normalise according to the learnt lexicon
-                    if options.normlex:
-                        if pp_line[i] in norm_lex:
-                            pp_line[i] = max(norm_lex[pp_line[i]], key=lambda x: x[1])[0]
-                    # If a given noisy word has not been learnt, it is normalised by lexical similarity
-                        else:
-                            cands = candidate_generation.generate_by_similarity_metric(
-                                lex=main_lex, word=pp_line[i], threshold=options.threshold,
-                                n_cands=options.n_cands)
-                            best_cand = candidate_scoring.score_by_similarity_metrics(lex=main_lex,
-                                candidates=cands, metrics=[metrics.hassan_similarity], reverse=True,
-                                n_cands=1)
-                            if best_cand[1]:
-                                pp_line[i] = best_cand[1][0][0]
-                            else:
-                                logger.error('Failed to normalise word \"'+ pp_line[i] + '\"!')
-            # Re-sanitizing the text after normalization
-            normalized_line = preprocessing.preprocess(text=' '.join(pp_line), tokenizer=tokenizer,
-                pn_lex=pn_lex, ac_lex=ac_lex, capitalize_inis=options.capitalize_inis,
-                capitalize_pns=options.capitalize_pns, capitalize_acs=options.capitalize_acs,
-                do_sanitize=options.sanitize, as_string=True)
-            o.write(normalized_line+'\n')
-        logger.info('Done! Normalised text written to '+options.output)
+            o.write(normaliser.normalise(line)+'\n')
+        logger.info('Done! Normalised text written to ' + options.output)
 
 
 

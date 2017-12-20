@@ -43,6 +43,7 @@ class Normaliser:
         self.threshold = threshold
         self.n_cands = n_cands
         self.logger = logger
+        self.logger.info('Lexicons loaded!')
 
     def normalise(self, sentence):
         '''Normalises a given sentence and returns it.
