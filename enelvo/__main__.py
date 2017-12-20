@@ -38,9 +38,11 @@ def load_options():
     config_arg_parser.add_argument(
         '--version', action='version', version='%(prog)s {}'.format(__version__))
     config_arg_parser.add_argument(
-        '--input', required=True, nargs='?', const='input.txt', help='input file')
+        '--input', required=False, nargs='?', const='input.txt', help='input file')
     config_arg_parser.add_argument(
-        '--output', required=True, nargs='?', const='output.txt', help='output file')
+        '--output', required=False, nargs='?', const='output.txt', help='output file')
+    config_arg_parser.add_argument(
+        '--interactive', required=False, action='store_true', help='runs in interactive mode, allowing user input.')
     args, remaining_argv = config_arg_parser.parse_known_args()
     parser = argparse.ArgumentParser(description='{}: {}'.format(__title__, __summary__),
         epilog='Please visit {} for additional help.'.format(__uri__),
@@ -73,6 +75,9 @@ def load_options():
     parser.add_argument('-normlex','--normlex', default='norm_lexicon.pickle', type=str,
         help='path to the learnt normalisation lexicon pickle.')
     argument_config = parser.parse_args()
+    if not argument_config.interactive:
+        if not argument_config.input or not argument_config.output:
+            parser.error('-- input and --output are required!')
     return argument_config
 
 
@@ -105,16 +110,25 @@ def run(options):
     # Creates the tokenizer
     tokenizer = preprocessing.new_readable_tokenizer() if options.tokenizer == 'readable' else None
     # Processing:
-    total_lines = sum(1 for line in open(options.input, encoding='utf-8'))
     # Normaliser object, initialised using the input arguments
     normaliser = Normaliser(main_lex, es_lex, pn_lex, ac_lex, in_lex, norm_lex, fc_list, ig_list, tokenizer, options.threshold, options.n_cands, options.capitalize_inis, options.capitalize_pns, options.capitalize_acs, options.sanitize, logger)
-    line_i = 0
-    with open(options.input, encoding='utf-8') as f, open(options.output, 'w', encoding='utf-8') as o:
-        for line in f:
-            line_i += 1
-            logger.info('Processing line '+str(line_i)+' of '+str(total_lines)+'!')
-            o.write(normaliser.normalise(line)+'\n')
-        logger.info('Done! Normalised text written to ' + options.output)
+    # If not ran in interactive mode, the normaliser processes the whole file
+    if not options.interactive:
+        total_lines = sum(1 for line in open(options.input, encoding='utf-8'))
+        line_i = 0
+        with open(options.input, encoding='utf-8') as f, open(options.output, 'w', encoding='utf-8') as o:
+            for line in f:
+                line_i += 1
+                logger.info('Processing line '+str(line_i)+' of '+str(total_lines)+'!')
+                o.write(normaliser.normalise(line)+'\n')
+            logger.info('Done! Normalised text written to ' + options.output)
+    # Interactive mode
+    else:
+        print('\t### Running in interactive mode! ###')
+        while True:
+            print('Enter a sentence to be normalised or press Ctrl+C to quit:')
+            sentence = input()
+            print('Normalised sentence:\n\t'+normaliser.normalise(sentence))
 
 
 
