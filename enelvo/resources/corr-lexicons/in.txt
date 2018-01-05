@@ -752,7 +752,6 @@ kd,cadê
 porq,porque
 soh,só
 bb,bebê
-cm,comigo
 cmg,comigo
 nd,nada
 vcs,vocês
