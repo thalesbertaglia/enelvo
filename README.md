@@ -28,7 +28,6 @@ To make sure that the installation was successful, run:
 ```bash
 python3 -m enelvo --input in.txt --output out.txt
 ```
-
 If eveything went correctly, ``out.txt`` will be written -- containing the normalised version of ``in.txt``.
 
 ## Running
@@ -79,6 +78,9 @@ Enelvo also provides some methods for "cleaning" the text. If you want to remove
 
 ### Other Arguments
 There are some other arguments used to control the internal functioning of the normalisation methods (like thresholds etc). Use ``-h`` or ``--help`` to see further details.
+
+## Issues
+If you are using ``conda`` as your Python package manager, you may get an error like ``MKL FATAL ERROR: Cannot load libmkl_avx.so or libmkl_def.so`` when running Enelvo. If that happens, you will need to install ``nokml``. Run ``conda install nokml`` to do so. Alternatively, you can follow any of the approaches discussed [here](https://github.com/BVLC/caffe/issues/3884) to solve the problem.
 
 ## What Else?
 Everything described here is related to using Enelvo as a *tool*. However, it can be personalised and configured way further when used as an API. It is possible to generate and score candidates using a lot of different metrics and methods -- you can even use your own metrics! The easiest way of doing this is using the **Normaliser** class. Have a look at ``__main__.py`` and ``normaliser.py`` to understand how to start. The code is reasonably well-commented, so it shouldn't be too difficult to understand what is happening.
