@@ -2,6 +2,7 @@
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 import pickle
+import os
 
 from enelvo import metrics
 from enelvo import preprocessing
@@ -11,30 +12,44 @@ from enelvo import candidate_scoring
 
 from enelvo.utils import loaders
 
+
 class Normaliser:
 
-    def __init__(self, main_lex, es_lex, pn_lex, ac_lex, in_lex, norm_lex, fc_list, ig_list, tokenizer, threshold, n_cands, capitalize_inis, capitalize_pns, capitalize_acs, sanitize, logger):
+    def __init__(self, main_lex=None, es_lex=None, pn_lex=None, ac_lex=None, in_lex=None, norm_lex=None, fc_list=None, ig_list=None, tokenizer=None, threshold=3, n_cands=-1, capitalize_inis=False, capitalize_pns=False, capitalize_acs=False, sanitize=False, logger=None):
         '''Loads all necessary lexicons.'''
+        main_path = os.path.split(os.path.abspath(__file__))[0]
+        lexicons_path = os.path.join(main_path, 'resources/lexicons/')
+        corrs_path = os.path.join(main_path, 'resources/corr-lexicons/')
+        embs_path = os.path.join(main_path, 'resources/embeddings/')
         # Lexicon of words considered correct
-        self.main_lex = loaders.load_lex(file_path=main_lex)
+        self.main_lex = loaders.load_lex(file_path=main_lex) if main_lex else loaders.load_lex(
+            file_path=lexicons_path + 'unitex-full-clean+enelvo-ja-corrigido.txt')
         # Lexicon of foreign words
-        self.es_lex = loaders.load_lex(file_path=es_lex)
+        self.es_lex = loaders.load_lex(file_path=es_lex) if es_lex else loaders.load_lex(
+            file_path=corrs_path + 'es.txt')
         # Lexicon of proper nouns
-        self.pn_lex = loaders.load_lex(file_path=pn_lex)
+        self.pn_lex = loaders.load_lex(file_path=pn_lex) if pn_lex else loaders.load_lex(
+            file_path=corrs_path + 'pns.txt')
         # Lexicon of acronyms
-        self.ac_lex = loaders.load_lex(file_path=ac_lex)
+        self.ac_lex = loaders.load_lex(file_path=ac_lex) if ac_lex else loaders.load_lex(
+            file_path=corrs_path + 'acs.txt')
         # Force list
         self.fc_list = loaders.load_lex(file_path=fc_list) if fc_list else None
         # Ignore list
         self.ig_list = loaders.load_lex(file_path=ig_list) if ig_list else None
         # Combined lexicon of 'ok' words
-        self.ok_lex = {**self.main_lex, **self.es_lex, **self.pn_lex, **self.ac_lex}
+        self.ok_lex = {**self.main_lex, **
+                       self.es_lex, **self.pn_lex, **self.ac_lex}
         # Lexicon of internet slang
-        self.in_lex = loaders.load_lex_corr(file_path=in_lex)
-        self.ok_lex = {k: self.ok_lex[k] for k in self.ok_lex if k not in self.in_lex}
-        self.ok_lex = {**self.ok_lex, **self.ig_list} if self.ig_list else self.ok_lex
+        self.in_lex = loaders.load_lex_corr(
+            file_path=in_lex) if in_lex else loaders.load_lex_corr(file_path=corrs_path + 'in.txt')
+        self.ok_lex = {k: self.ok_lex[k]
+                       for k in self.ok_lex if k not in self.in_lex}
+        self.ok_lex = {**self.ok_lex, **
+                       self.ig_list} if self.ig_list else self.ok_lex
         # Loads pickle if parameter is set
-        self.norm_lex = pickle.load(open(norm_lex, 'rb')) if norm_lex else None
+        self.norm_lex = pickle.load(open(norm_lex, 'rb')) if norm_lex else pickle.load(
+            open(embs_path + 'norm_lexicon.pickle', 'rb'))
         self.capitalize_inis = capitalize_inis
         self.capitalize_acs = capitalize_acs
         self.capitalize_pns = capitalize_pns
@@ -43,7 +58,8 @@ class Normaliser:
         self.threshold = threshold
         self.n_cands = n_cands
         self.logger = logger
-        self.logger.info('Lexicons loaded!')
+        if self.logger:
+            self.logger.info('Lexicons loaded!')
 
     def normalise(self, sentence):
         '''Normalises a given sentence and returns it.
