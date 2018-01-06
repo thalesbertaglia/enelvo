@@ -1,6 +1,7 @@
 '''Normaliser class. Combines all normalisation methods in a single class.'''
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
+from inspect import currentframe, getargvalues
 import pickle
 import os
 
@@ -15,8 +16,18 @@ from enelvo.utils import loaders
 
 class Normaliser:
 
-    def __init__(self, main_lex=None, es_lex=None, pn_lex=None, ac_lex=None, in_lex=None, norm_lex=None, fc_list=None, ig_list=None, tokenizer=None, threshold=3, n_cands=-1, capitalize_inis=False, capitalize_pns=False, capitalize_acs=False, sanitize=False, logger=None):
+    def __init__(self, main_lex=None, es_lex=None, pn_lex=None, ac_lex=None, in_lex=None, norm_lex=None, fc_list=None, ig_list=None, tokenizer=None, threshold=3, n_cands=-1, capitalize_inis=False, capitalize_pns=False, capitalize_acs=False, sanitize=False, logger=None, print_params=False):
         '''Loads all necessary lexicons.'''
+        # Parameter tuning message
+        self.print_params = print_params
+        if self.print_params:
+            frame = currentframe()
+            args, _, _, values = getargvalues(frame)
+            args_str = '%s params:' % __class__.__name__
+            for i in args:
+                args_str += "%s=%s;" % (i, values[i])
+            print(args_str)
+
         main_path = os.path.split(os.path.abspath(__file__))[0]
         lexicons_path = os.path.join(main_path, 'resources/lexicons/')
         corrs_path = os.path.join(main_path, 'resources/corr-lexicons/')
