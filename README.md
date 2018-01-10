@@ -83,7 +83,7 @@ Enelvo also provides some methods for "cleaning" the text. If you want to remove
 There are some other arguments used to control the internal functioning of the normalisation methods (like thresholds etc). Use ``-h`` or ``--help`` to see further details.
 
 ## What Else?
-Everything described here is related to using Enelvo as a *tool*. However, it can be personalised and configured way further when used as an API. It is possible to generate and score candidates using a lot of different metrics and methods -- you can even use your own metrics! The easiest way of doing this is using the **Normaliser** class. Have a look at ``example.py`` and ``normaliser.py`` to understand how to start. The code is reasonably well-commented, so it shouldn't be too difficult to understand what is happening.
+Everything described here is related to using Enelvo as a *tool*. However, it can be personalised and configured way further when used as an API/library. It is possible to generate and score candidates using a lot of different metrics and methods -- you can even use your own metrics! The easiest way of doing this is using the **Normaliser** class. Have a look at ``example.py`` and ``normaliser.py`` to understand how to start. The code is reasonably well-commented, so it shouldn't be too difficult to understand what is happening.
 
 If you have any questions, comments, suggestions or problems with Enelvo, please feel free to [contact me](http://thalesbertaglia.com).
 
