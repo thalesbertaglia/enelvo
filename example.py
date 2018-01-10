@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-'''A simple example showing how to integrate Enelvo to your code, using it as a package.'''
+'''A simple example showing how to integrate Enelvo to your code, using it as a library.'''
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
