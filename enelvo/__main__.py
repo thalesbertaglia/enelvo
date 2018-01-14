@@ -98,9 +98,9 @@ def run(options):
     # Lexicon of acronyms
     ac_lex = corrs_path+'acs.txt'
     # Force list
-    fc_list = loaders.load_lex(file_path=options.force_list) if options.force_list else None
+    fc_list = options.force_list if options.force_list else None
     # Ignore list
-    ig_list = loaders.load_lex(file_path=options.ignore_list) if options.ignore_list else None
+    ig_list = options.ignore_list if options.ignore_list else None
     # Lexicon of internet slang
     in_lex = corrs_path+'in.txt'
     # Pickle

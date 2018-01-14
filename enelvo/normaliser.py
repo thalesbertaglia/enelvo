@@ -34,7 +34,7 @@ class Normaliser:
         self.ac_lex = loaders.load_lex(file_path=ac_lex) if ac_lex else loaders.load_lex(
             file_path=corrs_path + 'acs.txt')
         # Force list
-        self.fc_list = loaders.load_lex(file_path=fc_list) if fc_list else None
+        self.fc_list = loaders.load_lex_mixed(file_path=fc_list) if fc_list else None
         # Ignore list
         self.ig_list = loaders.load_lex(file_path=ig_list) if ig_list else None
         # Combined lexicon of 'ok' words
@@ -74,7 +74,10 @@ class Normaliser:
         oov_tokens = analytics.identify_oov(lex=self.ok_lex, force_list=self.fc_list,
                                             tokens=self.pp_line) if self.fc_list else analytics.identify_oov(lex=self.ok_lex, tokens=pp_line)
         for i in oov_tokens:
-            if pp_line[i] in self.in_lex:
+            # In case force list contains forced corrections
+            if pp_line[i] in self.fc_list:
+                pp_line[i] = self.fc_list[pp_line[i]]
+            elif pp_line[i] in self.in_lex:
                 pp_line[i] = self.in_lex[pp_line[i]]
             else:
                 # First option is to normalise according to the learnt lexicon
