@@ -62,6 +62,15 @@ An ignore list is a list of words that will *always* be considered **correct** -
 
 A force list is a list of words that will *always* be considered **noisy** -- even if contained in the language lexicon. Thus, these words will alway be normalised. To use it, add ``-fclst path_to_list`` or ``-force-list path_to_list``. The input must be the full path file and the file must contain a single word per line.
 
+For the force list, you can also force a correction. To do so, just write the word and its correction separated by a comma. You can mix both formats, for example:
+```bash
+vc
+q,que
+oq, o que
+kk
+etc
+```
+
 ### Changing the Tokeniser
 By default, the tokeniser used in Enelvo replaces some entities with pre-defined tags. Twitter usernames become ``USERNAME``, numbers (including dates, phone numbers etc) -> ``NUMBER``, URLs -> ``URL``, Twitter hashtags -> ``HASHTAG``, emojis -> ``EMOJI`` etc.
 
