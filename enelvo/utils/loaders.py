@@ -10,11 +10,24 @@ def load_lex(file_path):
         file_path (str): File containing the lexicon.
 
     Return:
-        dict(str:int): Word and 0.
+        dict(str:str): Word and correction.
     '''
     return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip()): 0 for w in open(file_path, encoding='utf-8').readlines()}
 
 def load_lex_corr(file_path):
+    '''Loads a lexicon in mixed format. Lines with a comma are loaded as (word,correction), others are loaded as (word,0)
+
+    Args:
+        file_path (str): File containing the lexicon.
+
+    Return:
+        dict(str:str): Word and correction.
+    '''
+    return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip().split(',')[0]): re.sub(r'(.)\1+', r'\1\1\1', w.strip().split(',')[1])
+            for w in open(file_path, encoding='utf-8').readlines()}
+
+
+def load_lex_mixed(file_path):
     '''Loads a lexicon in (word,correction) format to a dictionary
 
     Args:
@@ -23,8 +36,14 @@ def load_lex_corr(file_path):
     Return:
         dict(str:int): Word and frequency.
     '''
-    return {re.sub(r'(.)\1\1+', r'\1\1\1', w.strip().split(',')[0]): re.sub(r'(.)\1+', r'\1\1\1', w.strip().split(',')[1])
-            for w in open(file_path, encoding='utf-8').readlines()}
+    lex = {}
+    with open(file_path, encoding='utf-8') as f:
+        for line in f:
+            if ',' in line:
+                lex[re.sub(r'(.)\1\1+', r'\1\1\1', line.strip().split(',')[0])] = re.sub(r'(.)\1+', r'\1\1\1', line.strip().split(',')[1])
+            else:
+                lex[re.sub(r'(.)\1\1+', r'\1\1\1', line.strip())] = 0
+    return lex
 
 
 def load_lex_freq(file_path, freq=10):
