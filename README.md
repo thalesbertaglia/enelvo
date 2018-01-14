@@ -70,6 +70,7 @@ oq, o que
 kk
 etc
 ```
+Lines containing a comma will assume that the word after the comma is a forced correction. Other lines will just force the word to be corrected regularly by the normaliser.
 
 ### Changing the Tokeniser
 By default, the tokeniser used in Enelvo replaces some entities with pre-defined tags. Twitter usernames become ``USERNAME``, numbers (including dates, phone numbers etc) -> ``NUMBER``, URLs -> ``URL``, Twitter hashtags -> ``HASHTAG``, emojis -> ``EMOJI`` etc.
