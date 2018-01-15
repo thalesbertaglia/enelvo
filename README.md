@@ -49,7 +49,21 @@ python3 -m enelvo --interactive
 Each of the arguments and their usage will be explained in the following section.
 
 ## Arguments
-There are some arguments that allow you to personalise how Enelvo works. You can find the details by adding ``-h`` or ``--help`` when running the tool or by reading the sections below.
+There are some arguments that allow you to personalise how Enelvo works. You can find the details by adding ``-h`` or ``--help`` when running the tool. The main ones are:
+
+|                       **Option**                       |                  **Default**                  |                                                    **Description**                                                   |
+|:------------------------------------------------------:|:---------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------:|
+| ``-h, --help``                                              |                       -                       | Displays list of commands.                                                                                           |
+| ``-l, --lex LEX_FILE``                                 | ``unitex-full-clean+enelvo-ja-corrigido.txt`` | Changes the lexicon of words considered correct.                                                                     |
+| ``-iglst, --ignore-list LIST_FILE``                    |                    ``None``                   | Sets a list of words that will be ignored by the normaliser.                                                         |
+| ``-fclst, --force-list LIST_FILE``                     |                    ``None``                   | Sets a list of words (and optionally their corrections) that will always be processed by the normaliser.             |
+| ``-t, --tokenizer readable``                           |                  ``regular``                  | Changes tokeniser configuration. A ``readable`` tokeniser does not replace entities (hashtags, number etc) for tags. |
+| ``-cpns, --capitalize-pns``                            |                       -                       | Capitalises proper nouns (e.g. maria -> Maria).                                                                      |
+| ``-cacs, --capitalize-acs``                            |                       -                       | Capitalises acronyms (e.g bbb -> BBB).                                                                               |
+| ``-cinis, --capitalize-inis``                          |                       -                       | Capitalises initials in a sentence.                                                                                  |
+| ``-sn, --sanitize``                                    |                       -                       | Removes punctuation, emojis, and emoticons from all sentences.                                                       |                                   |
+
+The following sections will explain each one more thoroughly.
 
 ### Changing the Lexicon
 Argument ``-l`` or ``--lex`` lets you choose the lexicon of words considered correct -- i.e, this argument sets the language dictionary. The input must be the full file path (e.g. ``../some/folder/dict-pt.txt``).
