@@ -75,9 +75,11 @@ class Normaliser:
                                             tokens=self.pp_line) if self.fc_list else analytics.identify_oov(lex=self.ok_lex, tokens=pp_line)
         for i in oov_tokens:
             # In case force list contains forced corrections
-            if pp_line[i] in self.fc_list:
-                pp_line[i] = self.fc_list[pp_line[i]]
-            elif pp_line[i] in self.in_lex:
+            if self.fc_list:
+                if pp_line[i] in self.fc_list:
+                    pp_line[i] = self.fc_list[pp_line[i]]
+                    continue
+            if pp_line[i] in self.in_lex:
                 pp_line[i] = self.in_lex[pp_line[i]]
             else:
                 # First option is to normalise according to the learnt lexicon
