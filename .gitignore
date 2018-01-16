@@ -21,3 +21,4 @@ dist/
 build/
 out.txt
 i.txt
+*.so
