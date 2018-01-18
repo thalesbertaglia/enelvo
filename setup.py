@@ -9,7 +9,7 @@ ext_modules = [
 
 setup(
     name='Enelvo',
-    version='0.0.3',
+    version='0.0.7',
     packages=['enelvo', 'enelvo.preprocessing', 'enelvo.candidate_generation',
     'enelvo.candidate_scoring', 'enelvo.metrics', 'enelvo.utils', 'enelvo.preprocessing.tokenizer'],
     package_data = {'enelvo' : ['../requirements.txt', 'resources/lexicons/*',
