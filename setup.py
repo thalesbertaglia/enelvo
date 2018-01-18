@@ -1,8 +1,8 @@
-from distutils.core import setup
 from Cython.Build import cythonize
-from distutils.extension import Extension
 from Cython.Distutils import build_ext
+from setuptools import setup, Extension
 
+REQUIRED_PYTHON = (3, 5)
 
 ext_modules = [
     Extension("enelvo.metrics.cythonlcs", ["enelvo/metrics/cythonlcs.pyx"], include_dirs=['.'])]
@@ -21,7 +21,7 @@ setup(
     author='Thales Bertaglia',
     author_email='contact@thalesbertaglia.com',
     url='https://github.com/tfcbertaglia/enelvo',
-    python_requires='~=3',
+    python_requires='>={}.{}'.format(*REQUIRED_PYTHON),
     include_package_data=True,
     install_requires=[
         'gensim>=2.2.0',

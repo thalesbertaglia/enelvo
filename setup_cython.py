@@ -1,7 +1,6 @@
-from distutils.core import setup
 from Cython.Build import cythonize
-from distutils.extension import Extension
 from Cython.Distutils import build_ext
+from setuptools import setup, Extension
 
 ext_modules = [
     Extension("enelvo.metrics.cythonlcs", ["enelvo/metrics/cythonlcs.pyx"], include_dirs=['.'])]
