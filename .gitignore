@@ -16,9 +16,11 @@ resultados-baselines-scoring.txt
 resultados-baselines.txt
 test.py
 *.so
+*.pyx
 enelvo/resources/embeddings/*.model
 dist/
 build/
 out.txt
 i.txt
 *.so
+Enelvo.egg-info
