@@ -30,6 +30,8 @@ python3 -m enelvo --input in.txt --output out.txt
 ```
 If eveything went correctly, ``out.txt`` will be written -- containing the normalised version of ``in.txt``.
 
+There is also a [REST-based microservice](https://github.com/staticdev/enelvo-microservice) for Enelvo, developed by Thiago D'Ávila. Instructions can be found on the [repository page](https://github.com/staticdev/enelvo-microservice).
+
 ### Issues
 If you are using ``conda`` as your Python package manager, you may get an error like ``MKL FATAL ERROR: Cannot load libmkl_avx.so or libmkl_def.so`` when running Enelvo. If that happens, you will need to install ``nokml``. Run ``conda install nokml`` to do so. Alternatively, you can follow any of the approaches discussed [here](https://github.com/BVLC/caffe/issues/3884) to solve the problem.
 
