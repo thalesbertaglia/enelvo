@@ -53,7 +53,7 @@ class Normaliser:
         self.capitalize_inis = capitalize_inis
         self.capitalize_acs = capitalize_acs
         self.capitalize_pns = capitalize_pns
-        self.tokenizer = tokenizer
+        self.tokenizer = preprocessing.new_readable_tokenizer() if tokenizer == 'readable' else preprocessing.Tokenizer() if not tokenizer else tokenizer
         self.sanitize = sanitize
         self.threshold = threshold
         self.n_cands = n_cands
