@@ -8,6 +8,22 @@ Enelvo is a tool for normalising noisy words in user-generated content written i
 
 The tool was developed as part of my master's project. You can find more details about how it works in my [dissertation](http://www.teses.usp.br/teses/disponiveis/55/55134/tde-10112017-170919/en.php) (in Portuguese) or in [this paper](http://anthology.aclweb.org/W/W16/W16-3916.pdf) (in English). For more information in Portuguese, please visit the [project website](http://thalesbertaglia.com/enelvo).
 
+## Citing
+If you use Enelvo or any code from Enelvo in your research work, you are kindly asked to acknowledge the use of the tool in your publications.
+>Bertaglia, Thales Felipe Costa, and Maria das Graças Volpe Nunes. "Exploring Word Embeddings for Unsupervised Textual User-Generated Content Normalization." Proceedings of the 2nd Workshop on Noisy User-generated Text (WNUT). 2016.
+
+BibTeX:
+```
+@inproceedings{bertaglia2016exploring,
+  title={Exploring Word Embeddings for Unsupervised Textual User-Generated Content Normalization},
+  author={Bertaglia, Thales Felipe Costa and Nunes, Maria das Gra{\c{c}}as Volpe},
+  booktitle={Proceedings of the 2nd Workshop on Noisy User-generated Text (WNUT)},
+  pages={112--120},
+  year={2016}
+}
+```
+
+
 ## Getting Started
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Python>=3.5](https://www.python.org/) installed on your computer. First of all, download the repository as a ZIP or run from your command line:
 
@@ -115,12 +131,14 @@ Everything described here is related to using Enelvo as a *tool*. However, it ca
 If you have any questions, comments, suggestions or problems with Enelvo, please feel free to [contact me](http://thalesbertaglia.com).
 
 ## Acknowledgements
-Many people were fundamental in carrying out this project (and my master's in general), so I would like to thank some of them.
+Many people were fundamental in carrying out this project (and my master's in general), so I would like to thank some of them:
 
-Huge thanks to Graça Nunes, Henrico Brum, Rafael Martins, Raphael Silva, and Thiago Pardo, who devoted a (big) portion of their valuable time to annotate the corpus that served as the basis for this project.
+Graça Nunes, Henrico Brum, Rafael Martins, Raphael Silva, and Thiago Pardo, who devoted a (big) portion of their valuable time to annotate the corpus that served as the basis for this project.
 
-Thanks to Marcos Treviso for helping me organise and implement many parts os this project, and for teaching me a great deal of what I know about NLP.
+Marcos Treviso for helping me organise and implement many parts os this project, and for teaching me a great deal of what I know about NLP.
 
-Thanks to all my fellow labmates from NILC for helping throughout my whole master's.
+Carolina Coimbra and Thiago D'Ávila, for being the first ones to use Enelvo, for reporting many bugs, and for suggesting valuable improvements to the tool.
+
+All my fellow labmates from NILC for helping throughout my whole master's.
 
 Thank you all! 😬
