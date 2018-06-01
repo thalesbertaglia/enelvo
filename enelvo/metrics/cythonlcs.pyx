@@ -14,7 +14,7 @@ def cython_eval_lcs(x, y):
     m = len(x)
     n = len(y)
     # An (m+1) times (n+1) matrix
-    C = np.zeros((m + 1, n + 1), dtype=np.int32)
+    C = np.zeros((m + 1, n + 1), dtype=np.int16)
     #C = [[0] * (n + 1) for _ in range(m + 1)]
     for i in range(1, m + 1):
         for j in range(1, n + 1):
