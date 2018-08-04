@@ -74,6 +74,8 @@ def load_options():
         help='path to the embedding model.')'''
     parser.add_argument('-normlex','--normlex', default='norm_lexicon.pickle', type=str,
         help='path to the learnt normalisation lexicon pickle.')
+    parser.add_argument('-nrmen','--norm-en', default=False, required=False, action='store_true',
+        help='try to normalise english words')
     argument_config = parser.parse_args()
     if not argument_config.interactive:
         if not argument_config.input or not argument_config.output:
@@ -111,7 +113,7 @@ def run(options):
     tokenizer = preprocessing.new_readable_tokenizer() if options.tokenizer == 'readable' else None
     # Processing:
     # Normaliser object, initialised using the input arguments
-    normaliser = Normaliser(main_lex, es_lex, pn_lex, ac_lex, in_lex, norm_lex, fc_list, ig_list, tokenizer, options.threshold, options.n_cands, options.capitalize_inis, options.capitalize_pns, options.capitalize_acs, options.sanitize, logger)
+    normaliser = Normaliser(main_lex, es_lex, pn_lex, ac_lex, in_lex, norm_lex, fc_list, ig_list, options.norm_en, tokenizer, options.threshold, options.n_cands, options.capitalize_inis, options.capitalize_pns, options.capitalize_acs, options.sanitize, logger)
     # If not ran in interactive mode, the normaliser processes the whole file
     if not options.interactive:
         total_lines = sum(1 for line in open(options.input, encoding='utf-8'))

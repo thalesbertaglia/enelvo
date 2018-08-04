@@ -827,7 +827,7 @@ static const char __pyx_k_np[] = "np";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_dtype[] = "dtype";
-static const char __pyx_k_int32[] = "int32";
+static const char __pyx_k_int16[] = "int16";
 static const char __pyx_k_numpy[] = "numpy";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_zeros[] = "zeros";
@@ -842,7 +842,7 @@ static PyObject *__pyx_n_s_dtype;
 static PyObject *__pyx_n_s_enelvo_metrics_cythonlcs;
 static PyObject *__pyx_n_s_i;
 static PyObject *__pyx_n_s_import;
-static PyObject *__pyx_n_s_int32;
+static PyObject *__pyx_n_s_int16;
 static PyObject *__pyx_n_s_j;
 static PyObject *__pyx_n_s_m;
 static PyObject *__pyx_n_s_main;
@@ -966,7 +966,7 @@ static PyObject *__pyx_pf_6enelvo_7metrics_9cythonlcs_cython_eval_lcs(CYTHON_UNU
  *     m = len(x)
  *     n = len(y)             # <<<<<<<<<<<<<<
  *     # An (m+1) times (n+1) matrix
- *     C = np.zeros((m + 1, n + 1), dtype=np.int32)
+ *     C = np.zeros((m + 1, n + 1), dtype=np.int16)
  */
   __pyx_t_1 = PyObject_Length(__pyx_v_y); if (unlikely(__pyx_t_1 == -1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
@@ -977,7 +977,7 @@ static PyObject *__pyx_pf_6enelvo_7metrics_9cythonlcs_cython_eval_lcs(CYTHON_UNU
   /* "enelvo/metrics/cythonlcs.pyx":17
  *     n = len(y)
  *     # An (m+1) times (n+1) matrix
- *     C = np.zeros((m + 1, n + 1), dtype=np.int32)             # <<<<<<<<<<<<<<
+ *     C = np.zeros((m + 1, n + 1), dtype=np.int16)             # <<<<<<<<<<<<<<
  *     #C = [[0] * (n + 1) for _ in range(m + 1)]
  *     for i in range(1, m + 1):
  */
@@ -1007,7 +1007,7 @@ static PyObject *__pyx_pf_6enelvo_7metrics_9cythonlcs_cython_eval_lcs(CYTHON_UNU
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_int32); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_int16); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
@@ -1021,7 +1021,7 @@ static PyObject *__pyx_pf_6enelvo_7metrics_9cythonlcs_cython_eval_lcs(CYTHON_UNU
   __pyx_t_6 = 0;
 
   /* "enelvo/metrics/cythonlcs.pyx":19
- *     C = np.zeros((m + 1, n + 1), dtype=np.int32)
+ *     C = np.zeros((m + 1, n + 1), dtype=np.int16)
  *     #C = [[0] * (n + 1) for _ in range(m + 1)]
  *     for i in range(1, m + 1):             # <<<<<<<<<<<<<<
  *         for j in range(1, n + 1):
@@ -1264,7 +1264,7 @@ static PyObject *__pyx_pf_6enelvo_7metrics_9cythonlcs_cython_eval_lcs(CYTHON_UNU
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "enelvo/metrics/cythonlcs.pyx":19
- *     C = np.zeros((m + 1, n + 1), dtype=np.int32)
+ *     C = np.zeros((m + 1, n + 1), dtype=np.int16)
  *     #C = [[0] * (n + 1) for _ in range(m + 1)]
  *     for i in range(1, m + 1):             # <<<<<<<<<<<<<<
  *         for j in range(1, n + 1):
@@ -1354,7 +1354,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_enelvo_metrics_cythonlcs, __pyx_k_enelvo_metrics_cythonlcs, sizeof(__pyx_k_enelvo_metrics_cythonlcs), 0, 0, 1, 1},
   {&__pyx_n_s_i, __pyx_k_i, sizeof(__pyx_k_i), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
-  {&__pyx_n_s_int32, __pyx_k_int32, sizeof(__pyx_k_int32), 0, 0, 1, 1},
+  {&__pyx_n_s_int16, __pyx_k_int16, sizeof(__pyx_k_int16), 0, 0, 1, 1},
   {&__pyx_n_s_j, __pyx_k_j, sizeof(__pyx_k_j), 0, 0, 1, 1},
   {&__pyx_n_s_m, __pyx_k_m, sizeof(__pyx_k_m), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
