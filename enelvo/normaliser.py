@@ -3,6 +3,7 @@
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 import pickle
 import os
+import logging
 
 from enelvo import metrics
 from enelvo import preprocessing
@@ -61,7 +62,7 @@ class Normaliser:
         self.sanitize = sanitize
         self.threshold = threshold
         self.n_cands = n_cands
-        self.logger = logger
+        self.logger = logger if logger else logging.getLogger(__name__)
         if self.logger:
             self.logger.info('Lexicons loaded!')
 

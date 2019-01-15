@@ -941,3 +941,7 @@ hoj,hoje
 secr,secar
 dx,deixa
 fessor,professor
+historia,história
+historias,histórias
+aniversario,aniversário
+aniversarios,aniversários
