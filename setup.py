@@ -21,7 +21,7 @@ def find_version(*file_paths):
         return version_match.group(1)
     raise RuntimeError("Unable to find version string.")
 
-REQUIRED_PYTHON = (3, 5)
+REQUIRED_PYTHON = (3, 6)
 
 ext_modules = [
     Extension("enelvo.metrics.cythonlcs",
@@ -51,7 +51,7 @@ setup(
         'tabulate>=0.8.2',
         'editdistance>=0.5.2',
         'numpy>=1.16.0',
-        'cython==0.29.7'],
+        'cython==0.29.10'],
     cmdclass={'build_ext': build_ext},
     ext_modules=ext_modules,
     options={'build_ext': {'inplace': True, 'force': True}},
