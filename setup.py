@@ -51,7 +51,7 @@ setup(
         'tabulate>=0.8.2',
         'editdistance>=0.5.2',
         'numpy>=1.16.0',
-        'cython>=0.29.2'],
+        'cython==0.29.7'],
     cmdclass={'build_ext': build_ext},
     ext_modules=ext_modules,
     options={'build_ext': {'inplace': True, 'force': True}},
