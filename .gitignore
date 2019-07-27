@@ -25,3 +25,4 @@ i.txt
 *.so
 Enelvo.egg-info
 enelvo/.vscode/settings.json
+enelvo/.vscode/launch.json
