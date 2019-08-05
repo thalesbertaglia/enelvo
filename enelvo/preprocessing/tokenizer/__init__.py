@@ -20,10 +20,10 @@ on commonly modified and normalized features in classification research using
 content from Twitter.
 """
 
-__title__ = 'tweetokenize'
-__version__ = '1.0.1'
-__author__ = 'Jared Suttles'
-__license__ = 'Modified BSD'
-__copyright__ = 'Copyright 2017 Jared Suttles, modified by Thales Bertaglia'
+__title__ = "tweetokenize"
+__version__ = "1.0.1"
+__author__ = "Jared Suttles"
+__license__ = "Modified BSD"
+__copyright__ = "Copyright 2017 Jared Suttles, modified by Thales Bertaglia"
 
 from .tokenizer import Tokenizer

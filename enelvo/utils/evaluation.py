@@ -1,4 +1,4 @@
-'''Methods for evaluating normalization methods'''
+"""Methods for evaluating normalization methods"""
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
@@ -6,7 +6,7 @@ from tabulate import tabulate
 
 
 def evaluate_candidate_generation(list_corrections, list_candidates):
-    '''Returns the recall (in %) of candidate generation methods.
+    """Returns the recall (in %) of candidate generation methods.
 
     Args:
         list_corrections (list): List of tuples with (noisy_word, correction).
@@ -15,9 +15,10 @@ def evaluate_candidate_generation(list_corrections, list_candidates):
 
     Returns
         float: Recall value.
-    '''
+    """
     correct = 0
     for i in range(len(list_corrections)):
-        if list_corrections[i][1] in list_candidates[i]: correct += 1
+        if list_corrections[i][1] in list_candidates[i]:
+            correct += 1
 
-    return (correct/len(list_corrections))
+    return correct / len(list_corrections)
