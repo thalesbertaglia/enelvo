@@ -146,4 +146,4 @@ Carolina Coimbra and Thiago D'Ávila, for being the first ones to use Enelvo, fo
 
 All my fellow labmates from NILC for helping throughout my whole master's.
 
-Thank you all! 😬
+Thank you all! ❤️
