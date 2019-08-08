@@ -7,6 +7,7 @@
 
 <p align="center">
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+[![Build Status](https://travis-ci.org/tfcbertaglia/enelvo.svg?branch=master)](https://travis-ci.org/tfcbertaglia/enelvo)
 </p>
 
 Enelvo is a tool for normalising noisy words in user-generated content written in Portuguese -- such as tweets, blog posts, and product reviews. It is capable of identifying and normalising spelling mistakes, internet slang, acronyms, proper nouns, and others.
