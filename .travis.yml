@@ -1,3 +1,6 @@
+# Disable sudo to speed up the build
+sudo: false
+
 dist: xenial   # required for Python >= 3.7
 language: python
 python:
