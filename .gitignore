@@ -28,3 +28,4 @@ enelvo/.vscode/settings.json
 enelvo/.vscode/launch.json
 enelvo/metrics/cythonlcs.c
 .vscode/settings.json
+.mpypy_cache/
