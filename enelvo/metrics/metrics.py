@@ -4,7 +4,11 @@
 import functools
 import editdistance
 import numpy as np
-from enelvo.metrics.cythonlcs import cython_eval_lcs
+
+try:
+    from enelvo.metrics.cythonlcs import cython_eval_lcs
+except ImportError:
+    print("Cython installation not found!")
 
 # Constants
 METRICS_DICT = {}
