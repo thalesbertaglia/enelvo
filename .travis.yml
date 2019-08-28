@@ -11,7 +11,7 @@ python:
 install:
   - pip install -r requirements.txt
 
-script: pytest --cov=enelvo/
+script: pytest tests/ --cov=enelvo/
 
 after_success:
   - coveralls
