@@ -30,3 +30,4 @@ enelvo/metrics/cythonlcs.c
 .vscode/settings.json
 .mpypy_cache/
 .pytest_cache/
+.coverage
