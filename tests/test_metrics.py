@@ -8,10 +8,10 @@ def test_edit_distance():
 
 
 def test_lcs():
-    assert metrics.eval_lcs("casa", "caza") == 3
-    assert metrics.eval_lcs("qq eh isso", "o que é isso") == 7
-    assert metrics.eval_lcs("abc def zzz", "abc def zzz") == 11
-    assert metrics.eval_lcs("abc def zzz", "yyy") == 0
+    assert metrics.eval_lcs("casa", "caza", cython=False) == 3
+    assert metrics.eval_lcs("qq eh isso", "o que é isso", cython=False) == 7
+    assert metrics.eval_lcs("abc def zzz", "abc def zzz", cython=False) == 11
+    assert metrics.eval_lcs("abc def zzz", "yyy", cython=False) == 0
 
 
 def test_lcs_ratio():
