@@ -5,10 +5,13 @@ import functools
 import editdistance
 import numpy as np
 
+global USE_CYTHON_LCS
+USE_CYTHON_LCS = True
 try:
     from enelvo.metrics.cythonlcs import cython_eval_lcs
 except ImportError:
     print("Cython installation not found!")
+    USE_CYTHON_LCS = False
 
 # Constants
 METRICS_DICT = {}
@@ -46,7 +49,7 @@ def edit_distance(x: str, y: str) -> int:
     return editdistance.eval(x, y)
 
 
-def eval_lcs(x: str, y: str, cython: bool = True) -> int:
+def eval_lcs(x: str, y: str, cython: bool = USE_CYTHON_LCS) -> int:
     """Calculates the length of the longest common subsequence between two strings.
 
     Args:
