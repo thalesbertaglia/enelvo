@@ -166,30 +166,45 @@ def diacritic_sym(x: str, y: str) -> int:
     return symmetry
 
 
-def lcs_ratio_sym(x, y):
+def lcs_ratio_sym(x: str, y: str) -> float:
     """The length of the longest common subsequence between two strings + the
     diacritic_sym normalized by the length of longest one.
 
     Args:
-        x (str): The first string.
-        y (str): The second string.
+        x: The first string.
+        y: The second string.
 
     Returns:
-        float: The normalized length of the longest common subsequence between x and y.
+        The normalized length of the longest common subsequence between x and y.
     """
     return (lcs(x, y) + diacritic_sym(x, y)) / max(len(x), len(y))
 
 
-def hassan_similarity(x, y):
+def hassan_similarity(x: str, y: str) -> float:
     """Similarity measure proposed by Hassan and Menezes (2013) in
-    "Social Text Normalization using Contextual Graph Random Walks"
+    Social Text Normalization using Contextual Graph Random Walks.
+
+    Args:
+        x: The first string.
+        y: The second string.
+
+    Returns:
+        The hassan similarity between ``x``and ``y``."
     """
     edit = edit_distance(x, y) - diacritic_sym(x, y)
     return lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y)
 
 
-def c_hassan_similarity(x, y):
-    """Complement of hassan_similarity."""
+def c_hassan_similarity(x: str, y: str) -> float:
+    """Complement of ``hassan_similarity``.
+    
+    Args:
+        x: The first string.
+        y: The second string.
+
+    Returns:
+        The complement of the hassan similarity between ``x``and ``y``.
+    """
     edit = edit_distance(x, y) - diacritic_sym(x, y)
     hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
     return hassan
