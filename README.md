@@ -43,7 +43,7 @@ $ cd enelvo
 ```
 
 ## Installing
-Make sure you have all dependencies installed. You also need to have Cython properly installed, follow the instructions [here](http://cython.readthedocs.io/en/latest/src/quickstart/install.html). If you use [pip](https://pypi.python.org/pypi/pip), simply run ``pip install --user -r requirements.txt``.
+Make sure you have all dependencies installed. If you use [pip](https://pypi.python.org/pypi/pip), simply run ``pip install --user -r requirements.txt``.
 
 After that, run `python3 setup.py install` to install Enelvo.
 
