@@ -79,18 +79,18 @@ def lcs(str_x: str, str_y: str) -> int:
     Returns:
         The length of the longest common subsequence between str_x and str_y.
     """
-    METRICS_DICT = get_dict()
-    if str_x not in METRICS_DICT:
-        METRICS_DICT[str_x] = {}
+    metrics_dict = get_dict()
+    if str_x not in metrics_dict:
+        metrics_dict[str_x] = {}
         lcsv = eval_lcs(str_x, str_y)
-        METRICS_DICT[str_x][str_y] = lcsv
+        metrics_dict[str_x][str_y] = lcsv
         return lcsv
 
-    if str_y in METRICS_DICT[str_x]:
-        return METRICS_DICT[str_x][str_y]
+    if str_y in metrics_dict[str_x]:
+        return metrics_dict[str_x][str_y]
 
     lcsv = eval_lcs(str_x, str_y)
-    METRICS_DICT[str_x][str_y] = lcsv
+    metrics_dict[str_x][str_y] = lcsv
     return lcsv
 
 
