@@ -2,8 +2,6 @@ import codecs
 import os.path
 import re
 import sys
-from Cython.Build import cythonize
-from Cython.Distutils import build_ext
 from setuptools import setup, Extension
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -23,11 +21,6 @@ def find_version(*file_paths):
 
 REQUIRED_PYTHON = (3, 6)
 
-ext_modules = [
-    Extension(
-        "enelvo.metrics.cythonlcs", ["enelvo/metrics/cythonlcs.pyx"], include_dirs=["."]
-    )
-]
 
 setup(
     name="Enelvo",
@@ -47,7 +40,6 @@ setup(
             "resources/lexicons/*",
             "resources/corr-lexicons/*",
             "resources/embeddings/norm_lexicon.pickle",
-            "../setup_cython.py",
             "../build/*",
             "preprocessing/tokenizer/lexicons/*",
         ]
@@ -65,9 +57,5 @@ setup(
         "tabulate>=0.8.2",
         "editdistance>=0.5.2",
         "numpy>=1.16.0",
-        "cython==0.29.10",
     ],
-    cmdclass={"build_ext": build_ext},
-    ext_modules=ext_modules,
-    options={"build_ext": {"inplace": True, "force": True}},
 )
