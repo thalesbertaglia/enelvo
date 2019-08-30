@@ -49,7 +49,6 @@ def eval_lcs(str_x: str, str_y: str) -> int:
     Args:
         str_x: The first string.
         str_y: The second string.
-        cython: Whether to use the cython implementation of the method.
 
     Returns:
         The length of the longest common subsequence between str_x and str_y.
