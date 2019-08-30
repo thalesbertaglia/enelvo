@@ -13,7 +13,7 @@ __title__ = "Enelvo"
 __summary__ = "A flexible normaliser for user-generated content."
 __uri__ = "https://www.github.com/tfcbertaglia/enelvo"
 
-__version__ = "0.0.9"
+__version__ = "0.9.1"
 
 __author__ = "Thales Bertaglia"
 __email__ = "contact@thalesbertaglia.com"
