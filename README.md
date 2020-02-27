@@ -64,7 +64,9 @@ You can use the tool, with the most simple configuration, by running:
 python3 -m enelvo --input in.txt --output out.txt
 ```
 
-There are two **required** arguments: ``--input`` (path to the input file) and ``--output`` (path+file name to which Enelvo will write the output). Enelvo considers that each line in the input file is a sentence, so format it accordingly. Use option ``-h`` to see the full list of arguments and their explanation.
+There are two **required** arguments: ``--input`` (path to the input file or folder) and ``--output`` (path+file name or just path, if the input is a folder to which Enelvo will write the output). Enelvo considers that each line in the input file is a sentence, so format it accordingly. Use option ``-h`` to see the full list of arguments and their explanation.
+
+If your input is a folder/directory, you need to use the flag -F. Each output file will be written to the directory specified in ``--output``, as ``original_file_name + .normalized``.
 
 You can also run Enelvo in **interactive mode**. In this case, you will be able to type in sentences and their normalised version will be displayed in real-time. To use interactive mode, just run:
 ```bash
@@ -80,6 +82,7 @@ There are some arguments that allow you to personalise how Enelvo works. You can
 |:------------------------------------------------------:	|:---------------------------------------------:	|:--------------------------------------------------------------------------------------------------------------------:	|
 | ``-h, --help``                                         	|                       -                       	| Displays list of commands.                                                                                           	|
 | ``-l, --lex LEX_FILE``                                 	| ``unitex-full-clean+enelvo-ja-corrigido.txt`` 	| Changes the lexicon of words considered correct.                                                                     	|
+| ``-F, --folder``                                 	      |                       - 	                      | Sets input as a folder.                                                                     	                        | 
 | ``-iglst, --ignore-list LIST_FILE``                    	|                    ``None``                   	| Sets a list of words that will be ignored by the normaliser.                                                         	|
 | ``-fclst, --force-list LIST_FILE``                     	|                    ``None``                   	| Sets a list of words (and optionally their corrections) that will always be processed by the normaliser.             	|
 | ``-t, --tokenizer readable``                           	|                  ``regular``                  	| Changes tokeniser configuration. A ``readable`` tokeniser does not replace entities (hashtags, number etc) for tags. 	|

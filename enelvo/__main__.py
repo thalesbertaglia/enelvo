@@ -26,6 +26,8 @@ from enelvo.preprocessing import tokenizer
 from enelvo.normaliser import Normaliser
 from enelvo.utils import evaluation
 from enelvo.utils import loaders
+from glob import iglob
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
@@ -40,10 +42,18 @@ def load_options():
         "--version", action="version", version="%(prog)s {}".format(__version__)
     )
     config_arg_parser.add_argument(
-        "--input", required=False, nargs="?", const="input.txt", help="input file"
+        "--input",
+        required=False,
+        nargs="?",
+        const="input.txt",
+        help="input file or folder",
     )
     config_arg_parser.add_argument(
-        "--output", required=False, nargs="?", const="output.txt", help="output file"
+        "--output",
+        required=False,
+        nargs="?",
+        const="output.txt",
+        help="output file or folder",
     )
     config_arg_parser.add_argument(
         "--interactive",
@@ -64,6 +74,12 @@ def load_options():
         default="unitex-full-clean+enelvo-ja-corrigido.txt",
         type=str,
         help="file containing the Portuguese lexicon to be used",
+    )
+    parser.add_argument(
+        "-F",
+        "--folder",
+        action="store_true",
+        help="sets the input to a directory instead of a file",
     )
     """parser.add_argument('-f', '--freq', default=10, type=int,
         help='minimum frequency to add word to the dictionary')"""
@@ -150,8 +166,8 @@ def load_options():
     )
     argument_config = parser.parse_args()
     if not argument_config.interactive:
-        if not argument_config.input or not argument_config.output:
-            parser.error("-- input and --output are required!")
+        if not argument_config.input:
+            parser.error("--input and --output are required!")
     return argument_config
 
 
@@ -210,18 +226,48 @@ def run(options):
     )
     # If not ran in interactive mode, the normaliser processes the whole file
     if not options.interactive:
-        total_lines = sum(1 for line in open(options.input, encoding="utf-8"))
-        line_i = 0
-        with open(options.input, encoding="utf-8") as f, open(
-            options.output, "w", encoding="utf-8"
-        ) as o:
-            for line in f:
-                line_i += 1
-                logger.info(
-                    "Processing line " + str(line_i) + " of " + str(total_lines) + "!"
+        if not options.folder:
+            total_lines = sum(1 for line in open(options.input, encoding="utf-8"))
+            line_i = 0
+            with open(options.input, encoding="utf-8") as f, open(
+                options.output, "w", encoding="utf-8"
+            ) as o:
+                for line in f:
+                    line_i += 1
+                    logger.info(
+                        "Processing line "
+                        + str(line_i)
+                        + " of "
+                        + str(total_lines)
+                        + "!"
+                    )
+                    o.write(normaliser.normalise(line) + "\n")
+                logger.info("Done! Normalised text written to " + options.output)
+        else:
+            # Creates the output folder
+            Path(options.output).mkdir(parents=True, exist_ok=True)
+            for dir_f in filter(
+                os.path.isfile, iglob(options.input + "/**", recursive=True)
+            ):
+                total_lines = sum(1 for line in open(dir_f, encoding="utf-8"))
+                line_i = 0
+                out_f = os.path.join(
+                    options.output, os.path.basename(dir_f) + ".normalized"
                 )
-                o.write(normaliser.normalise(line) + "\n")
-            logger.info("Done! Normalised text written to " + options.output)
+                with open(dir_f, encoding="utf-8") as f, open(
+                    out_f, "w", encoding="utf-8"
+                ) as o:
+                    for line in f:
+                        line_i += 1
+                        logger.info(
+                            "Processing line "
+                            + str(line_i)
+                            + " of "
+                            + str(total_lines)
+                            + "!"
+                        )
+                        o.write(normaliser.normalise(line) + "\n")
+                    logger.info("Done! Normalised text written to " + out_f)
     # Interactive mode
     else:
         print("\t### Running in interactive mode! ###")
