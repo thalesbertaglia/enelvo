@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: enelvo
+Version: 0.10.0
+Summary: A flexible normalizer for user-generated content http://thalesbertaglia.com/enelvo
+Home-page: https://github.com/tfcbertaglia/enelvo
+Author: Thales Bertaglia
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6,<4.0
