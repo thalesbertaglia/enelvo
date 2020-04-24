@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "enelvo"
+version = "0.10.0"
+description = "A flexible normalizer for user-generated content http://thalesbertaglia.com/enelvo"
+authors = ["Thales Bertaglia <contact@thalesbertaglia.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/tfcbertaglia/enelvo"
+homepage = "https://github.com/tfcbertaglia/enelvo"
+packages = [
+    {include = "enelvo"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+editdistance = "0.5.2"
+numpy = "1.16.0"
+gensim = "3.6.0"
+tabulate = "0.8.2"
+emoji = "0.5.1"
+
+[tool.poetry.dev-dependencies]
+coveralls = "^2.0.0"
+pytest-cov = "^2.8.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
