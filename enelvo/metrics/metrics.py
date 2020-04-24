@@ -1,234 +1,214 @@
-'''Similarity measures.'''
+"""Similarity measures."""
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
-
 import editdistance
 import numpy as np
-from enelvo.metrics.cythonlcs import cython_eval_lcs
 
 
+# Constants
 METRICS_DICT = {}
+DIACRITICS = {}
+DIACRITICS["a"] = {"á", "ã", "à", "â"}
+DIACRITICS["e"] = {"é", "ê"}
+DIACRITICS["i"] = {"í"}
+DIACRITICS["o"] = {"ó", "õ", "ô"}
+DIACRITICS["u"] = {"ú"}
+DIACRITICS["c"] = {"ç"}
 
 # Dict for optimizing metric calculation. Stores already calculated strings.
 # 0 = ED, 1 = LCS, 2 = HASSAN
 def get_dict():
+    """Singleton for the cached metrics dictionary."""
     global METRICS_DICT
     return METRICS_DICT
 
-def edit_distance(x, y):
-    '''Calculates the edit distance between two strings.
+
+# Dict for storing characters with diacritics
+def get_diacritics():
+    """Singleton for the diacritics dictionary."""
+    global DIACRITICS
+    return DIACRITICS
+
+
+def edit_distance(str_x: str, str_y: str) -> int:
+    """Calculates the edit distance between two strings.
 
     Args:
-        x (str): The first string.
-        y (str): The second string.
+        str_x: The first string.
+        str_y: The second string.
 
     Returns:
-        int: The edit distance between x and y. 0 = same string.
-    '''
-    '''METRICS_DICT = get_dict()
-    if x not in METRICS_DICT:
-        METRICS_DICT[x] = {}
-        METRICS_DICT[x][y] = {}
-        ed = editdistance.eval(x, y)
-        METRICS_DICT[x][y][0] = ed
-        return ed
-    else:
-        if y in METRICS_DICT[x]:
-            if 0 in METRICS_DICT[x][y]:
-                return METRICS_DICT[x][y][0]
+        The edit distance between str_x and str_y. 0 = same string.
+    """
+    return editdistance.eval(str_x, str_y)
+
+
+def eval_lcs(str_x: str, str_y: str) -> int:
+    """Calculates the length of the longest common subsequence between two strings.
+
+    Args:
+        str_x: The first string.
+        str_y: The second string.
+
+    Returns:
+        The length of the longest common subsequence between str_x and str_y.
+    """
+    m = len(str_x)
+    n = len(str_y)
+    # An (m+1) times (n+1) matrix
+    C = np.zeros((m + 1, n + 1), dtype=np.int16)
+    # C = [[0] * (n + 1) for _ in range(m + 1)]
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if str_x[i - 1] == str_y[j - 1]:
+                C[i][j] = C[i - 1][j - 1] + 1
             else:
-                ed = editdistance.eval(x, y)
-                METRICS_DICT[x][y][0] = ed
-                return ed
-        else:
-            METRICS_DICT[x][y] = {}
-            ed = editdistance.eval(x, y)
-            METRICS_DICT[x][y][0] = ed
-            return ed'''
-    return editdistance.eval(x, y)
-
-def edc(x,y):
-    return editdistance.eval(x, y)
+                C[i][j] = max(C[i][j - 1], C[i - 1][j])
+    return C[len(C) - 1][len(C[0]) - 1]
 
 
-def eval_lcs(x, y, cython=True):
-    '''Calculates the length of the longest common subsequence between two strings.
+def lcs(str_x: str, str_y: str) -> int:
+    """Wrapper to ``eval_lcs``.
+    Returns the cached version of the metric if it has already been calculated.
+    Else, calls ``eval_lcs``.
 
     Args:
-        x (str): The first string.
-        y (str): The second string.
+        str_x: The first string.
+        str_y: The second string.
 
     Returns:
-        int: The length of the longest common subsequence between x and y.
-    '''
-    if cython:
-        return cython_eval_lcs(x,y)
-    else:
-        m = len(x)
-        n = len(y)
-        # An (m+1) times (n+1) matrix
-        C = np.zeros((m + 1, n + 1), dtype=np.int16)
-        #C = [[0] * (n + 1) for _ in range(m + 1)]
-        for i in range(1, m + 1):
-            for j in range(1, n + 1):
-                if x[i - 1] == y[j - 1]:
-                    C[i][j] = C[i - 1][j - 1] + 1
-                else:
-                    C[i][j] = max(C[i][j - 1], C[i - 1][j])
-        return C[len(C) - 1][len(C[0]) - 1]
-
-
-
-def lcs(x, y):
-    '''Calculates the length of the longest common subsequence between two strings.
-
-    Args:
-        x (str): The first string.
-        y (str): The second string.
-
-    Returns:
-        int: The length of the longest common subsequence between x and y.
-    '''
-    METRICS_DICT = get_dict()
-    if x not in METRICS_DICT:
-        METRICS_DICT[x] = {}
-        lcsv = eval_lcs(x, y)
-        METRICS_DICT[x][y] = lcsv
+        The length of the longest common subsequence between str_x and str_y.
+    """
+    metrics_dict = get_dict()
+    if str_x not in metrics_dict:
+        metrics_dict[str_x] = {}
+        lcsv = eval_lcs(str_x, str_y)
+        metrics_dict[str_x][str_y] = lcsv
         return lcsv
-    else:
-        if y in METRICS_DICT[x]:
-            return METRICS_DICT[x][y]
-        else:
-            lcsv = eval_lcs(x, y)
-            METRICS_DICT[x][y] = lcsv
-            return lcsv
+
+    if str_y in metrics_dict[str_x]:
+        return metrics_dict[str_x][str_y]
+
+    lcsv = eval_lcs(str_x, str_y)
+    metrics_dict[str_x][str_y] = lcsv
+    return lcsv
 
 
-
-def lcs_ratio(x, y):
-    '''The length of the longest common subsequence between two strings normalized by the length of longest one.
+def lcs_ratio(str_x: int, str_y: int) -> float:
+    """The length of the longest common subsequence between two strings
+    normalized by the length of longest one.
 
     Args:
-        x (str): The first string.
-        y (str): The second string.
+        str_x: The first string.
+        str_y: The second string.
 
     Returns:
-        float: The normalized length of the longest common subsequence between x and y.
-    '''
-    return lcs(x, y) / max(len(x), len(y))
+        The normalized length of the longest common subsequence between str_x and str_y.
+    """
+    return lcs(str_x, str_y) / max(len(str_x), len(str_y))
 
 
-def c_lcs_ratio(x, y):
-    '''Complement of LCS ratio.
+def c_lcs(str_x: str, str_y: str) -> int:
+    """Complement of LCS length.
 
     Args:
-        x (str): The first string.
-        y (str): The second string.
+        str_x: The first string.
+        str_y: The second string.
 
     Returns:
-        float: 1 - the normalized length of the longest common subsequence between x and y.
-    '''
-    return 1 - (lcs(x, y) / max(len(x), len(y)))
+        len(str_x) - longest common subsequence length between str_x and str_y.
+    """
+    complement = len(str_x) - lcs(str_x, str_y)
+    return complement if complement >= 0 else len(str_x)
 
 
-def c_lcs(x, y):
-    '''Complement of LCS length.
+def c_lcs_ratio(str_x: str, str_y: str) -> float:
+    """Complement of LCS ratio.
 
     Args:
-        x (str): The first string.
-        y (str): The second string.
+        str_x: The first string.
+        str_y: The second string.
 
     Returns:
-        int: len(x) - longest common subsequence length between x and y.
-    '''
-    c = len(x) - lcs(x, y)
-    return c if c >= 0 else len(x)
+        1 - the normalized length of the longest common subsequence between str_x and str_y.
+    """
+    return 1 - (lcs(str_x, str_y) / max(len(str_x), len(str_y)))
 
 
-def diacritic_sym(x, y):
-    '''Number of characters alligned to their accented version.
+def diacritic_sym(str_x: str, str_y: str) -> int:
+    """Number of characters alligned to their accented version.
 
     Args:
-        x (str): The first string.
-        y (str): The second string.
+        str_x: The first string.
+        str_y: The second string.
 
     Returns:
         int: Number of characters alligned to their accented version.
-    '''
-    diacritics = {}
-    diacritics['a'] = {'á', 'ã', 'à', 'â'}
-    diacritics['e'] = {'é', 'ê'}
-    diacritics['i'] = {'í'}
-    diacritics['o'] = {'ó', 'õ', 'ô'}
-    diacritics['u'] = {'ú'}
-    diacritics['c'] = {'ç'}
-
+    """
+    diacritics = get_diacritics()
     symmetry = 0
-    for c1, c2 in zip(x, y):
-        if c1 in diacritics:
-            if c2 in diacritics[c1]: symmetry += 1
+    for char_1, char_2 in zip(str_x, str_y):
+        if char_1 in diacritics:
+            if char_2 in diacritics[char_1]:
+                symmetry += 1
 
-        if c2 in diacritics:
-            if c1 in diacritics[c2]: symmetry += 1
+        if char_2 in diacritics:
+            if char_1 in diacritics[char_2]:
+                symmetry += 1
     return symmetry
 
 
-def lcs_ratio_sym(x, y):
-    '''The length of the longest common subsequence between two strings + the
+def lcs_ratio_sym(str_x: str, str_y: str) -> float:
+    """The length of the longest common subsequence between two strings + the
     diacritic_sym normalized by the length of longest one.
 
     Args:
-        x (str): The first string.
-        y (str): The second string.
+        str_x: The first string.
+        str_y: The second string.
 
     Returns:
-        float: The normalized length of the longest common subsequence between x and y.
-    '''
-    return (lcs(x, y) + diacritic_sym(x, y)) / max(len(x), len(y))
+        The normalized length of the longest common subsequence between str_x and str_y.
+    """
+    return (lcs(str_x, str_y) + diacritic_sym(str_x, str_y)) / max(
+        len(str_x), len(str_y)
+    )
 
 
-def hassan_similarity(x, y):
-    '''Similarity measure proposed by Hassan and Menezes (2013) in
-    "Social Text Normalization using Contextual Graph Random Walks"
-    '''
-    edit = edit_distance(x, y) - diacritic_sym(x, y)
-    return lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y)
+def hassan_similarity(str_x: str, str_y: str) -> float:
+    """Similarity measure proposed by Hassan and Menezes (2013) in
+    Social Text Normalization using Contextual Graph Random Walks.
+
+    Args:
+        str_x: The first string.
+        str_y: The second string.
+
+    Returns:
+        The hassan similarity between ``str_x``and ``str_y``."
+    """
+    edit = edit_distance(str_x, str_y) - diacritic_sym(str_x, str_y)
+    return lcs_ratio_sym(str_x, str_y) / edit if edit else lcs_ratio_sym(str_x, str_y)
 
 
-def c_hassan_similarity(x, y):
-    '''Complement of hassan_similarity
-    '''
-    '''METRICS_DICT = get_dict()
-    if x not in METRICS_DICT:
-        METRICS_DICT[x] = {}
-        METRICS_DICT[x][y] = {}
-        edit = edit_distance(x, y) - diacritic_sym(x, y)
-        hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
-        METRICS_DICT[x][y][2] = hassan
-        return hassan
-    else:
-        if y in METRICS_DICT[x]:
-            if 2 in METRICS_DICT[x][y]:
-                return METRICS_DICT[x][y][2]
-            else:
-                edit = edit_distance(x, y) - diacritic_sym(x, y)
-                hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
-                METRICS_DICT[x][y][2] = hassan
-                return hassan
-        else:
-            METRICS_DICT[x][y] = {}
-            edit = edit_distance(x, y) - diacritic_sym(x, y)
-            hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
-            METRICS_DICT[x][y][2] = hassan
-            return hassan'''
-    edit = edit_distance(x, y) - diacritic_sym(x, y)
-    hassan = 1 - (lcs_ratio_sym(x, y) / edit if edit else lcs_ratio_sym(x, y))
+def c_hassan_similarity(str_x: str, str_y: str) -> float:
+    """Complement of ``hassan_similarity``.
+
+    Args:
+        str_x: The first string.
+        str_y: The second string.
+
+    Returns:
+        The complement of the hassan similarity between ``str_x``and ``str_y``.
+    """
+    edit = edit_distance(str_x, str_y) - diacritic_sym(str_x, str_y)
+    hassan = 1 - (
+        lcs_ratio_sym(str_x, str_y) / edit if edit else lcs_ratio_sym(str_x, str_y)
+    )
     return hassan
 
 
 # Not exactly a metric, but it is here for the sake of organization.
 def word_frequency(lex, word):
-    '''Returns the frequency of ``word`` from ``lex``.
+    """Returns the frequency of ``word`` from ``lex``.
 
     Args:
         lex (dictionary): The lexicon dictionary.
@@ -237,5 +217,5 @@ def word_frequency(lex, word):
     Returns:
         int: The absolute frequency of ``word`` based on ``lex`` frequency list.
              Returns 0 if ``word`` is not contained in ``lex``.
-    '''
+    """
     return lex[word] if word in lex else 0
