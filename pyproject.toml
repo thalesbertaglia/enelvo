@@ -18,6 +18,7 @@ numpy = "1.16.0"
 gensim = "3.6.0"
 tabulate = "0.8.2"
 emoji = "0.5.1"
+importlib_metadata = {version = "^1.6.0", python = "<3.8"}
 
 [tool.poetry.dev-dependencies]
 coveralls = "^2.0.0"
