@@ -1,5 +1,0 @@
-editdistance==0.5.2
-emoji==0.5.1
-gensim==3.6.0
-numpy==1.16.0
-tabulate==0.8.2
