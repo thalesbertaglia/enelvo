@@ -8,8 +8,11 @@ python:
   - "3.7"
   - "3.8"
 
+before_install:
+  - pip install poetry
+
 install:
-  - pip install -r requirements.txt
+  - poetry install
 
 script: pytest tests/ --cov=enelvo/
 
