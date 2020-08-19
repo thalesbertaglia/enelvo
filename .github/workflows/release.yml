@@ -14,6 +14,14 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Upgrade pip
+      run: |
+        pip install --constraint=.github/workflows/constraints.txt pip
+          
+    - name: Install Poetry
+      run: |
+        pip install --constraint=.github/workflows/constraints.txt poetry
+
     - name: Build package
       run: |
         poetry build --ansi
@@ -23,6 +31,3 @@ jobs:
       with:
         user: ${{ secrets.PYPI_USERNAME }}
         password: ${{ secrets.PYPI_PASSWORD }}
-          
-        
-
