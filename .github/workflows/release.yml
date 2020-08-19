@@ -1,4 +1,4 @@
-name: Upload Python Package to PyPI
+name: Release
 
 on:
   release:
@@ -13,10 +13,16 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-          
-    - name: Build and publish
-      uses: d1618033/gh-action-python-publish-using-poetry@master
+
+    - name: Build package
+      run: |
+        poetry build --ansi
+
+    - name: Publish package on PyPI
+      uses: pypa/gh-action-pypi-publish@v1.3.1
       with:
-        pypi_username: ${{ secrets.PYPI_USERNAME }}
-        pypi_password: ${{ secrets.PYPI_PASSWORD }}
+        user: ${{ secrets.PYPI_USERNAME }}
+        password: ${{ secrets.PYPI_PASSWORD }}
+          
         
+
