@@ -8,12 +8,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
+    - name: Check out the repository
+      uses: actions/checkout@v2.3.2
       with:
-        python-version: '3.x'
+        fetch-depth: 2
 
+    - name: Set up Python
+      uses: actions/setup-python@v2.1.2
+      with:
+        python-version: "3.x"
+          
     - name: Upgrade pip
       run: |
         pip install --constraint=.github/workflows/constraints.txt pip
