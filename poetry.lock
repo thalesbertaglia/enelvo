@@ -133,7 +133,7 @@ description = "Fast implementation of the edit distance(Levenshtein distance)"
 name = "editdistance"
 optional = false
 python-versions = "*"
-version = "0.5.2"
+version = "0.5.3"
 
 [[package]]
 category = "main"
@@ -423,7 +423,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "89035946e98a3171ae71feb55d4fc678d4b87e51d7fdf4fb80a468ddadf37216"
+content-hash = "7c25e1505012674c1170e57ba4510265b0a702ceafe136ad74f6c03d81214654"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -505,36 +505,36 @@ docutils = [
     {file = "docutils-0.15.2.tar.gz", hash = "sha256:a2aeea129088da402665e92e0b25b04b073c04b2dce4ab65caaa38b7ce2e1a99"},
 ]
 editdistance = [
-    {file = "editdistance-0.5.2-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:60f295c7c4d676bd034443ef1c8de156979a7e3d5e93ae35e808cf5acb108dd7"},
-    {file = "editdistance-0.5.2-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:046e7bc19b141386efe38598da3aa6b35eca86451ec168cf190200845c62a6b6"},
-    {file = "editdistance-0.5.2-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:ec45c58bb9a18828bdc0411983b9494aba4d693220a9ef1e231cf78ad5436a20"},
-    {file = "editdistance-0.5.2-cp27-cp27m-win32.whl", hash = "sha256:c4602da57ccbcb7788fb92ea71462477202219832e9a73fc4939c32a27ce8772"},
-    {file = "editdistance-0.5.2-cp27-cp27m-win_amd64.whl", hash = "sha256:6487ec8f9a977a4d7325e47539904e3926bb0bac3c0d4de041388b4186465351"},
-    {file = "editdistance-0.5.2-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:b200729cb374b54edb5836e8dde772f1f7ad759ce3b002f693bc46fec41037a1"},
-    {file = "editdistance-0.5.2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:d18ac86f15c97ab079249aa611c4392d25806fc307598e27c14ed52ae9e29fc6"},
-    {file = "editdistance-0.5.2-cp33-cp33m-win32.whl", hash = "sha256:95d9bd96fc252ba092ee5324e8408029ac496b57e967769b82a340e8f3a68daf"},
-    {file = "editdistance-0.5.2-cp33-cp33m-win_amd64.whl", hash = "sha256:d648f8c5f11dca3df89a6a3c0431ed6d04500b1cfcade297269150fa0baf1acc"},
-    {file = "editdistance-0.5.2-cp34-cp34m-macosx_10_6_intel.whl", hash = "sha256:564db41068bf2deec7544a466bf091702d9f07f00dda1ba36f9f285c370d5c63"},
-    {file = "editdistance-0.5.2-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:e0475b203cdad1e32874e65b4641ebf51d4e1afa0a5bf35ec74e6eee4c519335"},
-    {file = "editdistance-0.5.2-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:6527c1c41dd45e7a8f7ba93d66c832720ad1da88789aee2fb8749af149723c90"},
-    {file = "editdistance-0.5.2-cp34-cp34m-win32.whl", hash = "sha256:8d5f21b69f423f70ee2707b35a2710fd1242730dd4f4e22d9a9f33a7404e00e2"},
-    {file = "editdistance-0.5.2-cp34-cp34m-win_amd64.whl", hash = "sha256:13412a819e6477d91ea9bfecf943a28b5235f47a27599a382fa18a6016bb3d22"},
-    {file = "editdistance-0.5.2-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:7ed69b435bf733ffb0ffbacbedc95ebb28f874c79653a79d193f09f6c3d093ad"},
-    {file = "editdistance-0.5.2-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:61dcc9caf8ad7d033d9648c124f871812f6b9a2901643064c2e28ad42276f3c0"},
-    {file = "editdistance-0.5.2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:c858370e156bce2025192bcd5a5b7a8d915bf7375ec2fbf6f0fc51e7c5d99b1f"},
-    {file = "editdistance-0.5.2-cp35-cp35m-win32.whl", hash = "sha256:a1c50691afa19ec010cd0dbdbcb56821b750b8eef5c28567d94c0b28afbcca80"},
-    {file = "editdistance-0.5.2-cp35-cp35m-win_amd64.whl", hash = "sha256:0d7026e33d4211dfd0115f2a73ab7385733aad3af8342efadc82648c254bc847"},
-    {file = "editdistance-0.5.2-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:381361c57ba5a6306408388326b7d0fb5c439a61d12345ccc18a56ff429fce42"},
-    {file = "editdistance-0.5.2-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:08e08d8ad044a5925b5377997968304497702166aec72ffa42dd24d872c8135c"},
-    {file = "editdistance-0.5.2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:0f7ffb4d2a1b2a597c0852176c8b1923a37d6c78a89d0500406e8c57725d3d7b"},
-    {file = "editdistance-0.5.2-cp36-cp36m-win32.whl", hash = "sha256:39726c9f0100627397e910f2b7bf1b55e0113468dafd9c711c2c6b18446c5d3b"},
-    {file = "editdistance-0.5.2-cp36-cp36m-win_amd64.whl", hash = "sha256:a8f079a91d8c6f5231df6a8419b98ca04383bd2998372be46ae0507ed9d86a32"},
-    {file = "editdistance-0.5.2-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:b6ba83a27c85179da5b50a3140a80f9545dc50c88a563b93fb50e7df779fffd3"},
-    {file = "editdistance-0.5.2-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:98b9627c08cfcfdd499a8370efdba97d4988ee4333c7b3ab2b76d43f7560c828"},
-    {file = "editdistance-0.5.2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:0287d9f1c066bc8abbb7e537f61d30ef641414b3e66067b8a35c3ec96874ee96"},
-    {file = "editdistance-0.5.2-cp37-cp37m-win32.whl", hash = "sha256:1b50e245317172697994ef3f104a0842d25706a3617a98b10b587763675d7761"},
-    {file = "editdistance-0.5.2-cp37-cp37m-win_amd64.whl", hash = "sha256:4cfe7f72c65ebab2ddd2a0d095d9a0d4812e8b3bd06af59f05e3a0f1f4d97393"},
-    {file = "editdistance-0.5.2.tar.gz", hash = "sha256:5a51276aaa6be65c2ac0fb807af93267b4f2488662fc925d27c4d317ef5d067a"},
+    {file = "editdistance-0.5.3-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:ef4714dc9cf281863dcc3ba6d24c3cae1dde41610a78dcdfae50d743ca71d5e1"},
+    {file = "editdistance-0.5.3-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:a322354a8dfb442770902f06552b20df5184e65e84ac90cb799740915eb52212"},
+    {file = "editdistance-0.5.3-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:36a4c36d7945f5ecfa1dc92c08635d73b64769cd0af066da774437fe2c7dc80a"},
+    {file = "editdistance-0.5.3-cp27-cp27m-win32.whl", hash = "sha256:93e847cc2fbebb34a36b41337a3eb9b2034d4ff9679665b08ecc5c3c313f83a9"},
+    {file = "editdistance-0.5.3-cp27-cp27m-win_amd64.whl", hash = "sha256:d4561b602b7675f6a050cdd0e1b652007ce73bb7290019487b8919a44593d74d"},
+    {file = "editdistance-0.5.3-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:dddb0d36f698e3c942d0d5934185533d9324fbde975b3e956a19883713e86d33"},
+    {file = "editdistance-0.5.3-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:1018f0fa857b079c721583c42d2c54800fbe8c7d2c29b354a9724a0b79971cb8"},
+    {file = "editdistance-0.5.3-cp33-cp33m-win32.whl", hash = "sha256:810d93e614f35ad2916570f48ff1370ac3c001eb6941d5e836e2c1c6986fafff"},
+    {file = "editdistance-0.5.3-cp33-cp33m-win_amd64.whl", hash = "sha256:a96ac49acc7668477c13aff02ca0527c6462b026b78600602dbef04efc9250d3"},
+    {file = "editdistance-0.5.3-cp34-cp34m-macosx_10_6_intel.whl", hash = "sha256:a9167d9d5e754abd7ce68da065a636cc161e5063c322efd81159d15001d5272a"},
+    {file = "editdistance-0.5.3-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:a10c61df748220b2b9e2949a10aea23ffeded28c07e610e107a8f6a4b5b92782"},
+    {file = "editdistance-0.5.3-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:6452d750fbc49c6f04232a840f96b0f1155ff7cb2d953ce1edf075c5a394f3ea"},
+    {file = "editdistance-0.5.3-cp34-cp34m-win32.whl", hash = "sha256:1f510e6eb411ec6123ba4ebc086d5882027710d28db174985a74e13fd0eb354f"},
+    {file = "editdistance-0.5.3-cp34-cp34m-win_amd64.whl", hash = "sha256:9d6ee66f8de30ec6358083e5ecd7919a5966b38c64012c1672f326c61ff7a15f"},
+    {file = "editdistance-0.5.3-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:c1cf5ff98cfdc38046ae0f2d3ccbe1e15b0665234a04783f6558ec0a48e72dc8"},
+    {file = "editdistance-0.5.3-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:5f9c202b1a2f2630f7a0cdd76ad0ad55de4cd700553778c77e37379c6ac8e8bb"},
+    {file = "editdistance-0.5.3-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:553fb295802c399f0f419b616b499c241ffdcb2a70888d1e9d1bd22ba21b122f"},
+    {file = "editdistance-0.5.3-cp35-cp35m-win32.whl", hash = "sha256:0834826832e51a6c18032b13b68083e3ebfbf3daf774142ae6f2b17b35580c16"},
+    {file = "editdistance-0.5.3-cp35-cp35m-win_amd64.whl", hash = "sha256:6ccfd57221bae661304e7f9495f508aeec8f72e462d97481d55488ded87f5cbc"},
+    {file = "editdistance-0.5.3-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:25b39c836347dcbb251a6041fd3d7575b82c365923a4b13c32c699e442b1b644"},
+    {file = "editdistance-0.5.3-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:fa0047a8d972ab779141eed4713811251c9f6e96e9e8a62caa8d554a0444ff74"},
+    {file = "editdistance-0.5.3-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:db65bf1f39964019040434cb924c62c9965bd0df2feb316dbe5de3f09e6a81de"},
+    {file = "editdistance-0.5.3-cp36-cp36m-win32.whl", hash = "sha256:cc65c2cd68751a966f7468537b4a6fd7d9107d49e139d8efd5734ee6f48d3126"},
+    {file = "editdistance-0.5.3-cp36-cp36m-win_amd64.whl", hash = "sha256:fe7e6a90476976d7e5abc9472acb0311b7cdc76d84190f8f6c317234680c5de3"},
+    {file = "editdistance-0.5.3-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:25dd59d7f17a38203c5e433f5b11f64a8d1042d876d0dc00b324dda060d12e81"},
+    {file = "editdistance-0.5.3-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:61486173447a153cccbd52eb63947378803f0f2a5bffebbfec500bd77fc5706d"},
+    {file = "editdistance-0.5.3-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:cd49e9b22972b15527d53e06918c14d9fe228ae362a57476d16b0cad3e14e0c8"},
+    {file = "editdistance-0.5.3-cp37-cp37m-win32.whl", hash = "sha256:503c6f69f4901d8a63f3748e4b0eccb2a89e6844b0879a7e256cab439297d379"},
+    {file = "editdistance-0.5.3-cp37-cp37m-win_amd64.whl", hash = "sha256:ee4ed815bc5137a794095368580334e430ff26c73a05c67e76b39f535b363a0f"},
+    {file = "editdistance-0.5.3.tar.gz", hash = "sha256:89d016dda04649b2c49e12b34337755a7b612bfd690420edd50ab31787120c1f"},
 ]
 emoji = [
     {file = "emoji-0.5.1-py3-none-any.whl", hash = "sha256:1e959336dafc7a5ed2c0256ee587bbd38a7187d772141f0b5ba42de9e08599a8"},
