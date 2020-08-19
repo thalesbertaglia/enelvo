@@ -1,0 +1,22 @@
+name: Upload Python Package to PyPI
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+          
+    - name: Build and publish
+      uses: d1618033/gh-action-python-publish-using-poetry@master
+      with:
+        pypi_username: ${{ secrets.PYPI_USERNAME }}
+        pypi_password: ${{ secrets.PYPI_PASSWORD }}
+        
