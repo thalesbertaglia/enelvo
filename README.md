@@ -32,21 +32,10 @@ BibTeX:
 
 
 ## Getting Started
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Python>=3.5](https://www.python.org/) installed on your computer. First of all, download the repository as a ZIP or run from your command line:
-
+You can install Enelvo using `pip` by running:
 ```bash
-# Clone this repository
-$ git clone https://github.com/tfcbertaglia/enelvo.git
-
-# Go into the repository
-$ cd enelvo
+pip3 install --user enelvo 
 ```
-
-## Installing
-Make sure you have all dependencies installed. If you use [pip](https://pypi.python.org/pypi/pip), simply run ``pip install --user -r requirements.txt``.
-
-After that, run `python3 setup.py install` to install Enelvo.
-
 To make sure that the installation was successful, run:
 ```bash
 python3 -m enelvo --input in.txt --output out.txt
@@ -54,9 +43,6 @@ python3 -m enelvo --input in.txt --output out.txt
 If eveything went correctly, ``out.txt`` will be written -- containing the normalised version of ``in.txt``.
 
 There is also a [REST-based microservice](https://github.com/staticdev/enelvo-microservice) for Enelvo, developed by Thiago D'Ávila. Instructions can be found on the [repository page](https://github.com/staticdev/enelvo-microservice).
-
-### Issues
-If you are using ``conda`` as your Python package manager, you may get an error like ``MKL FATAL ERROR: Cannot load libmkl_avx.so or libmkl_def.so`` when running Enelvo. If that happens, you will need to install ``nokml``. Run ``conda install nokml`` to do so. Alternatively, you can follow any of the approaches discussed [here](https://github.com/BVLC/caffe/issues/3884) to solve the problem.
 
 ## Running
 You can use the tool, with the most simple configuration, by running:
