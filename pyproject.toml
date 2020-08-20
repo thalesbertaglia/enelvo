@@ -17,7 +17,7 @@ editdistance = "0.5.3"
 numpy = "1.19.1"
 gensim = "3.8.3"
 tabulate = "0.8.2"
-emoji = "0.5.1"
+emoji = "0.6.0"
 
 [tool.poetry.dev-dependencies]
 coveralls = "^2.1.2"
