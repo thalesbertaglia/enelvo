@@ -392,7 +392,7 @@ description = "Pretty-print tabular data"
 name = "tabulate"
 optional = false
 python-versions = "*"
-version = "0.8.2"
+version = "0.8.7"
 
 [package.extras]
 widechars = ["wcwidth"]
@@ -432,7 +432,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "2c0508229a74ba3fcbba8016139ae69f28b4348403ec8964bd61d15a82b5ff45"
+content-hash = "46fcd308123474ae63349544c0d91e33a060f171201d2a62280dc8bd02388d17"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -724,7 +724,8 @@ smart-open = [
     {file = "smart_open-1.11.1.tar.gz", hash = "sha256:221cc08ae926af6ad72d141f208d228e1e801b1ee9b15f3e466eecf89d931002"},
 ]
 tabulate = [
-    {file = "tabulate-0.8.2.tar.gz", hash = "sha256:e4ca13f26d0a6be2a2915428dc21e732f1e44dad7f76d7030b2ef1ec251cf7f2"},
+    {file = "tabulate-0.8.7-py3-none-any.whl", hash = "sha256:ac64cb76d53b1231d364babcd72abbb16855adac7de6665122f97b593f1eb2ba"},
+    {file = "tabulate-0.8.7.tar.gz", hash = "sha256:db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"},
 ]
 urllib3 = [
     {file = "urllib3-1.25.9-py2.py3-none-any.whl", hash = "sha256:88206b0eb87e6d677d424843ac5209e3fb9d0190d0ee169599165ec25e9d9115"},
