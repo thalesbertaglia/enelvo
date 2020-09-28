@@ -51,7 +51,7 @@ jobs:
         poetry version $version.dev.$(date +%s)
 
     - name: Publish package on PyPI
-      uses: pypa/gh-action-pypi-publish@v1.3.1
+      uses: pypa/gh-action-pypi-publish@v1.4.1
       with:
         user: ${{ secrets.PYPI_USERNAME }}
         password: ${{ secrets.PYPI_PASSWORD }}
