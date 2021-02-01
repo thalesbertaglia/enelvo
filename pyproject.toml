@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "enelvo"
-version = "v0.10.62"
+version = "v0.0.0"
 description = "A flexible normalizer for user-generated content http://thalesbertaglia.com/enelvo"
 authors = ["Thales Bertaglia <contact@thalesbertaglia.com>"]
 license = "MIT"
