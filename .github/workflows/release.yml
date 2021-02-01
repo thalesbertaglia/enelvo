@@ -37,14 +37,6 @@ jobs:
         poetry version patch &&
         version=$(poetry version | awk '{ print $2 }') &&
         poetry version $version.dev.$(date +%s)
-        
-    - name: Detect and tag new version
-      id: check-version
-      if: steps.check-parent-commit.outputs.sha
-      uses: salsify/action-detect-and-tag-new-version@v2.0.1
-      with:
-        version-command: |
-          bash -o pipefail -c "poetry version | awk '{ print \$2 }'"
 
     - name: Build package
       run: |
