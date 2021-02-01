@@ -25,10 +25,6 @@ jobs:
     - name: Install Poetry
       run: |
         pip install --constraint=.github/workflows/constraints.txt poetry
-
-    - name: Build package
-      run: |
-        poetry build --ansi
     
     - name: Check if there is a parent commit
       id: check-parent-commit
@@ -50,6 +46,10 @@ jobs:
         version-command: |
           bash -o pipefail -c "poetry version | awk '{ print \$2 }'"
 
+    - name: Build package
+      run: |
+        poetry build --ansi
+        
     - name: Publish package on PyPI
       uses: pypa/gh-action-pypi-publish@v1.4.1
       with:
