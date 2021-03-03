@@ -377,7 +377,7 @@ test = ["mock", "moto", "pathlib2", "responses", "boto3", "google-compute-engine
 
 [[package]]
 name = "tabulate"
-version = "0.8.8"
+version = "0.8.9"
 description = "Pretty-print tabular data"
 category = "main"
 optional = false
@@ -422,7 +422,7 @@ testing = ["jaraco.itertools", "func-timeout"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "62f199ff6df58531920d018918e54c888be07f219ddb08560e0372c136a4d54b"
+content-hash = "5cb94e8fd618db1b364bc40afbd98c9e4c0eed4360909f9f3a83a49aa0639311"
 
 [metadata.files]
 atomicwrites = [
@@ -740,8 +740,8 @@ smart-open = [
     {file = "smart_open-1.11.1.tar.gz", hash = "sha256:221cc08ae926af6ad72d141f208d228e1e801b1ee9b15f3e466eecf89d931002"},
 ]
 tabulate = [
-    {file = "tabulate-0.8.8-py3-none-any.whl", hash = "sha256:d6fe298fc0a58d848d6160118d17e70905f36766552ee78f8a1f4d64e8e16916"},
-    {file = "tabulate-0.8.8.tar.gz", hash = "sha256:26f2589d80d332fefd2371d396863dedeb806f51b54bdb4b264579270b621e92"},
+    {file = "tabulate-0.8.9-py3-none-any.whl", hash = "sha256:d7c013fe7abbc5e491394e10fa845f8f32fe54f8dc60c6622c6cf482d25d47e4"},
+    {file = "tabulate-0.8.9.tar.gz", hash = "sha256:eb1d13f25760052e8931f2ef80aaf6045a6cceb47514db8beab24cded16f13a7"},
 ]
 urllib3 = [
     {file = "urllib3-1.25.9-py2.py3-none-any.whl", hash = "sha256:88206b0eb87e6d677d424843ac5209e3fb9d0190d0ee169599165ec25e9d9115"},
