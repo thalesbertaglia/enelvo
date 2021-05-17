@@ -21,7 +21,7 @@ emoji = "1.2.0"
 
 [tool.poetry.dev-dependencies]
 coveralls = "^3.0.1"
-pytest-cov = "^2.11.1"
+pytest-cov = "^2.12.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
