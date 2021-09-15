@@ -15,7 +15,7 @@ packages = [
 python = "^3.6"
 editdistance = "0.5.3"
 numpy = "1.19.5"
-gensim = "4.1.0"
+gensim = "4.1.1"
 tabulate = "0.8.9"
 emoji = "1.4.2"
 

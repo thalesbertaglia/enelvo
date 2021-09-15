@@ -112,6 +112,14 @@ requests = ">=1.0.0"
 yaml = ["PyYAML (>=3.10)"]
 
 [[package]]
+name = "cython"
+version = "0.29.23"
+description = "The Cython compiler for writing C extensions for the Python language."
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
 name = "dataclasses"
 version = "0.8"
 description = "A backport of the dataclasses module for Python 3.6"
@@ -148,13 +156,14 @@ dev = ["pytest", "coverage", "coveralls"]
 
 [[package]]
 name = "gensim"
-version = "4.1.0"
+version = "4.1.1"
 description = "Python framework for fast Vector Space Modelling"
 category = "main"
 optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
+Cython = "0.29.23"
 dataclasses = {version = "*", markers = "python_version < \"3.7\""}
 numpy = ">=1.17.0"
 scipy = ">=0.18.1"
@@ -162,9 +171,9 @@ smart-open = ">=1.8.1"
 
 [package.extras]
 distributed = ["Pyro4 (>=4.27)"]
-docs = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)", "pyemd", "nmslib", "Pyro4 (>=4.27)", "visdom (>0.1.8.7)", "sphinx", "sphinx-gallery", "sphinxcontrib.programoutput", "sphinxcontrib-napoleon", "matplotlib", "memory-profiler", "annoy", "pyro4", "nltk", "statsmodels", "pandas"]
-test = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)", "pyemd", "nmslib", "visdom (>0.1.8.7)"]
-test-win = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)", "pyemd", "nmslib"]
+docs = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)", "Pyro4 (>=4.27)", "visdom (>0.1.8.7)", "sphinx", "sphinx-gallery", "sphinxcontrib.programoutput", "sphinxcontrib-napoleon", "matplotlib", "memory-profiler", "annoy", "pyro4", "nltk", "statsmodels", "pandas"]
+test = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)", "visdom (>0.1.8.7)"]
+test-win = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)"]
 
 [[package]]
 name = "idna"
@@ -429,7 +438,7 @@ testing = ["jaraco.itertools", "func-timeout"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "9f2ebd3ac7697ce8b3ee9bbb4ce4c019c3f31d756ac28cae45b1ea319478eb38"
+content-hash = "71ede527b4bf18b3cad186ab0376b803062cb83af9ef7a5fada967933b673be6"
 
 [metadata.files]
 atomicwrites = [
@@ -519,6 +528,48 @@ coveralls = [
     {file = "coveralls-3.2.0-py2.py3-none-any.whl", hash = "sha256:aedfcc5296b788ebaf8ace8029376e5f102f67c53d1373f2e821515c15b36527"},
     {file = "coveralls-3.2.0.tar.gz", hash = "sha256:15a987d9df877fff44cd81948c5806ffb6eafb757b3443f737888358e96156ee"},
 ]
+cython = [
+    {file = "Cython-0.29.23-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:ff885f18d169759b57f116d3956e45cd2b9cba989fde348bba091544c668dc11"},
+    {file = "Cython-0.29.23-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:3b29224eb62309a10819d923dc6262f769e4f3facfee3cd06372c355e5b38b33"},
+    {file = "Cython-0.29.23-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:355a6e768d91e21fbf477b61881bab64b7a2da386a166898997bccefd532cf5d"},
+    {file = "Cython-0.29.23-cp27-cp27m-win32.whl", hash = "sha256:2af52d312e96b38ded38b34d06e22685c226b1b0e58278bd27209f5d2385d115"},
+    {file = "Cython-0.29.23-cp27-cp27m-win_amd64.whl", hash = "sha256:519fccf526d26b377e1db22f22aa44889b28bc5833ec106588cb13557e8ba2da"},
+    {file = "Cython-0.29.23-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:625a16103770fd92b487b701fb0c07e5790b080f40fa11ce572a2d56d9e9fcca"},
+    {file = "Cython-0.29.23-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:7b7a766726d207d7cd57aff0fcb4b35ce042d3cc88a421fcdb45eeb61a5b9d12"},
+    {file = "Cython-0.29.23-cp34-cp34m-win32.whl", hash = "sha256:474c1a29ab43e29d990df279e2cf6aa96baa9208f5cd4bc76ac87ffcdf1e2945"},
+    {file = "Cython-0.29.23-cp34-cp34m-win_amd64.whl", hash = "sha256:f4aca6bffb1c1c3c4ada3347d0b162a699c18a66e097ee08b63b3a35118fdfcc"},
+    {file = "Cython-0.29.23-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:58dc06871bfdb0592542d779714fe9f918e11ba20ac07757dd63b198bdc704fe"},
+    {file = "Cython-0.29.23-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:2a3bbce689a2fddb85aa66712d93875c99bf7f64ac82b1d149ecce522a7a4e0c"},
+    {file = "Cython-0.29.23-cp35-cp35m-manylinux2014_aarch64.whl", hash = "sha256:8b8a02883ef75f21472205e8db2e471efb142729030fedb8c4e59a06866682ee"},
+    {file = "Cython-0.29.23-cp35-cp35m-win32.whl", hash = "sha256:3ef530f975e3a760e7282fce2a25f900fa63f96d17321b4aa5f5542eb9859cdf"},
+    {file = "Cython-0.29.23-cp35-cp35m-win_amd64.whl", hash = "sha256:ef21c51350462160456eb71df31b0869e5141e940f22c61c358bdb6e3ebc3388"},
+    {file = "Cython-0.29.23-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:20402ef316393168909926ab21848aa6e08e39bed5003b657139774e66166cd0"},
+    {file = "Cython-0.29.23-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:4858043ac5f96a8f0277cf63760bb39b9521c1f897678cf1d22423f3e758f4ed"},
+    {file = "Cython-0.29.23-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:4d7c3b0882d8757c601eaf288fc0d321d5c7ac6c3afb8c42eddf9325a3419cf5"},
+    {file = "Cython-0.29.23-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:b05f365329e8ad44ff492408265841c83a43b83e430286490791a1f4bdaa0bef"},
+    {file = "Cython-0.29.23-cp36-cp36m-win32.whl", hash = "sha256:37ff66039e3d138ec968ee1d1e12441fa5fb4e6a9c5458bc3c3a232f01be4a7d"},
+    {file = "Cython-0.29.23-cp36-cp36m-win_amd64.whl", hash = "sha256:5be3ae3189cf7d0e9bbeafb854496dc7030c6f6a5602d809435fab8223543a41"},
+    {file = "Cython-0.29.23-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:b0699f0dc90181f2458fdb8170455e7798a309e18f41379eda7a2dc8c7aadee0"},
+    {file = "Cython-0.29.23-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:41cd0dd2ff5d78466e73409db509887a84449b400074d4f217980cedbb18e4be"},
+    {file = "Cython-0.29.23-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:aa3bb0928fb2aa3a8828801eb8b29af2261c199f805ae835467489e2bdd00372"},
+    {file = "Cython-0.29.23-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:a6b02900d80c6f1ad4fc2060563922b4f031505c69ceeceba112d8971aacbcc3"},
+    {file = "Cython-0.29.23-cp37-cp37m-win32.whl", hash = "sha256:20cb50d9fede8029bdb50875458f07a27f909289aeed4cdb9c19544dd9a9bc45"},
+    {file = "Cython-0.29.23-cp37-cp37m-win_amd64.whl", hash = "sha256:c4b82461edbbcf90f19b319006345b77474a2d7514e1476d49a14bbd55d6b797"},
+    {file = "Cython-0.29.23-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:794e3df0b57e16bce7583ac909126f4cb381fe566adadb20484d89095855eedb"},
+    {file = "Cython-0.29.23-cp38-cp38-manylinux1_i686.whl", hash = "sha256:0c4b9f7e3aa004cf3f364e3e772f55fec5740485bafea99d1f13bdc9bbd8a545"},
+    {file = "Cython-0.29.23-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:ceccc03b633113ede1f14ad914a6db5c278ce108c8ddb308a5c01c1567d8a02a"},
+    {file = "Cython-0.29.23-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:06317468cfbf6f77f8c5b71cec76a565bd8c01432914d2d6338a298bab86f9f7"},
+    {file = "Cython-0.29.23-cp38-cp38-win32.whl", hash = "sha256:4b0bcf2e06a9063fc78c3243ed4003228375d532ef13b9e5d7183be8f0a52cf5"},
+    {file = "Cython-0.29.23-cp38-cp38-win_amd64.whl", hash = "sha256:5a6792153b728a0240e55bbb5b643f4f7e45c76319e03abf15bf367471ea1d1a"},
+    {file = "Cython-0.29.23-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:a8eed9c82e8fe07b8a8ffbd36018871a17458903fc25c9d015f37b54513a3efd"},
+    {file = "Cython-0.29.23-cp39-cp39-manylinux1_i686.whl", hash = "sha256:266459c7e48fe3c6c492b297e4033e42d4c6863cc1a1ff7cc4034949fc574fa6"},
+    {file = "Cython-0.29.23-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:4b6824b58d4373224fc76ee8bee6b35c2d17c91a1ed0fa67b88440f63daebe50"},
+    {file = "Cython-0.29.23-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:5baab5e14dd1fda34044aebf5303c69c4ce88ba7082e0b77b7a25bd09bfc39df"},
+    {file = "Cython-0.29.23-cp39-cp39-win32.whl", hash = "sha256:7d6a33c8a11f05f698e215bfdb837f32c27f63c20f3af863557ed91c748dc2be"},
+    {file = "Cython-0.29.23-cp39-cp39-win_amd64.whl", hash = "sha256:2365f3b5e6451b6bc6dcd262230656f4ade1d862ec2f6c22154deebef37c08b6"},
+    {file = "Cython-0.29.23-py2.py3-none-any.whl", hash = "sha256:282263628c5d601b313d5920f7b6d7e08c7fedbddacd080c4858aa04d86b6b4b"},
+    {file = "Cython-0.29.23.tar.gz", hash = "sha256:6a0d31452f0245daacb14c979c77e093eb1a546c760816b5eed0047686baad8e"},
+]
 dataclasses = [
     {file = "dataclasses-0.8-py3-none-any.whl", hash = "sha256:0201d89fa866f68c8ebd9d08ee6ff50c0b255f8ec63a71c16fda7af82bb887bf"},
     {file = "dataclasses-0.8.tar.gz", hash = "sha256:8479067f342acf957dc82ec415d355ab5edb7e7646b90dc6e2fd1d96ad084c97"},
@@ -562,23 +613,19 @@ emoji = [
     {file = "emoji-1.4.2.tar.gz", hash = "sha256:21257f311e24468031e85685867c00b87249dc7612b82dc763a771ba5fb00c01"},
 ]
 gensim = [
-    {file = "gensim-4.1.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:504c129224953f75940402143ecce1383be0784ea89912042c7b7e1e1107cbbc"},
-    {file = "gensim-4.1.0-cp36-cp36m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:932a3d372d4b795ce56efbec8f7b074e8c97a043e2f846b2f721a76c5cc80cc3"},
-    {file = "gensim-4.1.0-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9866744a57e6001dd8115328bc7e306fedc746e37e8d1720f3811b5e76359e67"},
-    {file = "gensim-4.1.0-cp36-cp36m-win_amd64.whl", hash = "sha256:093415811d56af0f70cd8ed51ef21f927937dc59ed7b341a5b5ebb887906851a"},
-    {file = "gensim-4.1.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:28f6e97d9a6bb32c44c53602d990a12e9fd199719c46f89f9221fe6cb6109bcd"},
-    {file = "gensim-4.1.0-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:068a4bc698f3b2844609dcb8f693b033d81c9d03f82ffd56d80a62fecc9347e9"},
-    {file = "gensim-4.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f6c4c8bf0c07d1f05f1c718fbc88e85eced222ceba03216eb6e5763098e8c2da"},
-    {file = "gensim-4.1.0-cp37-cp37m-win_amd64.whl", hash = "sha256:344ca542b7d8aca249ac3b4ad952f5c360341d4656cb0d25f9893a68ed4fd473"},
-    {file = "gensim-4.1.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:eb577ec45ef72cc213e8e1301b251a6b5798e51f5085f88a0b5527d281acbcec"},
-    {file = "gensim-4.1.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:96a4bae3e7523a9e28049e0b85b9e8525924f6ae9313467734556afecf120bb9"},
-    {file = "gensim-4.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:d2dee416383591b4fef9cdf3810f9818a2de4af5e588133822e2629a0ed2dc79"},
-    {file = "gensim-4.1.0-cp38-cp38-win_amd64.whl", hash = "sha256:382c821e256040c9763d8ae356d851bbc58590bc45aa8c70ee067f037349e3b3"},
-    {file = "gensim-4.1.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:905617489a72bd51c7cf516db0defb4d6c04d500a0b054976e816df7f7397a90"},
-    {file = "gensim-4.1.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:57c3b947b352e0637d810a5651db568e61844617ff07fec5fb56d55275b04578"},
-    {file = "gensim-4.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b9a37a941d3b618520225f0f3e1ea2e2c1971385cca1d740db707c10421a7319"},
-    {file = "gensim-4.1.0-cp39-cp39-win_amd64.whl", hash = "sha256:1f3f37b2836d00b92e75f33695ee0c901286b71ced325e3e7510918e06b8144e"},
-    {file = "gensim-4.1.0.tar.gz", hash = "sha256:0b09983048a97c7915ab50500bc53eeec438d26366041598709ec156db3eef1f"},
+    {file = "gensim-4.1.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:78cc34a3bad16e1aeaa39056cab7bcc80fa478d5580212567feaf0a43ba2ad7d"},
+    {file = "gensim-4.1.1-cp36-cp36m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:605f44dba281de2c752d891bf402bddda173fec195f96e15b571ebe2f1be463f"},
+    {file = "gensim-4.1.1-cp36-cp36m-win_amd64.whl", hash = "sha256:f7c82599b4e68180beed50cb13aecd656cdc1814d04a49eaf0937ad9d3383367"},
+    {file = "gensim-4.1.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:60ee925321d57725de05e52ba83df9df7428641ca8b10a9b8a33f92fd3059066"},
+    {file = "gensim-4.1.1-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:da7150e2151d44dc5246de8dedd16e7bd1c33d0ab1ff98ef4eab812910641d2e"},
+    {file = "gensim-4.1.1-cp37-cp37m-win_amd64.whl", hash = "sha256:1d4c0ddb3ddd2783773f50383fe19fcce6a900529709e22fa903e77745592c71"},
+    {file = "gensim-4.1.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:0fcb71db327baed24620597f1574b68c91c3ebb1157055bd5f2912f480771211"},
+    {file = "gensim-4.1.1-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:6a1e45fa3a890d138bae69ba64c3fa436570a948e0b84a39400ef172fe00b12d"},
+    {file = "gensim-4.1.1-cp38-cp38-win_amd64.whl", hash = "sha256:27eedc9995e61d66e4b53436b520aa212a81a088d40ffe03f8ebabb6f51d7c93"},
+    {file = "gensim-4.1.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:c3151364ebf64f332bbdde9ce31e9f52d20729934dd348343596b707057a80ed"},
+    {file = "gensim-4.1.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:8378a3458523ff66a1862a672e1849396e77082d40a26ffd57627c8af3289cde"},
+    {file = "gensim-4.1.1-cp39-cp39-win_amd64.whl", hash = "sha256:195cb6913259a50f13ccb1d5c33eadb4ae6c8ea30b58e633f5506cc17f36cbe2"},
+    {file = "gensim-4.1.1.tar.gz", hash = "sha256:7c762daa4029046dfbe467fdd79f911aa140748bf50dc64dbeddc8eaa07f760b"},
 ]
 idna = [
     {file = "idna-2.9-py2.py3-none-any.whl", hash = "sha256:a068a21ceac8a4d63dbfd964670474107f541babbd2250d61922f029858365fa"},
