@@ -13,7 +13,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
-editdistance = "0.5.3"
+editdistance = "0.6.0"
 numpy = "1.19.5"
 gensim = "4.1.2"
 tabulate = "0.8.9"
