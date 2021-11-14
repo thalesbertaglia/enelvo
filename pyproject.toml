@@ -20,7 +20,7 @@ tabulate = "0.8.9"
 emoji = "1.6.1"
 
 [tool.poetry.dev-dependencies]
-coveralls = "^3.3.0"
+coveralls = "^3.3.1"
 pytest-cov = "^3.0.0"
 
 [build-system]
