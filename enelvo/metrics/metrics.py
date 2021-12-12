@@ -148,13 +148,11 @@ def diacritic_sym(str_x: str, str_y: str) -> int:
     diacritics = get_diacritics()
     symmetry = 0
     for char_1, char_2 in zip(str_x, str_y):
-        if char_1 in diacritics:
-            if char_2 in diacritics[char_1]:
-                symmetry += 1
+        if char_1 in diacritics and char_2 in diacritics[char_1]:
+            symmetry += 1
 
-        if char_2 in diacritics:
-            if char_1 in diacritics[char_2]:
-                symmetry += 1
+        if char_2 in diacritics and char_1 in diacritics[char_2]:
+            symmetry += 1
     return symmetry
 
 
