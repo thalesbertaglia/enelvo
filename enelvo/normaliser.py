@@ -128,10 +128,9 @@ class Normaliser:
         )
         for i in oov_tokens:
             # In case force list contains forced corrections
-            if self.fc_list:
-                if pp_line[i] in self.fc_list:
-                    pp_line[i] = self.fc_list[pp_line[i]]
-                    continue
+            if self.fc_list and pp_line[i] in self.fc_list:
+                pp_line[i] = self.fc_list[pp_line[i]]
+                continue
             if pp_line[i] in self.in_lex:
                 pp_line[i] = self.in_lex[pp_line[i]]
             else:

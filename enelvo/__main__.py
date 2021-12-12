@@ -165,9 +165,11 @@ def load_options():
         help="try to normalise english words",
     )
     argument_config = parser.parse_args()
-    if not argument_config.interactive:
-        if not argument_config.input:
-            parser.error("--input and --output are required!")
+    if (
+        not argument_config.interactive
+        and not argument_config.input
+    ):
+        parser.error("--input and --output are required!")
     return argument_config
 
 
