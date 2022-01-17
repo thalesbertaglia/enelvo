@@ -137,7 +137,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "emoji"
-version = "1.6.1"
+version = "1.6.3"
 description = "Emoji for Python"
 category = "main"
 optional = false
@@ -429,7 +429,7 @@ testing = ["jaraco.itertools", "func-timeout"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "0faf8bec8d5c673ccbfcbf20461f389162988ccb610b9bff64d54275e7092cea"
+content-hash = "78059455fa69896b484530dadf0f1efc52d065cf509beda68269de9234dc8dee"
 
 [metadata.files]
 atomicwrites = [
@@ -580,7 +580,7 @@ editdistance = [
     {file = "editdistance-0.6.0.tar.gz", hash = "sha256:82de4fb7c6a87c7c2978e5f509dc790e8657b264edbaf87ca6869e2022aa220e"},
 ]
 emoji = [
-    {file = "emoji-1.6.1.tar.gz", hash = "sha256:53d61a8e4c025f6c295ab99c842302c66d47952199c4fde66dd060dee3ad4324"},
+    {file = "emoji-1.6.3.tar.gz", hash = "sha256:cc28bdc1010b1c03c241f69c7af1e8715144ef45a273bfadc14dc89319ba26d0"},
 ]
 gensim = [
     {file = "gensim-4.1.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:1ff0171ec5b7473facb1441426a6b41e8ec4599fd62e1820868ab965804e3d4c"},
