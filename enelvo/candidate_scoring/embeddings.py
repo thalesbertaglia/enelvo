@@ -6,9 +6,7 @@ import pickle
 from enelvo import metrics
 
 
-def score_by_embedding_model(
-    lex, embedding_model, candidates, lex_sim_weight=0.8, n_cands=-1
-):
+def score_by_embedding_model(embedding_model, candidates, lex_sim_weight=0.8, n_cands=-1):
     """Described in "Exploring Word Embeddings for Unsupervised Textual User-Generated
     Content Normalization, Bertaglia and Nunes(2016)"
 

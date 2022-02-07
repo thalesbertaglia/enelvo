@@ -41,9 +41,7 @@ def score_by_frequency(lex, candidates, n_cands=-1):
     )
 
 
-def score_by_similarity_metrics(
-    lex, candidates, metrics=None, n_cands=-1, reverse=False
-):
+def score_by_similarity_metrics(candidates, metrics=None, n_cands=-1, reverse=False):
     """Scores normalization candidates using similarity metrics.
 
     Each metric in ``metrics`` will be applied following the list order.
