@@ -61,7 +61,6 @@ def load_options():
         action="store_true",
         help="runs in interactive mode, allowing user input.",
     )
-    args, remaining_argv = config_arg_parser.parse_known_args()
     parser = argparse.ArgumentParser(
         description="{}: {}".format(__title__, __summary__),
         epilog="Please visit {} for additional help.".format(__uri__),
@@ -284,12 +283,6 @@ def cli():
 
     # load the argument options
     options = load_options()
-
-    # configure root logger to print to STDERR
-    logger = logging.getLogger(__name__)
-    root_logger = configure_stream(level="DEBUG")
-    log_formatter = logging.Formatter("%(asctime)s [%(levelname)-5.5s]  %(message)s")
-
     run(options)
 
 
