@@ -56,7 +56,7 @@ def sanitize(text, as_string=False):
         list (str): List of tokens if ``as_string`` = False.
         str: Tokenized text if ``as_string`` = True.
     """
-    if type(text) == list:
+    if isinstance(text, list):
         text = " ".join(text)
     translator = str.maketrans("", "", string.punctuation)
     emoticons = [
