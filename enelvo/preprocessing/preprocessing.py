@@ -70,7 +70,7 @@ def sanitize(text, as_string=False):
     clean = [
         w.strip()
         for w in tokens
-        if not w in emoticons and not w in UNICODE_EMOJI and len(w) != 0
+        if w not in emoticons and not w in UNICODE_EMOJI and len(w) != 0
     ]
     return clean if not as_string else " ".join(clean)
 

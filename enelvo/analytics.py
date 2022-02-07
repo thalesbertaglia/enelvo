@@ -26,7 +26,7 @@ def identify_oov(lex, tokens, force_list=None):
         if (
             str.isalpha(t)
             and not p.match(t)
-            and not t in placeholders
+            and t not in placeholders
             and len(t) < 15
             and (t not in lex or t in force_list)
         ):
