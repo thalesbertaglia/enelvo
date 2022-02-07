@@ -42,7 +42,7 @@ def score_by_frequency(lex, candidates, n_cands=-1):
 
 
 def score_by_similarity_metrics(
-    lex, candidates, metrics=[metrics.edit_distance], n_cands=-1, reverse=False
+    lex, candidates, metrics=None, n_cands=-1, reverse=False
 ):
     """Scores normalization candidates using similarity metrics.
 
@@ -63,6 +63,9 @@ def score_by_similarity_metrics(
     Returns:
         list (tuple): A list of tuples with the top ``n_cands`` sorted by each of the metrics and the scores.
     """
+    # Default metrics argument
+    if not metrics:
+        metrics = [metrics.edit_distance]
     # If the candidate list is already scored, it must be processed as a list
     # of tuples, thus the concatenation and access to the word itself are different
     is_tuple = lambda x, y: (x + (y,)) if isinstance(x, tuple) else (x, y)
