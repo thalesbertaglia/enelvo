@@ -90,7 +90,8 @@ def load_enelvo_format_full(file_path):
         dict: A dictionary containing every corpus annotation, organized as explained above.
     """
     corpus = {}
-    text = open(file_path, encoding="utf-8").read()
+    with open(file_path, encoding="utf-8") as f:
+        text = f.read()
     anns = text.split("<ann>")
     for i in range(len(anns)):
         ann = anns[i]
