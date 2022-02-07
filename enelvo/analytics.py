@@ -4,7 +4,7 @@ import re
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
 
-def identify_oov(lex, tokens, force_list=[]):
+def identify_oov(lex, tokens, force_list=None):
     """Returns a list containing all indexes of out-of-vocabulary words in ``text``.
 
     Args:
@@ -15,6 +15,9 @@ def identify_oov(lex, tokens, force_list=[]):
     Returns:
         list (int): Indexes of all out-of-vocabulary words in ``text``.
     """
+    # Default force_list argument
+    if not force_list:
+        force_list = []
     oov = []
     p = re.compile("(kk)+|(ha)+|(rs)+|(ks)+|(he)+|(hua)+|(hau)+|(hue)+")
     placeholders = ["username", "url", "number", "emoji"]
