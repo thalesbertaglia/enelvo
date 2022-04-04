@@ -150,7 +150,6 @@ class Normaliser:
                             n_cands=self.n_cands,
                         )
                         best_cand = candidate_scoring.score_by_similarity_metrics(
-                            lex=self.main_lex,
                             candidates=cands,
                             metrics=[metrics.hassan_similarity],
                             reverse=True,
