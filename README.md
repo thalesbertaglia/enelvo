@@ -6,6 +6,7 @@
 <h4 align="center">A flexible normaliser for user-generated content in Portuguese.</h4>
 
 <p align="center">
+<a href="https://github.com/thalesbertaglia/enelvo/actions/workflows/tests.yaml"><img alt="tests" src="https://github.com/thalesbertaglia/enelvo/actions/workflows/tests.yaml/badge.svg"></a>
 <a href="https://travis-ci.org/thalesbertaglia/enelvo"><img alt="Build Status" src="https://travis-ci.org/thalesbertaglia/enelvo.svg?branch=master"></a>
 <a href='https://coveralls.io/github/thalesbertaglia/enelvo?branch=master'><img src='https://coveralls.io/repos/github/thalesbertaglia/enelvo/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
