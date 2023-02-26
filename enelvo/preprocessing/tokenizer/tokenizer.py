@@ -9,9 +9,8 @@
 # Adapted to Portuguese by Thales Bertaglia <thalesbertaglia@gmail.com>
 
 import re
-import string
 from os import path
-from emoji import UNICODE_EMOJI
+import emoji
 
 from html.entities import name2codepoint
 
@@ -72,7 +71,7 @@ def _isemoji(s):
         len(s) == len("\U0001f4a9")
         and any(l <= s <= u for l, u in emoji_ranges)
         or s in emoji_flags
-        or s in UNICODE_EMOJI
+        or emoji.emoji_count(s) > 0
     )
 
 
