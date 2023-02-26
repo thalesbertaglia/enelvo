@@ -2,11 +2,9 @@
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
-import gensim
 import pickle
 from enelvo import metrics
 from enelvo import candidate_scoring
-from enelvo import utils
 from enelvo.candidate_generation import baselines
 
 

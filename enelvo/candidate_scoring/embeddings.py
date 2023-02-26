@@ -2,7 +2,6 @@
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
-import pickle
 from enelvo import metrics
 
 

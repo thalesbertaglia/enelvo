@@ -2,8 +2,6 @@
 
 # Author: Thales Bertaglia <thalesbertaglia@gmail.com>
 
-from tabulate import tabulate
-
 
 def evaluate_candidate_generation(list_corrections, list_candidates):
     """Returns the recall (in %) of candidate generation methods.
