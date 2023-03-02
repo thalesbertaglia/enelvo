@@ -121,7 +121,7 @@ class Normaliser:
         pp_line = preprocessing.tokenize(text=sentence, tokenizer=self.tokenizer)
         oov_tokens = (
             analytics.identify_oov(
-                lex=self.ok_lex, force_list=self.fc_list, tokens=self.pp_line
+                lex=self.ok_lex, force_list=self.fc_list, tokens=pp_line
             )
             if self.fc_list
             else analytics.identify_oov(lex=self.ok_lex, tokens=pp_line)
