@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use Enelvo in your research, please cite the paper below."
+type: software
+title: "Enelvo: a flexible normaliser for user-generated content in Portuguese"
+authors:
+  - family-names: Bertaglia
+    given-names: Thales
+    orcid: "https://orcid.org/0000-0003-0897-4005"
+repository-code: "https://github.com/thalesbertaglia/enelvo"
+url: "https://pypi.org/project/enelvo/"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Exploring Word Embeddings for Unsupervised Textual User-Generated Content Normalization"
+  authors:
+    - family-names: Bertaglia
+      given-names: Thales Felipe Costa
+    - family-names: Volpe Nunes
+      given-names: Maria das Graças
+  collection-title: "Proceedings of the 2nd Workshop on Noisy User-generated Text (WNUT)"
+  publisher:
+    name: "The COLING 2016 Organizing Committee"
+  year: 2016
+  start: 112
+  end: 120
+  url: "https://aclanthology.org/W16-3916"
